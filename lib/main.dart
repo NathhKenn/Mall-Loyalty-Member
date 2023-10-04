@@ -1,8 +1,11 @@
 import 'package:flutter/material.dart';
+import 'package:myapp/login-page/landing-page.dart';
 import 'package:myapp/utils.dart';
 // import 'package:myapp/login-page/forgot-password.dart';
 // import 'package:myapp/login-page/register.dart';
-import 'package:myapp/login-page/sign-in.dart';
+// import 'package:myapp/login-page/sign-in.dart';
+
+
 
 
 void main() {
@@ -23,7 +26,7 @@ class MyApp extends StatelessWidget {
 		),
 		home: const Scaffold(
 		body: SingleChildScrollView(
-			child: SignScene(), 
+			child: LandingScene(), 
 		),
 		),
 	);
