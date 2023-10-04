@@ -131,6 +131,24 @@ class Scene extends StatelessWidget {
                           ),
                         ],
                       ),
+                      child: Center(
+                        child: TextField(
+                          obscureText: true,
+                          style: TextStyle(
+                            fontSize: 15*ffem,
+                            color: const Color(0xff000000),
+                            ),
+                            decoration: InputDecoration(
+                              border: InputBorder.none,
+                              contentPadding: EdgeInsets.fromLTRB(8*fem, 0, 0, 0),
+                              hintText: 'Make new password',
+                              hintStyle: TextStyle(
+                                fontSize: 15*ffem,
+                                color: const Color(0xff000000).withOpacity(0.5),
+                              ),
+                          ),
+                        ),
+                      ), 
                     ),
                   ],
                 ),
@@ -138,7 +156,7 @@ class Scene extends StatelessWidget {
             ),
             Positioned(
               // passwordGvd (3:118)
-              left: 85*fem,
+              left: 88*fem,
               top: 403*fem,
               child: Container(
                 width: 216*fem,
@@ -177,6 +195,24 @@ class Scene extends StatelessWidget {
                             blurRadius: 2*fem,
                           ),
                         ],
+                      ),
+                      child: Center(
+                        child: TextField(
+                          obscureText: true,
+                          style: TextStyle(
+                            fontSize: 15*ffem,
+                            color: const Color(0xff000000),
+                            ),
+                            decoration: InputDecoration(
+                              border: InputBorder.none,
+                              contentPadding: EdgeInsets.fromLTRB(8*fem, 0, 0, 0),
+                              hintText: 're-enter your password',
+                              hintStyle: TextStyle(
+                                fontSize: 15*ffem,
+                                color: const Color(0xff000000).withOpacity(0.5),
+                              ),
+                          ),
+                        ),
                       ),
                     ),
                   ],
@@ -257,7 +293,7 @@ class Scene extends StatelessWidget {
             ),
             Positioned(
               // emailBi9 (3:129)
-              left: 90*fem,
+              left: 88*fem,
               top: 466*fem,
               child: Container(
                 width: 216*fem,
@@ -297,6 +333,23 @@ class Scene extends StatelessWidget {
                           ),
                         ],
                       ),
+                      child: Center (
+                        child: TextField(
+                          style: TextStyle(
+                            fontSize: 15*ffem,
+                            color:const Color(0xff000000),
+                          ),
+                          decoration: InputDecoration(
+                            border: InputBorder.none,
+                            contentPadding: EdgeInsets.fromLTRB(8*fem, 0, 0, 0),
+                            hintText: 'Enter your email',
+                            hintStyle: TextStyle(
+                              fontSize: 15*ffem,
+                              color: const Color(0xff000000). withOpacity(0.5),
+                            )
+                          )
+                        )
+                      ),
                     ),
                   ],
                 ),
@@ -305,7 +358,7 @@ class Scene extends StatelessWidget {
             Positioned(
               // undrawwanderingmindrex2a31wKw (3:132)
               left: 150*fem,
-              top: 243*fem,
+              top: 237*fem,
               child: Align(
                 child: SizedBox(
                   width: 88*fem,
