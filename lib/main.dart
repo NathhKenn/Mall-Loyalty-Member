@@ -5,7 +5,9 @@ import 'package:myapp/utils.dart';
 import 'package:myapp/login-page/sign-in.dart';
 
 
-void main() => runApp(const MyApp());
+void main() {
+  runApp(const MyApp());
+}
 
 class MyApp extends StatelessWidget {
   const MyApp({super.key});
