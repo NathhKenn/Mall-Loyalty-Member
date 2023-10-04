@@ -1,8 +1,8 @@
 import 'package:flutter/material.dart';
 import 'package:myapp/utils.dart';
 
-class Scene extends StatelessWidget {
-  const Scene({super.key});
+class RegisterScene extends StatelessWidget {
+  const RegisterScene({Key? key}) : super(key: key);
 
   @override
   Widget build(BuildContext context) {
