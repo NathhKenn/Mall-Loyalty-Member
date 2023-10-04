@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:myapp/login-page/sign-in.dart';
 import 'package:myapp/utils.dart';
 
 class ForgotScene extends StatelessWidget {
@@ -223,6 +224,17 @@ class ForgotScene extends StatelessWidget {
               // joinnowCho (3:122)
               left: 211*fem,
               top: 558*fem,
+              child:  
+                TextButton(
+                  onPressed:  () {
+                    Navigator.push(
+                      context,
+                      MaterialPageRoute(builder: (context) => const SignScene()),
+                    );
+                  },
+                  style:  TextButton.styleFrom (
+                  padding:  EdgeInsets.zero,
+                  ),
               child: Container(
                 width: 90*fem,
                 height: 30*fem,
@@ -251,6 +263,7 @@ class ForgotScene extends StatelessWidget {
                   ),
                 ),
               ),
+            ),
             ),
             Positioned(
               // cancelcmX (3:125)

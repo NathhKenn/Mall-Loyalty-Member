@@ -225,6 +225,15 @@ class SignScene extends StatelessWidget {
               // forgetpassword233 (3:16)
               left: 85*fem,
               top: 484*fem,
+              child: TextButton(
+                onPressed: () {
+                  Navigator.push(
+                    context, MaterialPageRoute(builder: (context) => const ForgotScene())
+                  );
+                },
+                style: TextButton.styleFrom(
+                  padding:EdgeInsets.zero,
+                ),
               child: Align(
                 child: SizedBox(
                   width: 120*fem,
@@ -245,6 +254,7 @@ class SignScene extends StatelessWidget {
                 ),
               ),
             ),
+          ),
             Positioned(
               // signin7KP (3:33)
               left: 211*fem,
