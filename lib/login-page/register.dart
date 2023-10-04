@@ -1,8 +1,8 @@
 import 'package:flutter/material.dart';
 import 'package:myapp/utils.dart';
 
-class Scene extends StatelessWidget {
-  const Scene({super.key});
+class RegisterScene extends StatelessWidget {
+  const RegisterScene({Key? key}) : super(key: key);
 
   @override
   Widget build(BuildContext context) {
@@ -131,6 +131,23 @@ class Scene extends StatelessWidget {
                           ),
                         ],
                       ),
+                      child: Center (
+                        child: TextField(
+                          style: TextStyle(
+                            fontSize: 15*ffem,
+                            color:const Color(0xff000000),
+                          ),
+                          decoration: InputDecoration(
+                            border: InputBorder.none,
+                            contentPadding: EdgeInsets.fromLTRB(8*fem, 0, 0, 0),
+                            hintText: 'Enter your email',
+                            hintStyle: TextStyle(
+                              fontSize: 15*ffem,
+                              color: const Color(0xff000000). withOpacity(0.5),
+                            )
+                          )
+                        )
+                      ),
                     ),
                   ],
                 ),
@@ -177,6 +194,14 @@ class Scene extends StatelessWidget {
                             blurRadius: 2*fem,
                           ),
                         ],
+                      ),
+                      child: Center(
+                        child: TextField(
+                          style: TextStyle(
+                            fontSize: 15*ffem,
+                              color: const Color(0xff000000),
+                            ),
+                        ),     
                       ),
                     ),
                   ],
@@ -225,6 +250,14 @@ class Scene extends StatelessWidget {
                           ),
                         ],
                       ),
+                      child: Center(
+                        child: TextField(
+                          style: TextStyle(
+                            fontSize: 15*ffem,
+                            color: const Color(0xff000000),
+                          ),  
+                        ),
+                      ),
                     ),
                   ],
                 ),
@@ -272,6 +305,24 @@ class Scene extends StatelessWidget {
                           ),
                         ],
                       ),
+                      child: Center(
+                        child: TextField(
+                          obscureText: true,
+                          style: TextStyle(
+                            fontSize: 15*ffem,
+                            color: const Color(0xff000000),
+                            ),
+                            decoration: InputDecoration(
+                              border: InputBorder.none,
+                              contentPadding: EdgeInsets.fromLTRB(8*fem, 0, 0, 0),
+                              hintText: 're-enter your password',
+                              hintStyle: TextStyle(
+                                fontSize: 15*ffem,
+                                color: const Color(0xff000000).withOpacity(0.5),
+                              ),
+                          ),
+                        ),
+                      ),
                     ),
                   ],
                 ),
@@ -318,6 +369,24 @@ class Scene extends StatelessWidget {
                             blurRadius: 2*fem,
                           ),
                         ],
+                      ),
+                      child: Center(
+                        child: TextField(
+                          obscureText: true,
+                          style: TextStyle(
+                            fontSize: 15*ffem,
+                            color: const Color(0xff000000),
+                            ),
+                            decoration: InputDecoration(
+                              border: InputBorder.none,
+                              contentPadding: EdgeInsets.fromLTRB(8*fem, 0, 0, 0),
+                              hintText: 'Enter your password',
+                              hintStyle: TextStyle(
+                                fontSize: 15*ffem,
+                                color: const Color(0xff000000).withOpacity(0.5),
+                              ),
+                          ),
+                        ),
                       ),
                     ),
                   ],

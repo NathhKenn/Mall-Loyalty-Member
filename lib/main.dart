@@ -21,7 +21,7 @@ class MyApp extends StatelessWidget {
 		),
 		home: const Scaffold(
 		body: SingleChildScrollView(
-			child: Scene(),
+			child: SignScene(), 
 		),
 		),
 	);

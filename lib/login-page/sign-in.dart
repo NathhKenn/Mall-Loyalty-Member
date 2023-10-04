@@ -1,8 +1,10 @@
 import 'package:flutter/material.dart';
 import 'package:myapp/utils.dart';
+import 'package:myapp/login-page/forgot-password.dart';
+import 'package:myapp/login-page/register.dart';
 
-class Scene extends StatelessWidget {
-  const Scene({super.key});
+class SignScene extends StatelessWidget {
+  const SignScene({super.key});
 
   @override
   Widget build(BuildContext context) {
@@ -281,7 +283,12 @@ class Scene extends StatelessWidget {
               left: 83*fem,
               top: 558*fem,
               child: TextButton(
-                onPressed: () {},
+                onPressed: () {
+                  Navigator.push(
+                    context, 
+                    MaterialPageRoute(builder: (context) => const RegisterScene()),
+                  );
+                },
                 style: TextButton.styleFrom (
                   padding: EdgeInsets.zero,
                 ),
