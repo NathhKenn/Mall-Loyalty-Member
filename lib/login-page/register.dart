@@ -402,6 +402,15 @@ class RegisterScene extends StatelessWidget {
               left: 111*fem,
               top: 520*fem,
               child: Align(
+              child: TextButton(
+                onPressed: () {Navigator.push(
+                    context, 
+                    MaterialPageRoute(builder: (context) => const RegisterScene()),
+                  );
+                },
+                style: TextButton.styleFrom (
+                  padding: EdgeInsets.zero,
+                ),
                 child: SizedBox(
                   width: 143*fem,
                   height: 16*fem,
@@ -418,7 +427,6 @@ class RegisterScene extends StatelessWidget {
                       decorationColor: const Color(0xff0dc5ff),
                     ),
                   ),
-
                 ),
               ),
             ),
@@ -524,6 +532,7 @@ class RegisterScene extends StatelessWidget {
                 ),
               ),
             ),
+            )
           ],
         ),
       ),
