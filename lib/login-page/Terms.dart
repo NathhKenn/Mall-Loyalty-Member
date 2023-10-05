@@ -14,7 +14,8 @@ class TermsScene extends StatelessWidget {
     double fem = MediaQuery.of(context).size.width / baseWidth;
     double ffem = fem * 0.97;
 
-    return Container(
+    return Scaffold(
+      body :Container(
       width: double.infinity,
       child: Container(
         // termsandagreetmentXMb (53:3)
@@ -206,6 +207,7 @@ By enrolling in the Central Mall Loyalty Program, you agree to abide by these Te
           ],
         ),
       ),
+    )
     );
   }
 }
