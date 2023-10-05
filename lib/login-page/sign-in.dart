@@ -16,7 +16,8 @@ class SignScene extends StatelessWidget {
     double ffem = fem * 0.97;
     return SizedBox(
       width: double.infinity,
-      child: Container(
+      child: SafeArea(
+        child: Container(
         // signinfW1 (3:4)
         width: double.infinity,
         height: 844*fem,
@@ -361,6 +362,7 @@ class SignScene extends StatelessWidget {
             ),
           ],
         ),
+      ),
       ),
           );
   }

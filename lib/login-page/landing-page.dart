@@ -13,6 +13,7 @@ class LandingScene extends StatelessWidget {
     double ffem = fem * 0.97;
     return SizedBox(
       width: double.infinity,
+      child: SafeArea(
       child: Container(
         // landingpagecxZ (53:132)
         width: double.infinity,
@@ -176,6 +177,7 @@ class LandingScene extends StatelessWidget {
             ),
           ],
         ),
+      ),
       ),
           );
   }

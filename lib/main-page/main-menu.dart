@@ -12,8 +12,9 @@ class MenuScene extends StatelessWidget {
     double baseWidth = 390;
     double fem = MediaQuery.of(context).size.width / baseWidth;
     double ffem = fem * 0.97;
-    return Container(
-      width: double.infinity,
+    return Scaffold(
+      body:Container(
+        width: double.infinity,
       child: Container(
         // mainmenuU4Z (58:2259)
         padding: EdgeInsets.fromLTRB(0*fem, 33*fem, 0*fem, 0*fem),
@@ -52,7 +53,7 @@ class MenuScene extends StatelessWidget {
                           width: 18*fem,
                           height: 20*fem,
                           child: Image.asset(
-                            'assets/new-template-kontol/images/icons-5e1.png',
+                            'assets/main-page/images/icons-5e1.png',
                             width: 18*fem,
                             height: 20*fem,
                           ),
@@ -66,7 +67,7 @@ class MenuScene extends StatelessWidget {
                             image: DecorationImage (
                               fit: BoxFit.cover,
                               image: AssetImage (
-                                'assets/new-template-kontol/images/ellipse-1-bg-NSD.png',
+                                'assets/main-page/images/ellipse-1-bg-NSD.png',
                               ),
                             ),
                           ),
@@ -182,7 +183,7 @@ class MenuScene extends StatelessWidget {
                                   width: 8*fem,
                                   height: 4*fem,
                                   child: Image.asset(
-                                    'assets/new-template-kontol/images/icons-aSM.png',
+                                    'assets/main-page/images/icons-aSM.png',
                                     width: 8*fem,
                                     height: 4*fem,
                                   ),
@@ -204,7 +205,7 @@ class MenuScene extends StatelessWidget {
                                   image: DecorationImage (
                                     fit: BoxFit.cover,
                                     image: AssetImage (
-                                      'assets/new-template-kontol/images/rectangle-bg-X6h.png',
+                                      'assets/main-page/images/rectangle-bg-X6h.png',
                                     ),
                                   ),
                                 ),
@@ -264,7 +265,7 @@ class MenuScene extends StatelessWidget {
                                   image: DecorationImage (
                                     fit: BoxFit.cover,
                                     image: AssetImage (
-                                      'assets/new-template-kontol/images/rectangle-bg.png',
+                                      'assets/main-page/images/rectangle-bg.png',
                                     ),
                                   ),
                                 ),
@@ -281,7 +282,7 @@ class MenuScene extends StatelessWidget {
                               width: 28*fem,
                               height: 28*fem,
                               child: Image.asset(
-                                'assets/new-template-kontol/images/image-3-gBs.png',
+                                'assets/main-page/images/image-3-gBs.png',
                                 fit: BoxFit.cover,
                               ),
                             ),
@@ -322,7 +323,7 @@ class MenuScene extends StatelessWidget {
                                   image: DecorationImage (
                                     fit: BoxFit.cover,
                                     image: AssetImage (
-                                      'assets/new-template-kontol/images/image-14-bg.png',
+                                      'assets/main-page/images/image-14-bg.png',
                                     ),
                                   ),
                                 ),
@@ -400,7 +401,7 @@ class MenuScene extends StatelessWidget {
                                       width: 8*fem,
                                       height: 4*fem,
                                       child: Image.asset(
-                                        'assets/new-template-kontol/images/icons.png',
+                                        'assets/main-page/images/icons.png',
                                         width: 8*fem,
                                         height: 4*fem,
                                       ),
@@ -411,18 +412,18 @@ class MenuScene extends StatelessWidget {
                             ],
                           ),
                         ),
-                        Container(
-                          // image7Ptu (58:2437)
-                          width: 372*fem,
-                          height: 209*fem,
-                          child: Image.asset(
-                            'assets/new-template-kontol/images/image-7-5Ay.png',
-                            fit: BoxFit.cover,
-                          ),
+                        ListView(
+                          scrollDirection: Axis.horizontal,
+                          children: [InkWell(
+                            child: SizedBox(
+                              width: 372*fem,
+                              height: 209*fem,
+                              child: Image.asset('assets/main-page/images/image-7-5Ay.png',
+                               fit: BoxFit.cover,
+                               ),
+                            ),
+                          )],
                         ),
-                      ],
-                    ),
-                  ),
                   Container(
                     // frame2wQd (58:2439)
                     margin: EdgeInsets.fromLTRB(144*fem, 0*fem, 162*fem, 49*fem),
@@ -553,7 +554,7 @@ class MenuScene extends StatelessWidget {
                                 width: 8*fem,
                                 height: 4*fem,
                                 child: Image.asset(
-                                  'assets/new-template-kontol/images/icons-tJd.png',
+                                  'assets/main-page/images/icons-tJd.png',
                                   width: 8*fem,
                                   height: 4*fem,
                                 ),
@@ -628,7 +629,7 @@ class MenuScene extends StatelessWidget {
                                       width: 23*fem,
                                       height: 20*fem,
                                       child: Image.asset(
-                                        'assets/new-template-kontol/images/icon-WxR.png',
+                                        'assets/main-page/images/icon-WxR.png',
                                         width: 23*fem,
                                         height: 20*fem,
                                       ),
@@ -681,7 +682,7 @@ class MenuScene extends StatelessWidget {
                                       width: 24*fem,
                                       height: 24*fem,
                                       child: Image.asset(
-                                        'assets/new-template-kontol/images/icon.png',
+                                        'assets/main-page/images/icon.png',
                                         width: 24*fem,
                                         height: 24*fem,
                                       ),
@@ -730,7 +731,7 @@ class MenuScene extends StatelessWidget {
                                         width: 22.5*fem,
                                         height: 20*fem,
                                         child: Image.asset(
-                                          'assets/new-template-kontol/images/icon-aPb.png',
+                                          'assets/main-page/images/icon-aPb.png',
                                           width: 22.5*fem,
                                           height: 20*fem,
                                         ),
@@ -814,7 +815,7 @@ class MenuScene extends StatelessWidget {
                                               width: 20*fem,
                                               height: 20*fem,
                                               child: Image.asset(
-                                                'assets/new-template-kontol/images/image-16.png',
+                                                'assets/main-page/images/image-16.png',
                                                 fit: BoxFit.cover,
                                               ),
                                             ),
@@ -873,7 +874,7 @@ class MenuScene extends StatelessWidget {
                                 width: 16*fem,
                                 height: 18*fem,
                                 child: Image.asset(
-                                  'assets/new-template-kontol/images/icons-fN9.png',
+                                  'assets/main-page/images/icons-fN9.png',
                                   width: 16*fem,
                                   height: 18*fem,
                                 ),
@@ -904,6 +905,10 @@ class MenuScene extends StatelessWidget {
           ],
         ),
       ),
-          );
+    ]
+    )
+  )
+  )
+  );
   }
 }
