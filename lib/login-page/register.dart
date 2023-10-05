@@ -1,6 +1,10 @@
 import 'package:flutter/material.dart';
+import 'package:myapp/login-page/Terms.dart';
 import 'package:myapp/utils.dart';
 import 'package:myapp/main-page/main-menu.dart';
+import 'package:myapp/login-page/landing-page.dart';
+
+
 class RegisterScene extends StatelessWidget {
   const RegisterScene({Key? key}) : super(key: key);
 
@@ -399,7 +403,16 @@ class RegisterScene extends StatelessWidget {
               left: 111*fem,
               top: 520*fem,
               child: Align(
-                child: SizedBox(
+                child: TextButton(
+                  onPressed: () {Navigator.push(
+                    context,
+                    MaterialPageRoute(builder: (context) => const TermsScene()),
+                  );
+                  },
+                  style: TextButton.styleFrom (
+                  padding: EdgeInsets.zero,
+                  ),
+                  child: SizedBox(
                   width: 143*fem,
                   height: 16*fem,
                   child: Text(
@@ -415,7 +428,10 @@ class RegisterScene extends StatelessWidget {
                       decorationColor: const Color(0xff0dc5ff),
                     ),
                   ),
+
                 ),
+                )
+                
               ),
             ),
             Positioned(
@@ -425,7 +441,7 @@ class RegisterScene extends StatelessWidget {
               child: TextButton(
                 onPressed: (){
                   Navigator.push(context,
-                  MaterialPageRoute(builder: ((context) => MenuScene())));
+                  MaterialPageRoute(builder: ((context) => const MenuScene())));
                 },
                 style: TextButton.styleFrom(
                   padding:EdgeInsets.zero,
@@ -465,8 +481,10 @@ class RegisterScene extends StatelessWidget {
               left: 83*fem,
               top: 558*fem,
               child: TextButton(
-                onPressed: () {
-                  Navigator.pop(context);
+                onPressed: () {Navigator.push(
+                  context,
+                    MaterialPageRoute(builder: (context) => const LandingScene()),
+                  );
                 },
                 style: TextButton.styleFrom(
                   padding:EdgeInsets.zero,
@@ -522,7 +540,6 @@ class RegisterScene extends StatelessWidget {
         ),
       ),
       )
-      
-          );
+    );
   }
 }

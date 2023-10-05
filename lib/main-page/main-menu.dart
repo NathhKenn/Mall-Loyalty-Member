@@ -1,7 +1,4 @@
 import 'package:flutter/material.dart';
-import 'package:flutter/gestures.dart';
-import 'dart:ui';
-import 'package:google_fonts/google_fonts.dart';
 import 'package:myapp/utils.dart';
 
 class MenuScene extends StatelessWidget {
@@ -12,14 +9,13 @@ class MenuScene extends StatelessWidget {
     double baseWidth = 390;
     double fem = MediaQuery.of(context).size.width / baseWidth;
     double ffem = fem * 0.97;
-    return Scaffold(
-      body:Container(
-        width: double.infinity,
+    return SizedBox(
+      width: double.infinity,
       child: Container(
         // mainmenuU4Z (58:2259)
         padding: EdgeInsets.fromLTRB(0*fem, 33*fem, 0*fem, 0*fem),
         width: double.infinity,
-        decoration: BoxDecoration (
+        decoration: const BoxDecoration (
           color: Color(0xffffffff),
         ),
         child: Column(
@@ -29,7 +25,7 @@ class MenuScene extends StatelessWidget {
               // wrapperBUm (58:2280)
               padding: EdgeInsets.fromLTRB(0*fem, 21*fem, 0*fem, 0*fem),
               width: 422*fem,
-              decoration: BoxDecoration (
+              decoration: const BoxDecoration (
                 gradient: LinearGradient (
                   begin: Alignment(0, -1),
                   end: Alignment(0, 1),
@@ -64,7 +60,7 @@ class MenuScene extends StatelessWidget {
                           height: 52*fem,
                           decoration: BoxDecoration (
                             borderRadius: BorderRadius.circular(26*fem),
-                            image: DecorationImage (
+                            image: const DecorationImage (
                               fit: BoxFit.cover,
                               image: AssetImage (
                                 'assets/main-page/images/ellipse-1-bg-NSD.png',
@@ -75,7 +71,7 @@ class MenuScene extends StatelessWidget {
                       ],
                     ),
                   ),
-                  Container(
+                  SizedBox(
                     // autogroupkqsxzKj (LEcdRxtn5BEeKMuJfkKqsX)
                     width: double.infinity,
                     height: 70*fem,
@@ -90,7 +86,7 @@ class MenuScene extends StatelessWidget {
                               width: 185*fem,
                               height: 70*fem,
                               child: Container(
-                                decoration: BoxDecoration (
+                                decoration: const BoxDecoration (
                                   color: Color(0xff0081f9),
                                 ),
                               ),
@@ -108,7 +104,7 @@ class MenuScene extends StatelessWidget {
                               child: Container(
                                 decoration: BoxDecoration (
                                   borderRadius: BorderRadius.circular(35*fem),
-                                  color: Color(0xffd9d9d9),
+                                  color: const Color(0xffd9d9d9),
                                 ),
                               ),
                             ),
@@ -123,7 +119,7 @@ class MenuScene extends StatelessWidget {
                               width: 206*fem,
                               height: 70*fem,
                               child: Container(
-                                decoration: BoxDecoration (
+                                decoration: const BoxDecoration (
                                   color: Color(0xff00c1ff),
                                 ),
                               ),
@@ -146,7 +142,7 @@ class MenuScene extends StatelessWidget {
                                   fontWeight: FontWeight.w400,
                                   height: 1*ffem/fem,
                                   letterSpacing: -0.48*fem,
-                                  color: Color(0xffffffff),
+                                  color: const Color(0xffffffff),
                                 ),
                               ),
                             ),
@@ -174,11 +170,11 @@ class MenuScene extends StatelessWidget {
                                       fontWeight: FontWeight.w400,
                                       height: 1.8461538462*ffem/fem,
                                       letterSpacing: -0.26*fem,
-                                      color: Color(0xffffffff),
+                                      color: const Color(0xffffffff),
                                     ),
                                   ),
                                 ),
-                                Container(
+                                SizedBox(
                                   // iconsigy (I58:2311;434:5433)
                                   width: 8*fem,
                                   height: 4*fem,
@@ -201,7 +197,7 @@ class MenuScene extends StatelessWidget {
                               width: 12*fem,
                               height: 12*fem,
                               child: Container(
-                                decoration: BoxDecoration (
+                                decoration: const BoxDecoration (
                                   image: DecorationImage (
                                     fit: BoxFit.cover,
                                     image: AssetImage (
@@ -224,7 +220,7 @@ class MenuScene extends StatelessWidget {
                               child: Container(
                                 decoration: BoxDecoration (
                                   borderRadius: BorderRadius.circular(35*fem),
-                                  color: Color(0xffd9d9d9),
+                                  color: const Color(0xffd9d9d9),
                                 ),
                               ),
                             ),
@@ -234,7 +230,7 @@ class MenuScene extends StatelessWidget {
                           // accordionbuttonT2H (58:2343)
                           left: 266*fem,
                           top: 7*fem,
-                          child: Container(
+                          child: SizedBox(
                             width: 92*fem,
                             height: 24*fem,
                             child: Center(
@@ -246,7 +242,7 @@ class MenuScene extends StatelessWidget {
                                   fontWeight: FontWeight.w400,
                                   height: 1.8461538462*ffem/fem,
                                   letterSpacing: -0.26*fem,
-                                  color: Color(0xffffffff),
+                                  color: const Color(0xffffffff),
                                 ),
                               ),
                             ),
@@ -261,7 +257,7 @@ class MenuScene extends StatelessWidget {
                               width: 12*fem,
                               height: 12*fem,
                               child: Container(
-                                decoration: BoxDecoration (
+                                decoration: const BoxDecoration (
                                   image: DecorationImage (
                                     fit: BoxFit.cover,
                                     image: AssetImage (
@@ -304,7 +300,7 @@ class MenuScene extends StatelessWidget {
                                   fontWeight: FontWeight.w400,
                                   height: 1.5*ffem/fem,
                                   letterSpacing: -0.32*fem,
-                                  color: Color(0xffffffff),
+                                  color: const Color(0xffffffff),
                                 ),
                               ),
                             ),
@@ -319,7 +315,7 @@ class MenuScene extends StatelessWidget {
                               width: 32*fem,
                               height: 32*fem,
                               child: Container(
-                                decoration: BoxDecoration (
+                                decoration: const BoxDecoration (
                                   image: DecorationImage (
                                     fit: BoxFit.cover,
                                     image: AssetImage (
@@ -370,7 +366,7 @@ class MenuScene extends StatelessWidget {
                                     fontWeight: FontWeight.w600,
                                     height: 1.5*ffem/fem,
                                     letterSpacing: -0.32*fem,
-                                    color: Color(0xff3b3b3b),
+                                    color: const Color(0xff3b3b3b),
                                   ),
                                 ),
                               ),
@@ -392,11 +388,11 @@ class MenuScene extends StatelessWidget {
                                           fontWeight: FontWeight.w400,
                                           height: 1.5*ffem/fem,
                                           letterSpacing: -0.32*fem,
-                                          color: Color(0xff585858),
+                                          color: const Color(0xff585858),
                                         ),
                                       ),
                                     ),
-                                    Container(
+                                    SizedBox(
                                       // iconsUG9 (I58:2373;437:761)
                                       width: 8*fem,
                                       height: 4*fem,
@@ -412,18 +408,18 @@ class MenuScene extends StatelessWidget {
                             ],
                           ),
                         ),
-                        ListView(
-                          scrollDirection: Axis.horizontal,
-                          children: [InkWell(
-                            child: SizedBox(
-                              width: 372*fem,
-                              height: 209*fem,
-                              child: Image.asset('assets/main-page/images/image-7-5Ay.png',
-                               fit: BoxFit.cover,
-                               ),
-                            ),
-                          )],
+                        SizedBox(
+                          // image7Ptu (58:2437)
+                          width: 372*fem,
+                          height: 209*fem,
+                          child: Image.asset(
+                            'assets/new-template-kontol/images/image-7-5Ay.png',
+                            fit: BoxFit.cover,
+                          ),
                         ),
+                      ],
+                    ),
+                  ),
                   Container(
                     // frame2wQd (58:2439)
                     margin: EdgeInsets.fromLTRB(144*fem, 0*fem, 162*fem, 49*fem),
@@ -437,7 +433,7 @@ class MenuScene extends StatelessWidget {
                           width: 24*fem,
                           height: double.infinity,
                           decoration: BoxDecoration (
-                            color: Color(0xff3077e2),
+                            color: const Color(0xff3077e2),
                             borderRadius: BorderRadius.circular(12*fem),
                           ),
                         ),
@@ -449,7 +445,7 @@ class MenuScene extends StatelessWidget {
                           width: 8*fem,
                           height: double.infinity,
                           decoration: BoxDecoration (
-                            color: Color(0xffd5d5d5),
+                            color: const Color(0xffd5d5d5),
                             borderRadius: BorderRadius.circular(12*fem),
                           ),
                         ),
@@ -461,7 +457,7 @@ class MenuScene extends StatelessWidget {
                           width: 8*fem,
                           height: double.infinity,
                           decoration: BoxDecoration (
-                            color: Color(0xffd5d5d5),
+                            color: const Color(0xffd5d5d5),
                             borderRadius: BorderRadius.circular(12*fem),
                           ),
                         ),
@@ -473,7 +469,7 @@ class MenuScene extends StatelessWidget {
                           width: 8*fem,
                           height: double.infinity,
                           decoration: BoxDecoration (
-                            color: Color(0xffd5d5d5),
+                            color: const Color(0xffd5d5d5),
                             borderRadius: BorderRadius.circular(12*fem),
                           ),
                         ),
@@ -485,7 +481,7 @@ class MenuScene extends StatelessWidget {
                           width: 8*fem,
                           height: double.infinity,
                           decoration: BoxDecoration (
-                            color: Color(0xffd5d5d5),
+                            color: const Color(0xffd5d5d5),
                             borderRadius: BorderRadius.circular(12*fem),
                           ),
                         ),
@@ -497,7 +493,7 @@ class MenuScene extends StatelessWidget {
                           width: 8*fem,
                           height: double.infinity,
                           decoration: BoxDecoration (
-                            color: Color(0xffd5d5d5),
+                            color: const Color(0xffd5d5d5),
                             borderRadius: BorderRadius.circular(12*fem),
                           ),
                         ),
@@ -523,7 +519,7 @@ class MenuScene extends StatelessWidget {
                               fontWeight: FontWeight.w600,
                               height: 1.5*ffem/fem,
                               letterSpacing: -0.32*fem,
-                              color: Color(0xff3b3b3b),
+                              color: const Color(0xff3b3b3b),
                             ),
                           ),
                         ),
@@ -545,11 +541,11 @@ class MenuScene extends StatelessWidget {
                                     fontWeight: FontWeight.w400,
                                     height: 1.5*ffem/fem,
                                     letterSpacing: -0.32*fem,
-                                    color: Color(0xff585858),
+                                    color: const Color(0xff585858),
                                   ),
                                 ),
                               ),
-                              Container(
+                              SizedBox(
                                 // iconsadw (I58:2448;437:761)
                                 width: 8*fem,
                                 height: 4*fem,
@@ -577,7 +573,7 @@ class MenuScene extends StatelessWidget {
                         fontWeight: FontWeight.w400,
                         height: 1.5*ffem/fem,
                         letterSpacing: -0.32*fem,
-                        color: Color(0xffaba4a4),
+                        color: const Color(0xffaba4a4),
                       ),
                     ),
                   ),
@@ -600,7 +596,7 @@ class MenuScene extends StatelessWidget {
                                 padding: EdgeInsets.fromLTRB(0*fem, 0*fem, 0*fem, 11*fem),
                                 width: 77*fem,
                                 height: double.infinity,
-                                decoration: BoxDecoration (
+                                decoration: const BoxDecoration (
                                   color: Color(0xffffffff),
                                 ),
                                 child: Column(
@@ -616,7 +612,7 @@ class MenuScene extends StatelessWidget {
                                           width: double.infinity,
                                           height: 1*fem,
                                           child: Container(
-                                            decoration: BoxDecoration (
+                                            decoration: const BoxDecoration (
                                               color: Color(0x331d1d1d),
                                             ),
                                           ),
@@ -642,7 +638,7 @@ class MenuScene extends StatelessWidget {
                                         fontSize: 10*ffem,
                                         fontWeight: FontWeight.w400,
                                         height: 1.2175*ffem/fem,
-                                        color: Color(0x7f1d1d1d),
+                                        color: const Color(0x7f1d1d1d),
                                       ),
                                     ),
                                   ],
@@ -653,7 +649,7 @@ class MenuScene extends StatelessWidget {
                                 padding: EdgeInsets.fromLTRB(0*fem, 0*fem, 0*fem, 11*fem),
                                 width: 78*fem,
                                 height: double.infinity,
-                                decoration: BoxDecoration (
+                                decoration: const BoxDecoration (
                                   color: Color(0xffffffff),
                                 ),
                                 child: Column(
@@ -669,7 +665,7 @@ class MenuScene extends StatelessWidget {
                                           width: double.infinity,
                                           height: 1*fem,
                                           child: Container(
-                                            decoration: BoxDecoration (
+                                            decoration: const BoxDecoration (
                                               color: Color(0x331d1d1d),
                                             ),
                                           ),
@@ -695,7 +691,7 @@ class MenuScene extends StatelessWidget {
                                         fontSize: 10*ffem,
                                         fontWeight: FontWeight.w400,
                                         height: 1.2175*ffem/fem,
-                                        color: Color(0x7f1d1d1d),
+                                        color: const Color(0x7f1d1d1d),
                                       ),
                                     ),
                                   ],
@@ -704,7 +700,7 @@ class MenuScene extends StatelessWidget {
                             ],
                           ),
                         ),
-                        Container(
+                        SizedBox(
                           // autogrouphuemVyB (LEcanHoqWYAAderrQrhUeM)
                           width: 147*fem,
                           height: double.infinity,
@@ -719,7 +715,7 @@ class MenuScene extends StatelessWidget {
                                   width: 61*fem,
                                   height: 65*fem,
                                   decoration: BoxDecoration (
-                                    color: Color(0xffd90077),
+                                    color: const Color(0xffd90077),
                                     borderRadius: BorderRadius.circular(100*fem),
                                   ),
                                   child: Column(
@@ -744,7 +740,7 @@ class MenuScene extends StatelessWidget {
                                           fontSize: 10*ffem,
                                           fontWeight: FontWeight.w400,
                                           height: 1.2175*ffem/fem,
-                                          color: Color(0xffffffff),
+                                          color: const Color(0xffffffff),
                                         ),
                                       ),
                                     ],
@@ -755,7 +751,7 @@ class MenuScene extends StatelessWidget {
                                 // frame178ZLm (58:2512)
                                 left: 69*fem,
                                 top: 30*fem,
-                                child: Container(
+                                child: SizedBox(
                                   width: 78*fem,
                                   height: 1*fem,
                                   child: Center(
@@ -764,7 +760,7 @@ class MenuScene extends StatelessWidget {
                                       width: double.infinity,
                                       height: 1*fem,
                                       child: Container(
-                                        decoration: BoxDecoration (
+                                        decoration: const BoxDecoration (
                                           color: Color(0x331d1d1d),
                                         ),
                                       ),
@@ -779,13 +775,13 @@ class MenuScene extends StatelessWidget {
                                 child: Container(
                                   width: 77*fem,
                                   height: 60*fem,
-                                  decoration: BoxDecoration (
+                                  decoration: const BoxDecoration (
                                     color: Color(0xffffffff),
                                   ),
                                   child: Column(
                                     crossAxisAlignment: CrossAxisAlignment.center,
                                     children: [
-                                      Container(
+                                      SizedBox(
                                         // frame178w6R (58:2525)
                                         width: double.infinity,
                                         child: Center(
@@ -794,7 +790,7 @@ class MenuScene extends StatelessWidget {
                                             width: double.infinity,
                                             height: 1*fem,
                                             child: Container(
-                                              decoration: BoxDecoration (
+                                              decoration: const BoxDecoration (
                                                 color: Color(0x331d1d1d),
                                               ),
                                             ),
@@ -827,7 +823,7 @@ class MenuScene extends StatelessWidget {
                                                 fontSize: 10*ffem,
                                                 fontWeight: FontWeight.w400,
                                                 height: 1.2175*ffem/fem,
-                                                color: Color(0x7f1d1d1d),
+                                                color: const Color(0x7f1d1d1d),
                                               ),
                                             ),
                                           ],
@@ -845,7 +841,7 @@ class MenuScene extends StatelessWidget {
                           margin: EdgeInsets.fromLTRB(0*fem, 0*fem, 0*fem, 2*fem),
                           padding: EdgeInsets.fromLTRB(0*fem, 0*fem, 0*fem, 11*fem),
                           width: 77*fem,
-                          decoration: BoxDecoration (
+                          decoration: const BoxDecoration (
                             color: Color(0xffffffff),
                           ),
                           child: Column(
@@ -861,7 +857,7 @@ class MenuScene extends StatelessWidget {
                                     width: double.infinity,
                                     height: 1*fem,
                                     child: Container(
-                                      decoration: BoxDecoration (
+                                      decoration: const BoxDecoration (
                                         color: Color(0x331d1d1d),
                                       ),
                                     ),
@@ -889,7 +885,7 @@ class MenuScene extends StatelessWidget {
                                     fontSize: 10*ffem,
                                     fontWeight: FontWeight.w400,
                                     height: 1.2175*ffem/fem,
-                                    color: Color(0x7f1d1d1d),
+                                    color: const Color(0x7f1d1d1d),
                                   ),
                                 ),
                               ),
