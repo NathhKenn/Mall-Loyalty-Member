@@ -1,7 +1,6 @@
 import 'package:flutter/material.dart';
-import 'package:myapp/login-page/sign-in.dart';
 import 'package:myapp/utils.dart';
-
+import 'package:myapp/main-page/main-menu.dart';
 class RegisterScene extends StatelessWidget {
   const RegisterScene({Key? key}) : super(key: key);
 
@@ -423,7 +422,15 @@ class RegisterScene extends StatelessWidget {
               // joinnowE6d (3:92)
               left: 211*fem,
               top: 558*fem,
-              child: Container(
+              child: TextButton(
+                onPressed: (){
+                  Navigator.push(context,
+                  MaterialPageRoute(builder: ((context) => MenuScene())));
+                },
+                style: TextButton.styleFrom(
+                  padding:EdgeInsets.zero,
+                ),
+                child: Container(
                 width: 90*fem,
                 height: 30*fem,
                 decoration: BoxDecoration (
@@ -451,6 +458,7 @@ class RegisterScene extends StatelessWidget {
                   ),
                 ),
               ),
+              )
             ),
             Positioned(
               // cancel5sw (3:95)

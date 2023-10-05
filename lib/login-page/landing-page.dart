@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:myapp/login-page/sign-in.dart';
 import 'package:myapp/utils.dart';
 import 'package:myapp/login-page/register.dart';
 
@@ -134,7 +135,10 @@ class LandingScene extends StatelessWidget {
               left: 127*fem,
               top: 538*fem,
               child: TextButton(
-                onPressed: () {},
+                onPressed: () {
+                  Navigator.push(context,
+                  MaterialPageRoute(builder:(context) => const SignScene()));
+                },
                 style: TextButton.styleFrom (
                   padding: EdgeInsets.zero,
                 ),

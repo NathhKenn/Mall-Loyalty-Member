@@ -4,6 +4,7 @@ import 'package:flutter/material.dart';
 import 'package:myapp/utils.dart';
 import 'package:myapp/login-page/forgot-password.dart';
 import 'package:myapp/login-page/register.dart';
+import 'package:myapp/main-page/main-menu.dart';
 
 class SignScene extends StatelessWidget {
   const SignScene({super.key});
@@ -261,7 +262,15 @@ class SignScene extends StatelessWidget {
               // signin7KP (3:33)
               left: 211*fem,
               top: 558*fem,
-              child: Container(
+              child: TextButton(
+                onPressed: () {
+                  Navigator.push(context, MaterialPageRoute(
+                  builder:(context) => MenuScene()));
+                },
+                style: TextButton.styleFrom(
+                  padding:EdgeInsets.zero,
+                ),
+                child: Container(
                 width: 90*fem,
                 height: 30*fem,
                 decoration: BoxDecoration (
@@ -289,6 +298,7 @@ class SignScene extends StatelessWidget {
                   ),
                 ),
               ),
+              )
             ),
             Positioned(
               // joinnowMzR (3:34)
