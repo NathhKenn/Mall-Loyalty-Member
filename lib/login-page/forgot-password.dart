@@ -273,7 +273,9 @@ class ForgotScene extends StatelessWidget {
               left: 83*fem,
               top: 558*fem,
               child: TextButton(
-                onPressed: () {},
+                onPressed: () {
+                  Navigator.pop(context);
+                },
                 style: TextButton.styleFrom (
                   padding: EdgeInsets.zero,
                 ),

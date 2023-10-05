@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:myapp/login-page/sign-in.dart';
 import 'package:myapp/utils.dart';
 
 class RegisterScene extends StatelessWidget {
@@ -455,6 +456,13 @@ class RegisterScene extends StatelessWidget {
               // cancel5sw (3:95)
               left: 83*fem,
               top: 558*fem,
+              child: TextButton(
+                onPressed: () {
+                  Navigator.pop(context);
+                },
+                style: TextButton.styleFrom(
+                  padding:EdgeInsets.zero,
+                ),
               child: Container(
                 width: 90*fem,
                 height: 30*fem,
@@ -483,6 +491,7 @@ class RegisterScene extends StatelessWidget {
                   ),
                 ),
               ),
+            ),
             ),
             Positioned(
               // ellipse1iR7 (3:109)
