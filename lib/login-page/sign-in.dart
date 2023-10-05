@@ -14,9 +14,10 @@ class SignScene extends StatelessWidget {
     double baseWidth = 390;
     double fem = MediaQuery.of(context).size.width / baseWidth;
     double ffem = fem * 0.97;
-    return SizedBox(
-      width: double.infinity,
-      child: Container(
+    return Scaffold(
+      body: SizedBox(
+        width: double.infinity,
+        child: Container(
         // signinfW1 (3:4)
         width: double.infinity,
         height: 844*fem,
@@ -265,7 +266,7 @@ class SignScene extends StatelessWidget {
               child: TextButton(
                 onPressed: () {
                   Navigator.push(context, MaterialPageRoute(
-                  builder:(context) => MenuScene()));
+                  builder:(context) => const MenuScene()));
                 },
                 style: TextButton.styleFrom(
                   padding:EdgeInsets.zero,
@@ -362,6 +363,7 @@ class SignScene extends StatelessWidget {
           ],
         ),
       ),
+      )
           );
   }
 }

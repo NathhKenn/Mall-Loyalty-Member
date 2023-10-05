@@ -425,7 +425,7 @@ class RegisterScene extends StatelessWidget {
               child: TextButton(
                 onPressed: (){
                   Navigator.push(context,
-                  MaterialPageRoute(builder: ((context) => MenuScene())));
+                  MaterialPageRoute(builder: ((context) => const MenuScene())));
                 },
                 style: TextButton.styleFrom(
                   padding:EdgeInsets.zero,
