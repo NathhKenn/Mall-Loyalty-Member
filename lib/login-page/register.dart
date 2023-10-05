@@ -1,6 +1,9 @@
 import 'package:flutter/material.dart';
 import 'package:myapp/utils.dart';
 import 'package:myapp/main-page/main-menu.dart';
+import 'package:myapp/login-page/landing-page.dart';
+
+
 class RegisterScene extends StatelessWidget {
   const RegisterScene({Key? key}) : super(key: key);
 
@@ -415,6 +418,7 @@ class RegisterScene extends StatelessWidget {
                       decorationColor: const Color(0xff0dc5ff),
                     ),
                   ),
+
                 ),
               ),
             ),
@@ -465,8 +469,10 @@ class RegisterScene extends StatelessWidget {
               left: 83*fem,
               top: 558*fem,
               child: TextButton(
-                onPressed: () {
-                  Navigator.pop(context);
+                onPressed: () {Navigator.push(
+                  context,
+                    MaterialPageRoute(builder: (context) => const LandingScene()),
+                  );
                 },
                 style: TextButton.styleFrom(
                   padding:EdgeInsets.zero,
