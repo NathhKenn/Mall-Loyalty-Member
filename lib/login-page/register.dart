@@ -1,5 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:myapp/utils.dart';
+import 'package:myapp/login-page/landing-page.dart';
+
 
 class RegisterScene extends StatelessWidget {
   const RegisterScene({Key? key}) : super(key: key);
@@ -455,6 +457,15 @@ class RegisterScene extends StatelessWidget {
               // cancel5sw (3:95)
               left: 83*fem,
               top: 558*fem,
+              child: TextButton(
+                onPressed: () {Navigator.push(
+                    context, 
+                    MaterialPageRoute(builder: (context) => const LandingScene()),
+                  );
+                },
+                style: TextButton.styleFrom (
+                  padding: EdgeInsets.zero,
+                ),
               child: Container(
                 width: 90*fem,
                 height: 30*fem,
@@ -494,12 +505,13 @@ class RegisterScene extends StatelessWidget {
                   height: 15*fem,
                   child: Container(
                     decoration: BoxDecoration (
-                      borderRadius: BorderRadius.circular(7.5*fem),
+                      borderRadius: BorderRadius.circular(7.5),
                       color: const Color(0xfff1d3d3),
                     ),
                   ),
                 ),
               ),
+            ),
             ),
           ],
         ),

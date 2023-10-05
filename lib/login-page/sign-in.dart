@@ -13,8 +13,9 @@ class SignScene extends StatelessWidget {
     double baseWidth = 390;
     double fem = MediaQuery.of(context).size.width / baseWidth;
     double ffem = fem * 0.97;
-    return SizedBox(
-      width: double.infinity,
+    return Scaffold(
+      body: SizedBox(
+        width: double.infinity,
       child: Container(
         // signinfW1 (3:4)
         width: double.infinity,
@@ -352,6 +353,7 @@ class SignScene extends StatelessWidget {
           ],
         ),
       ),
+      )
           );
   }
 }
