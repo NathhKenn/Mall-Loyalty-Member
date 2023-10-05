@@ -78,7 +78,7 @@ class SignScene extends StatelessWidget {
               left: 143*fem,
               top: 209*fem,
               child: Align(
-                child: SizedBox(
+                  child: SizedBox(
                   width: 103*fem,
                   height: 34*fem,
                   child: Text(
@@ -93,8 +93,8 @@ class SignScene extends StatelessWidget {
                     ),
                   ),
                 ),
+                )
               ),
-            ),
             Positioned(
               // email1bo (3:38)
               left: 85*fem,

@@ -901,10 +901,6 @@ class MenuScene extends StatelessWidget {
           ],
         ),
       ),
-    ]
-    )
-  )
-  )
-  );
+    );
   }
 }
