@@ -1,11 +1,11 @@
 
 class Data{
-  String firstname = '';
-  String lastname = '';
-  String password = '';
-  String confirmPassword = '';
-  String email = '';
-  int point = 0;
+  String firstname = 'Vincent';
+  String lastname = 'Wijaya';
+  String password = 'test';
+  String confirmPassword = 'test';
+  String email = 'example@gmail.com';
+  int point = 10000;
 
 
   String getFirstName(){
