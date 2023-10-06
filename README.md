@@ -6,3 +6,4 @@ Mall Loyalty Member
 
 - Nicholas Eugene Supardi (535220102)
 - Nathanael Kenneth Lay (535220066)
+- Vincent Wijaya (535220064)
