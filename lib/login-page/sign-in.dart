@@ -5,16 +5,31 @@ import 'package:myapp/utils.dart';
 import 'package:myapp/login-page/forgot-password.dart';
 import 'package:myapp/login-page/register.dart';
 import 'package:myapp/main-page/welcome-screen.dart';
+import 'package:myapp/data.dart';
 
-class SignScene extends StatelessWidget {
+class SignScene extends StatefulWidget {
   const SignScene({super.key});
+  
+  @override
+  SignInScene createState(){
+    return SignInScene();
+  }
+}
+
+class SignInScene extends State<SignScene>{
+  final emailController = TextEditingController();
+  final passwordController = TextEditingController();
+  final _formKey = GlobalKey<FormState>();
 
   @override
   Widget build(BuildContext context) {
+    final data = Data();
     double baseWidth = 390;
     double fem = MediaQuery.of(context).size.width / baseWidth;
     double ffem = fem * 0.97;
-    return Scaffold(
+    return Form(
+      key : _formKey,
+      child:Scaffold(
       body: SizedBox(
         width: double.infinity,
         child: Container(
@@ -139,7 +154,8 @@ class SignScene extends StatelessWidget {
                         ],
                       ),
                       child: Center (
-                        child: TextField(
+                        child: TextFormField(
+                          controller: emailController,
                           style: TextStyle(
                             fontSize: 15*ffem,
                             color:const Color(0xff000000),
@@ -203,7 +219,8 @@ class SignScene extends StatelessWidget {
                         ],
                       ),
                       child: Center(
-                        child: TextField(
+                        child: TextFormField(
+                          controller: passwordController,
                           obscureText: true,
                           style: TextStyle(
                             fontSize: 15*ffem,
@@ -265,8 +282,24 @@ class SignScene extends StatelessWidget {
               top: 558*fem,
               child: TextButton(
                 onPressed: () {
-                  Navigator.push(context, MaterialPageRoute(
-                  builder:(context) => const WelcomeScene()));
+                  if (emailController.text == data.getEmail() && passwordController.text == data.getPassword()){
+                    Navigator.push(context,MaterialPageRoute(builder: (context) => const WelcomeScene()));
+                  }
+                  else{
+                    builder:(BuildContext context) => AlertDialog(
+                      title: const Text('Error'),
+                      content: const Text('there is something wrong with the password and email please check again'),
+                      actions: <Widget>[
+                        TextButton(onPressed: () => Navigator.pop(context, 'cancel'),
+                        child: const Text('Cancel'),
+                        ),
+                        TextButton(
+                          onPressed: () => Navigator.pop(context, 'Ok'),
+                          child: const Text('Ok')
+                        )
+                      ],
+                    );
+                  }
                 },
                 style: TextButton.styleFrom(
                   padding:EdgeInsets.zero,
@@ -364,6 +397,7 @@ class SignScene extends StatelessWidget {
         ),
       ),
       ),
-      );
+      ),
+    );
   }
 }

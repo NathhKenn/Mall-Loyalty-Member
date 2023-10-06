@@ -3,6 +3,7 @@ import 'package:flutter/gestures.dart';
 import 'dart:ui';
 import 'package:google_fonts/google_fonts.dart';
 import 'package:myapp/utils.dart';
+import 'package:myapp/login-page/sign-in.dart';
 
 class WelcomeScene extends StatelessWidget {
   const WelcomeScene({super.key});
