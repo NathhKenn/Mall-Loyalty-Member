@@ -4,6 +4,7 @@ import 'dart:ui';
 import 'package:google_fonts/google_fonts.dart';
 import 'package:myapp/utils.dart';
 import 'package:myapp/login-page/sign-in.dart';
+import 'package:myapp/main-page/main-menu.dart';
 
 class WelcomeScene extends StatelessWidget {
   const WelcomeScene({super.key});
@@ -219,7 +220,11 @@ class WelcomeScene extends StatelessWidget {
                     // buttonCC1 (54:1745)
                     margin: EdgeInsets.fromLTRB(13*fem, 0*fem, 13*fem, 0*fem),
                     child: TextButton(
-                      onPressed: () {},
+                      onPressed: () {
+                        Navigator.push(
+                          context, MaterialPageRoute(builder: (context) => const MenuScene())
+                        );
+                      },
                       style: TextButton.styleFrom (
                         padding: EdgeInsets.zero,
                       ),
