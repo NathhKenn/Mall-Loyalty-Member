@@ -4,13 +4,16 @@ import 'dart:ui';
 import 'package:google_fonts/google_fonts.dart';
 import 'package:myapp/utils.dart';
 
-class Scene extends StatelessWidget {
+class WelcomeScene extends StatelessWidget {
+  const WelcomeScene({super.key});
+
   @override
   Widget build(BuildContext context) {
     double baseWidth = 390;
     double fem = MediaQuery.of(context).size.width / baseWidth;
     double ffem = fem * 0.97;
-    return Container(
+    return Scaffold(
+      body:SizedBox(
       width: double.infinity,
       child: Container(
         // welcomescreenhWq (54:1694)
@@ -47,7 +50,7 @@ class Scene extends StatelessWidget {
                       width: 247*fem,
                       height: 61*fem,
                       child: Image.asset(
-                        'assets/new-template/images/central-mall-logo-1-2.png',
+                        'assets/login-page/images/central-mall-logo-1-2.png',
                         fit: BoxFit.cover,
                       ),
                     ),
@@ -61,7 +64,7 @@ class Scene extends StatelessWidget {
                         'Hello,\nReady to go\nShopping?',
                         textAlign: TextAlign.right,
                         style: SafeGoogleFont (
-                          'Black Han Sans',
+                          'Inter',
                           fontSize: 20*ffem,
                           fontWeight: FontWeight.w400,
                           height: 1.2*ffem/fem,
@@ -97,7 +100,7 @@ class Scene extends StatelessWidget {
                               width: 23*fem,
                               height: 23*fem,
                               child: Image.asset(
-                                'assets/new-template/images/rectangle.png',
+                                'assets/login-page/images/rectangle.png',
                                 fit: BoxFit.cover,
                               ),
                             ),
@@ -119,7 +122,7 @@ class Scene extends StatelessWidget {
                                   width: 415*fem,
                                   height: 294*fem,
                                   child: Image.asset(
-                                    'assets/new-template/images/voucher-2.png',
+                                    'assets/login-page/images/voucher-2.png',
                                     fit: BoxFit.cover,
                                   ),
                                 ),
@@ -128,7 +131,7 @@ class Scene extends StatelessWidget {
                                   width: 327*fem,
                                   height: 327*fem,
                                   child: Image.asset(
-                                    'assets/new-template/images/voucher-1.png',
+                                    'assets/login-page/images/voucher-1.png',
                                     fit: BoxFit.cover,
                                   ),
                                 ),
@@ -249,7 +252,7 @@ class Scene extends StatelessWidget {
                               width: 4*fem,
                               height: 8*fem,
                               child: Image.asset(
-                                'assets/new-template/images/icons-sAZ.png',
+                                'assets/login-page/images/icons-sAZ.png',
                                 width: 4*fem,
                                 height: 8*fem,
                               ),
@@ -265,6 +268,7 @@ class Scene extends StatelessWidget {
           ],
         ),
       ),
+      )
           );
   }
 }

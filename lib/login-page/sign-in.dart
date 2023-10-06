@@ -4,7 +4,7 @@ import 'package:flutter/material.dart';
 import 'package:myapp/utils.dart';
 import 'package:myapp/login-page/forgot-password.dart';
 import 'package:myapp/login-page/register.dart';
-import 'package:myapp/main-page/main-menu.dart';
+import 'package:myapp/main-page/welcome-screen.dart';
 
 class SignScene extends StatelessWidget {
   const SignScene({super.key});
@@ -266,7 +266,7 @@ class SignScene extends StatelessWidget {
               child: TextButton(
                 onPressed: () {
                   Navigator.push(context, MaterialPageRoute(
-                  builder:(context) => const MenuScene()));
+                  builder:(context) => const WelcomeScene()));
                 },
                 style: TextButton.styleFrom(
                   padding:EdgeInsets.zero,

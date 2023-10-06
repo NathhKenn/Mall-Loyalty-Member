@@ -81,7 +81,7 @@ class Scene extends StatelessWidget {
                         width: 146*fem,
                         height: 158*fem,
                         child: Image.asset(
-                          'assets/new-template/images/central-mall-logo-1-3.png',
+                          'assets/login-page/images/central-mall-logo-1-3.png',
                           fit: BoxFit.cover,
                         ),
                       ),
@@ -112,7 +112,7 @@ class Scene extends StatelessWidget {
                           width: 192*fem,
                           height: 192*fem,
                           child: Image.asset(
-                            'assets/new-template/images/image-43.png',
+                            'assets/login-page/images/image-43.png',
                             fit: BoxFit.cover,
                           ),
                         ),
@@ -199,7 +199,7 @@ class Scene extends StatelessWidget {
                                       width: 14*fem,
                                       height: 14*fem,
                                       child: Image.asset(
-                                        'assets/new-template/images/image-45.png',
+                                        'assets/login-page/images/image-45.png',
                                         fit: BoxFit.cover,
                                       ),
                                     ),
@@ -272,7 +272,7 @@ class Scene extends StatelessWidget {
                                 width: 50*fem,
                                 height: 48.93*fem,
                                 child: Image.asset(
-                                  'assets/new-template/images/coin-barcode-bhb.png',
+                                  'assets/login-page/images/coin-barcode-bhb.png',
                                   fit: BoxFit.cover,
                                 ),
                               ),
@@ -319,7 +319,7 @@ class Scene extends StatelessWidget {
                                 width: 50*fem,
                                 height: 48.93*fem,
                                 child: Image.asset(
-                                  'assets/new-template/images/coin-barcode-rPj.png',
+                                  'assets/login-page/images/coin-barcode-rPj.png',
                                   fit: BoxFit.cover,
                                 ),
                               ),
@@ -377,7 +377,7 @@ class Scene extends StatelessWidget {
                                 width: 50*fem,
                                 height: 48.93*fem,
                                 child: Image.asset(
-                                  'assets/new-template/images/coin-barcode-c81.png',
+                                  'assets/login-page/images/coin-barcode-c81.png',
                                   fit: BoxFit.cover,
                                 ),
                               ),
@@ -424,7 +424,7 @@ class Scene extends StatelessWidget {
                                 width: 50*fem,
                                 height: 48.93*fem,
                                 child: Image.asset(
-                                  'assets/new-template/images/coin-barcode.png',
+                                  'assets/login-page/images/coin-barcode.png',
                                   fit: BoxFit.cover,
                                 ),
                               ),

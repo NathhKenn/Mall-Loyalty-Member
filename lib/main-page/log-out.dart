@@ -102,7 +102,7 @@ class Scene extends StatelessWidget {
                       width: 64*fem,
                       height: 63*fem,
                       child: Image.asset(
-                        'assets/new-template/images/ellipse-5.png',
+                        'assets/login-page/images/ellipse-5.png',
                         width: 64*fem,
                         height: 63*fem,
                       ),

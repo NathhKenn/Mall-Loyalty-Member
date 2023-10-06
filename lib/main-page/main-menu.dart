@@ -12,7 +12,8 @@ class MenuScene extends StatelessWidget {
     double baseWidth = 390;
     double fem = MediaQuery.of(context).size.width / baseWidth;
     double ffem = fem * 0.97;
-    return Container(
+    return Scaffold(
+      body:SizedBox(
       width: double.infinity,
       child: Container(
         // mainmenu2TK (58:2259)
@@ -60,7 +61,7 @@ class MenuScene extends StatelessWidget {
                                   width: 22.5*fem,
                                   height: 25*fem,
                                   child: Image.asset(
-                                    'assets/new-template/images/icons-BNZ.png',
+                                    'assets/login-page/images/icons-BNZ.png',
                                     width: 22.5*fem,
                                     height: 25*fem,
                                   ),
@@ -84,7 +85,7 @@ class MenuScene extends StatelessWidget {
                                               width: 30*fem,
                                               height: 30*fem,
                                               child: Image.asset(
-                                                'assets/new-template/images/message-2-512-1.png',
+                                                'assets/login-page/images/message-2-512-1.png',
                                                 fit: BoxFit.cover,
                                               ),
                                             ),
@@ -93,7 +94,7 @@ class MenuScene extends StatelessWidget {
                                               width: 30*fem,
                                               height: 28.13*fem,
                                               child: Image.asset(
-                                                'assets/new-template/images/citypng-1.png',
+                                                'assets/login-page/images/citypng-1.png',
                                                 fit: BoxFit.cover,
                                               ),
                                             ),
@@ -109,7 +110,7 @@ class MenuScene extends StatelessWidget {
                                           image: DecorationImage (
                                             fit: BoxFit.cover,
                                             image: AssetImage (
-                                              'assets/new-template/images/profile-picture-bg.png',
+                                              'assets/login-page/images/profile-picture-bg.png',
                                             ),
                                           ),
                                         ),
@@ -179,7 +180,7 @@ class MenuScene extends StatelessWidget {
                                               child: ClipRRect(
                                                 borderRadius: BorderRadius.circular(5*fem),
                                                 child: Image.asset(
-                                                  'assets/new-template/images/image-3.png',
+                                                  'assets/login-page/images/image-3.png',
                                                   fit: BoxFit.cover,
                                                 ),
                                               ),
@@ -246,7 +247,7 @@ class MenuScene extends StatelessWidget {
                                                   image: DecorationImage (
                                                     fit: BoxFit.cover,
                                                     image: AssetImage (
-                                                      'assets/new-template/images/rectangle-bg-Lqo.png',
+                                                      'assets/login-page/images/rectangle-bg-Lqo.png',
                                                     ),
                                                   ),
                                                 ),
@@ -327,7 +328,7 @@ class MenuScene extends StatelessWidget {
                                           width: 8*fem,
                                           height: 4*fem,
                                           child: Image.asset(
-                                            'assets/new-template/images/icons-bsP.png',
+                                            'assets/login-page/images/icons-bsP.png',
                                             width: 8*fem,
                                             height: 4*fem,
                                           ),
@@ -349,7 +350,7 @@ class MenuScene extends StatelessWidget {
                                           image: DecorationImage (
                                             fit: BoxFit.cover,
                                             image: AssetImage (
-                                              'assets/new-template/images/rectangle-bg.png',
+                                              'assets/login-page/images/rectangle-bg.png',
                                             ),
                                           ),
                                         ),
@@ -394,7 +395,7 @@ class MenuScene extends StatelessWidget {
                             image: DecorationImage (
                               fit: BoxFit.cover,
                               image: AssetImage (
-                                'assets/new-template/images/image-14-bg.png',
+                                'assets/login-page/images/image-14-bg.png',
                               ),
                             ),
                           ),
@@ -415,7 +416,7 @@ class MenuScene extends StatelessWidget {
                             image: DecorationImage (
                               fit: BoxFit.cover,
                               image: AssetImage (
-                                'assets/new-template/images/central-mall-logo-1-1-bg.png',
+                                'assets/login-page/images/central-mall-logo-1-1-bg.png',
                               ),
                             ),
                           ),
@@ -492,7 +493,7 @@ class MenuScene extends StatelessWidget {
                                         width: 8*fem,
                                         height: 4*fem,
                                         child: Image.asset(
-                                          'assets/new-template/images/icons-fTw.png',
+                                          'assets/login-page/images/icons-fTw.png',
                                           width: 8*fem,
                                           height: 4*fem,
                                         ),
@@ -579,7 +580,7 @@ class MenuScene extends StatelessWidget {
                                   width: 372*fem,
                                   height: 209*fem,
                                   child: Image.asset(
-                                    'assets/new-template/images/image-7.png',
+                                    'assets/login-page/images/image-7.png',
                                     fit: BoxFit.cover,
                                   ),
                                 ),
@@ -589,7 +590,7 @@ class MenuScene extends StatelessWidget {
                                   width: 458*fem,
                                   height: 217*fem,
                                   child: Image.asset(
-                                    'assets/new-template/images/-A9o.png',
+                                    'assets/login-page/images/-A9o.png',
                                     fit: BoxFit.cover,
                                   ),
                                 ),
@@ -599,7 +600,7 @@ class MenuScene extends StatelessWidget {
                                   width: 488*fem,
                                   height: 204*fem,
                                   child: Image.asset(
-                                    'assets/new-template/images/.png',
+                                    'assets/login-page/images/.png',
                                     fit: BoxFit.cover,
                                   ),
                                 ),
@@ -609,7 +610,7 @@ class MenuScene extends StatelessWidget {
                                   width: 653*fem,
                                   height: 211*fem,
                                   child: Image.asset(
-                                    'assets/new-template/images/-yaq.png',
+                                    'assets/login-page/images/-yaq.png',
                                     fit: BoxFit.cover,
                                   ),
                                 ),
@@ -670,7 +671,7 @@ class MenuScene extends StatelessWidget {
                                 width: 8*fem,
                                 height: 4*fem,
                                 child: Image.asset(
-                                  'assets/new-template/images/icons.png',
+                                  'assets/login-page/images/icons.png',
                                   width: 8*fem,
                                   height: 4*fem,
                                 ),
@@ -725,7 +726,7 @@ class MenuScene extends StatelessWidget {
                                   width: 107*fem,
                                   height: 79*fem,
                                   child: Image.asset(
-                                    'assets/new-template/images/shihlin-logo-1.png',
+                                    'assets/login-page/images/shihlin-logo-1.png',
                                     fit: BoxFit.cover,
                                   ),
                                 ),
@@ -757,7 +758,7 @@ class MenuScene extends StatelessWidget {
                                                     child: RichText(
                                                       text: TextSpan(
                                                         style: SafeGoogleFont (
-                                                          'Coda Caption',
+                                                          'Inter',
                                                           fontSize: 24*ffem,
                                                           fontWeight: FontWeight.w800,
                                                           height: 1*ffem/fem,
@@ -799,7 +800,7 @@ class MenuScene extends StatelessWidget {
                                               width: 68*fem,
                                               height: 47*fem,
                                               child: Image.asset(
-                                                'assets/new-template/images/money-logo.png',
+                                                'assets/login-page/images/money-logo.png',
                                                 fit: BoxFit.cover,
                                               ),
                                             ),
@@ -848,7 +849,7 @@ class MenuScene extends StatelessWidget {
                                   width: 107*fem,
                                   height: 79*fem,
                                   child: Image.asset(
-                                    'assets/new-template/images/xxi-1.png',
+                                    'assets/login-page/images/xxi-1.png',
                                     fit: BoxFit.cover,
                                   ),
                                 ),
@@ -897,7 +898,7 @@ class MenuScene extends StatelessWidget {
                                   width: 47*fem,
                                   height: 47*fem,
                                   child: Image.asset(
-                                    'assets/new-template/images/voucher.png',
+                                    'assets/login-page/images/voucher.png',
                                     fit: BoxFit.cover,
                                   ),
                                 ),
@@ -926,7 +927,7 @@ class MenuScene extends StatelessWidget {
                                   width: 78.46*fem,
                                   height: 79*fem,
                                   child: Image.asset(
-                                    'assets/new-template/images/starbucks-1.png',
+                                    'assets/login-page/images/starbucks-1.png',
                                     fit: BoxFit.cover,
                                   ),
                                 ),
@@ -970,7 +971,7 @@ class MenuScene extends StatelessWidget {
                                             child: Text(
                                               'Date : 17 Oct 2021 ',
                                               style: SafeGoogleFont (
-                                                'Montserrat',
+                                                'Inter',
                                                 fontSize: 20*ffem,
                                                 fontWeight: FontWeight.w400,
                                                 height: 1.2*ffem/fem,
@@ -990,7 +991,7 @@ class MenuScene extends StatelessWidget {
                                             width: 50*fem,
                                             height: 49*fem,
                                             child: Image.asset(
-                                              'assets/new-template/images/pngwing-1.png',
+                                              'assets/login-page/images/pngwing-1.png',
                                               fit: BoxFit.cover,
                                             ),
                                           ),
@@ -1025,7 +1026,7 @@ class MenuScene extends StatelessWidget {
                                       width: 107*fem,
                                       height: 30*fem,
                                       child: Image.asset(
-                                        'assets/new-template/images/xiaomi.png',
+                                        'assets/login-page/images/xiaomi.png',
                                         fit: BoxFit.cover,
                                       ),
                                     ),
@@ -1088,6 +1089,7 @@ class MenuScene extends StatelessWidget {
           ],
         ),
       ),
+      )
           );
   }
 }

@@ -113,7 +113,7 @@ class Scene extends StatelessWidget {
                               image: DecorationImage (
                                 fit: BoxFit.cover,
                                 image: AssetImage (
-                                  'assets/new-template/images/profile-pic-bg.png',
+                                  'assets/login-page/images/profile-pic-bg.png',
                                 ),
                               ),
                             ),
@@ -227,7 +227,7 @@ class Scene extends StatelessWidget {
                                         width: 20*fem,
                                         height: 20.54*fem,
                                         child: Image.asset(
-                                          'assets/new-template/images/pencil-logo.png',
+                                          'assets/login-page/images/pencil-logo.png',
                                           fit: BoxFit.cover,
                                         ),
                                       ),
@@ -307,7 +307,7 @@ class Scene extends StatelessWidget {
                                 width: 6*fem,
                                 height: 12*fem,
                                 child: Image.asset(
-                                  'assets/new-template/images/icons-obP.png',
+                                  'assets/login-page/images/icons-obP.png',
                                   width: 6*fem,
                                   height: 12*fem,
                                 ),
@@ -356,7 +356,7 @@ class Scene extends StatelessWidget {
                                 width: 6*fem,
                                 height: 12*fem,
                                 child: Image.asset(
-                                  'assets/new-template/images/icons-ag1.png',
+                                  'assets/login-page/images/icons-ag1.png',
                                   width: 6*fem,
                                   height: 12*fem,
                                 ),
@@ -405,7 +405,7 @@ class Scene extends StatelessWidget {
                                 width: 6*fem,
                                 height: 12*fem,
                                 child: Image.asset(
-                                  'assets/new-template/images/icons-BfP.png',
+                                  'assets/login-page/images/icons-BfP.png',
                                   width: 6*fem,
                                   height: 12*fem,
                                 ),
@@ -454,7 +454,7 @@ class Scene extends StatelessWidget {
                                 width: 6*fem,
                                 height: 12*fem,
                                 child: Image.asset(
-                                  'assets/new-template/images/icons-RSy.png',
+                                  'assets/login-page/images/icons-RSy.png',
                                   width: 6*fem,
                                   height: 12*fem,
                                 ),
@@ -500,7 +500,7 @@ class Scene extends StatelessWidget {
                     width: 335*fem,
                     height: 116*fem,
                     child: Image.asset(
-                      'assets/new-template/images/barcode-1.png',
+                      'assets/login-page/images/barcode-1.png',
                       fit: BoxFit.cover,
                     ),
                   ),

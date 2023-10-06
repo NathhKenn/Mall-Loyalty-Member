@@ -108,7 +108,7 @@ class Scene extends StatelessWidget {
                             image: DecorationImage (
                               fit: BoxFit.cover,
                               image: AssetImage (
-                                'assets/new-template/images/rectangle-26-bg-t1X.png',
+                                'assets/login-page/images/rectangle-26-bg-t1X.png',
                               ),
                             ),
                             boxShadow: [
@@ -130,7 +130,7 @@ class Scene extends StatelessWidget {
                             image: DecorationImage (
                               fit: BoxFit.cover,
                               image: AssetImage (
-                                'assets/new-template/images/rectangle-26-bg.png',
+                                'assets/login-page/images/rectangle-26-bg.png',
                               ),
                             ),
                             boxShadow: [
@@ -150,7 +150,7 @@ class Scene extends StatelessWidget {
                           child: ClipRRect(
                             borderRadius: BorderRadius.circular(15*fem),
                             child: Image.asset(
-                              'assets/new-template/images/rectangle-26-Pus.png',
+                              'assets/login-page/images/rectangle-26-Pus.png',
                               fit: BoxFit.cover,
                             ),
                           ),
@@ -163,7 +163,7 @@ class Scene extends StatelessWidget {
                           child: ClipRRect(
                             borderRadius: BorderRadius.circular(15*fem),
                             child: Image.asset(
-                              'assets/new-template/images/rectangle-26.png',
+                              'assets/login-page/images/rectangle-26.png',
                               fit: BoxFit.cover,
                             ),
                           ),
@@ -178,7 +178,7 @@ class Scene extends StatelessWidget {
                             image: DecorationImage (
                               fit: BoxFit.cover,
                               image: AssetImage (
-                                'assets/new-template/images/rectangle-22-bg.png',
+                                'assets/login-page/images/rectangle-22-bg.png',
                               ),
                             ),
                             boxShadow: [
@@ -279,7 +279,7 @@ class Scene extends StatelessWidget {
                           child: ClipRRect(
                             borderRadius: BorderRadius.circular(15*fem),
                             child: Image.asset(
-                              'assets/new-template/images/vertical-voucher-1.png',
+                              'assets/login-page/images/vertical-voucher-1.png',
                               fit: BoxFit.cover,
                             ),
                           ),
@@ -292,7 +292,7 @@ class Scene extends StatelessWidget {
                           child: ClipRRect(
                             borderRadius: BorderRadius.circular(15*fem),
                             child: Image.asset(
-                              'assets/new-template/images/vertical-voucher-2.png',
+                              'assets/login-page/images/vertical-voucher-2.png',
                               fit: BoxFit.cover,
                             ),
                           ),
@@ -305,7 +305,7 @@ class Scene extends StatelessWidget {
                           child: ClipRRect(
                             borderRadius: BorderRadius.circular(15*fem),
                             child: Image.asset(
-                              'assets/new-template/images/vertical-voucher-3.png',
+                              'assets/login-page/images/vertical-voucher-3.png',
                               fit: BoxFit.cover,
                             ),
                           ),
