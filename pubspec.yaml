@@ -32,6 +32,7 @@ environment:
 dependencies:
   flutter:
     sdk: flutter
+  sqflite: ^2.3.0
 
 
   # The following adds the Cupertino Icons font to your application.
@@ -71,7 +72,56 @@ flutter:
     - assets/login-page/images/pakuwon-mall-1-bg-gAd.png
     - assets/login-page/images/pakuwon-mall-1-bg-FkD.png
     - assets/login-page/images/undrawshoppingbagsnoba-1.png
-    - assets/login-page/images/central-mall-logo-1-1.png
+    - assets/login-page/images/xiaomi.png
+    - assets/login-page/images/profile-pic-bg.png
+    - assets/login-page/images/icons.png
+    - assets/login-page/images/rectangle-22-bg.png
+    - assets/login-page/images/rectangle-bg.png
+    - assets/login-page/images/rectangle-26.png
+    - assets/login-page/images/.png
+    - assets/login-page/images/icons-BNZ.png
+    - assets/login-page/images/shihlin-logo-1.png
+    - assets/login-page/images/icons-obP.png
+    - assets/login-page/images/image-14-bg.png
+    - assets/login-page/images/icons-ag1.png
+    - assets/login-page/images/voucher.png
+    - assets/login-page/images/icons-sAZ.png
+    - assets/login-page/images/icons-RSy.png
+    - assets/login-page/images/pencil-logo.png
+    - assets/login-page/images/image-45.png
+    - assets/login-page/images/image-7.png
+    - assets/login-page/images/ellipse-5.png
+    - assets/login-page/images/message-2-512-1.png
+    - assets/login-page/images/profile-picture-bg.png
+    - assets/login-page/images/rectangle-bg-Lqo.png
+    - assets/login-page/images/image-3.png
+    - assets/login-page/images/coin-barcode.png
+    - assets/login-page/images/icons-fTw.png
+    - assets/login-page/images/icons-bsP.png
+    - assets/login-page/images/-A9o.png
+    - assets/login-page/images/vertical-voucher-1.png
+    - assets/login-page/images/xxi-1.png
+    - assets/login-page/images/icons-BfP.png
+    - assets/login-page/images/vertical-voucher-3.png
+    - assets/login-page/images/central-mall-logo-1-2.png
+    - assets/login-page/images/coin-barcode-bhb.png
+    - assets/login-page/images/pngwing-1.png
+    - assets/login-page/images/central-mall-logo-1-1-bg.png
+    - assets/login-page/images/voucher-2.png
+    - assets/login-page/images/image-43.png
+    - assets/login-page/images/coin-barcode-rPj.png
+    - assets/login-page/images/coin-barcode-c81.png
+    - assets/login-page/images/citypng-1.png
+    - assets/login-page/images/rectangle.png
+    - assets/login-page/images/money-logo.png
+    - assets/login-page/images/central-mall-logo-1-3.png
+    - assets/login-page/images/rectangle-26-bg.png
+    - assets/login-page/images/vertical-voucher-2.png
+    - assets/login-page/images/voucher-1.png
+    - assets/login-page/images/starbucks-1.png
+    - assets/login-page/images/-yaq.png
+    - assets/login-page/images/rectangle-26-bg-t1X.png
+    - assets/login-page/images/rectangle-26-Pus.png
     
   
 

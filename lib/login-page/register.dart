@@ -1,8 +1,8 @@
 import 'package:flutter/material.dart';
 import 'package:myapp/login-page/Terms.dart';
 import 'package:myapp/utils.dart';
-import 'package:myapp/main-page/main-menu.dart';
 import 'package:myapp/login-page/landing-page.dart';
+import 'package:myapp/login-page/sign-in.dart';
 
 
 class RegisterScene extends StatelessWidget {
@@ -441,7 +441,7 @@ class RegisterScene extends StatelessWidget {
               child: TextButton(
                 onPressed: (){
                   Navigator.push(context,
-                  MaterialPageRoute(builder: ((context) => const MenuScene())));
+                  MaterialPageRoute(builder: ((context) => const SignScene())));
                 },
                 style: TextButton.styleFrom(
                   padding:EdgeInsets.zero,
