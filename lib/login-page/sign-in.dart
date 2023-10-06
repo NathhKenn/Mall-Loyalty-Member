@@ -23,7 +23,6 @@ class SignInScene extends State<SignScene>{
 
   @override
   Widget build(BuildContext context) {
-    final data = Data();
     double baseWidth = 390;
     double fem = MediaQuery.of(context).size.width / baseWidth;
     double ffem = fem * 0.97;
@@ -282,23 +281,28 @@ class SignInScene extends State<SignScene>{
               top: 558*fem,
               child: TextButton(
                 onPressed: () {
+                  Data data = Data();
                   if (emailController.text == data.getEmail() && passwordController.text == data.getPassword()){
-                    Navigator.push(context,MaterialPageRoute(builder: (context) => const WelcomeScene()));
+                      Navigator.push(context,MaterialPageRoute(builder: (context) => const WelcomeScene()));
                   }
                   else{
-                    builder:(BuildContext context) => AlertDialog(
-                      title: const Text('Error'),
-                      content: const Text('there is something wrong with the password and email please check again'),
-                      actions: <Widget>[
-                        TextButton(onPressed: () => Navigator.pop(context, 'cancel'),
-                        child: const Text('Cancel'),
-                        ),
-                        TextButton(
-                          onPressed: () => Navigator.pop(context, 'Ok'),
-                          child: const Text('Ok')
-                        )
-                      ],
-                    );
+                      showDialog(
+                        context: context,
+                        builder: (BuildContext context) {
+                          return AlertDialog(
+                            title: const Text('Error occurred'),
+                            content: const Text('There is an error in password or email. Please try again'),
+                            actions: <Widget>[
+                              TextButton(
+                                child: const Text('OK'),
+                                onPressed: () {
+                                  Navigator.of(context).pop();
+                                },
+                              ),
+                            ],
+                          );
+                        },
+                      );
                   }
                 },
                 style: TextButton.styleFrom(

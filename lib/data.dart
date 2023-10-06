@@ -1,9 +1,12 @@
+
 class Data{
-  String firstname = "";
-  String lastname = "";
-  String password = "";
-  String email = "";
+  String firstname = '';
+  String lastname = '';
+  String password = '';
+  String confirmPassword = '';
+  String email = '';
   int point = 0;
+
 
   String getFirstName(){
     return firstname;
@@ -19,6 +22,9 @@ class Data{
 
   String getEmail(){
     return email;
+  }
+  String getConfirmPassword(){
+    return password;
   }
 
   int getPoint(){
@@ -37,7 +43,16 @@ class Data{
     this.email = email;
   }
 
+  void setPassword(String password){
+    this.password = password;
+  }
+
+  void setConfirmPassword(String value) {
+      confirmPassword = value;
+  }
+
   void setPoint(int point){
     this.point = point;
   }
+
 }

@@ -1,14 +1,28 @@
 import 'package:flutter/material.dart';
+import 'package:myapp/data.dart';
 import 'package:myapp/login-page/Terms.dart';
 import 'package:myapp/utils.dart';
 import 'package:myapp/login-page/landing-page.dart';
 import 'package:myapp/login-page/sign-in.dart';
 
 
-class RegisterScene extends StatelessWidget {
-  const RegisterScene({Key? key}) : super(key: key);
-
+class RegisterScene extends StatefulWidget {
+  const RegisterScene({super.key});
   @override
+  RegScene createState() => RegScene();
+}
+
+class RegScene extends State<RegisterScene>{
+ TextEditingController _firstName = TextEditingController();
+ TextEditingController _lastName = TextEditingController();
+ TextEditingController _email = TextEditingController();
+ TextEditingController _password = TextEditingController();
+ TextEditingController _confirm = TextEditingController();
+
+ final data = Data();
+
+
+   @override
   Widget build(BuildContext context) {
     double baseWidth = 390;
     double fem = MediaQuery.of(context).size.width / baseWidth;
@@ -137,7 +151,10 @@ class RegisterScene extends StatelessWidget {
                         ],
                       ),
                       child: Center (
-                        child: TextField(
+                        child: TextFormField(
+                          onChanged: (value){
+                            data.setEmail(value);
+                          },
                           style: TextStyle(
                             fontSize: 15*ffem,
                             color:const Color(0xff000000),
@@ -201,7 +218,10 @@ class RegisterScene extends StatelessWidget {
                         ],
                       ),
                       child: Center(
-                        child: TextField(
+                        child: TextFormField(
+                          onChanged: (value){
+                            data.setLastName(value);
+                          },
                           style: TextStyle(
                             fontSize: 15*ffem,
                               color: const Color(0xff000000),
@@ -256,7 +276,10 @@ class RegisterScene extends StatelessWidget {
                         ],
                       ),
                       child: Center(
-                        child: TextField(
+                        child: TextFormField(
+                          onChanged: (value){
+                            data.setFirstName(value);
+                          },
                           style: TextStyle(
                             fontSize: 15*ffem,
                             color: const Color(0xff000000),
@@ -311,7 +334,10 @@ class RegisterScene extends StatelessWidget {
                         ],
                       ),
                       child: Center(
-                        child: TextField(
+                        child: TextFormField(
+                           onChanged: (value){
+                            data.setConfirmPassword(value);
+                          },
                           obscureText: true,
                           style: TextStyle(
                             fontSize: 15*ffem,
@@ -376,7 +402,10 @@ class RegisterScene extends StatelessWidget {
                         ],
                       ),
                       child: Center(
-                        child: TextField(
+                        child: TextFormField(
+                          onChanged: (value){
+                            data.setPassword(value);
+                          },
                           obscureText: true,
                           style: TextStyle(
                             fontSize: 15*ffem,
@@ -439,10 +468,12 @@ class RegisterScene extends StatelessWidget {
               left: 211*fem,
               top: 558*fem,
               child: TextButton(
-                onPressed: (){
-                  Navigator.push(context,
-                  MaterialPageRoute(builder: ((context) => const SignScene())));
-                },
+               onPressed: () {
+                  if (_confirm.text == _password.text){
+                      setState(() {});
+                  }
+                  Navigator.push(context, MaterialPageRoute(builder: (context) => const SignScene()));
+               },
                 style: TextButton.styleFrom(
                   padding:EdgeInsets.zero,
                 ),
@@ -543,3 +574,4 @@ class RegisterScene extends StatelessWidget {
     );
   }
 }
+
