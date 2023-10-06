@@ -13,11 +13,11 @@ class RegisterScene extends StatefulWidget {
 }
 
 class RegScene extends State<RegisterScene>{
- TextEditingController _firstName = TextEditingController();
- TextEditingController _lastName = TextEditingController();
- TextEditingController _email = TextEditingController();
- TextEditingController _password = TextEditingController();
- TextEditingController _confirm = TextEditingController();
+ final TextEditingController _firstName = TextEditingController();
+ final TextEditingController _lastName = TextEditingController();
+ final TextEditingController _email = TextEditingController();
+ final TextEditingController _password = TextEditingController();
+ final TextEditingController _confirm = TextEditingController();
 
  final data = Data();
 

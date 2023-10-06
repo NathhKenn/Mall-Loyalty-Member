@@ -13,7 +13,7 @@ class Scene extends StatelessWidget {
     return Container(
       width: double.infinity,
       child: Container(
-        // profilebys (93:34)
+        // profileDDT (93:34)
         width: double.infinity,
         decoration: BoxDecoration (
           color: Color(0xffffffff),
@@ -22,7 +22,7 @@ class Scene extends StatelessWidget {
           crossAxisAlignment: CrossAxisAlignment.center,
           children: [
             Container(
-              // wrapperw29 (94:3679)
+              // wrapper4zm (94:3679)
               width: double.infinity,
               height: 108*fem,
               decoration: BoxDecoration (
@@ -36,7 +36,7 @@ class Scene extends StatelessWidget {
               child: Stack(
                 children: [
                   Positioned(
-                    // label1nh (I94:3679;437:3723)
+                    // label9mK (I94:3679;437:3723)
                     left: 16*fem,
                     top: 60*fem,
                     child: Align(
@@ -58,7 +58,7 @@ class Scene extends StatelessWidget {
                     ),
                   ),
                   Positioned(
-                    // labelt5o (94:4875)
+                    // profilebtD (94:4875)
                     left: 16*fem,
                     top: 60*fem,
                     child: Align(
@@ -83,27 +83,27 @@ class Scene extends StatelessWidget {
               ),
             ),
             Container(
-              // autogroupe8fsaUR (JZnxM614D5EzbYXdqvE8Fs)
+              // autogroupdscqJ1w (65fyPBcks2ugD7e9xqdSCq)
               padding: EdgeInsets.fromLTRB(0*fem, 23*fem, 0*fem, 59*fem),
               width: double.infinity,
               child: Column(
                 crossAxisAlignment: CrossAxisAlignment.center,
                 children: [
                   Container(
-                    // autogroupih8dg1f (JZnwRnCYbPW6sKYq1gih8d)
+                    // autogroup3xzj1S9 (65fxascb5tr8Ka4kgK3XZj)
                     margin: EdgeInsets.fromLTRB(0*fem, 0*fem, 130*fem, 27*fem),
                     padding: EdgeInsets.fromLTRB(40*fem, 0*fem, 0*fem, 0*fem),
                     width: 260*fem,
                     height: 76*fem,
                     child: Container(
-                      // frame182ymT (106:232)
+                      // frame182vJD (106:232)
                       width: double.infinity,
                       height: double.infinity,
                       child: Row(
                         crossAxisAlignment: CrossAxisAlignment.end,
                         children: [
                           Container(
-                            // profilepic7sf (94:4823)
+                            // profilepicek1 (94:4823)
                             margin: EdgeInsets.fromLTRB(0*fem, 0*fem, 19*fem, 1*fem),
                             width: 70*fem,
                             height: 70*fem,
@@ -113,26 +113,26 @@ class Scene extends StatelessWidget {
                               image: DecorationImage (
                                 fit: BoxFit.cover,
                                 image: AssetImage (
-                                  'assets/login-page/images/profile-pic-bg.png',
+                                  'assets/main-menu/images/profile-pic-bg.png',
                                 ),
                               ),
                             ),
                           ),
                           Container(
-                            // autogroup89fxnyo (JZnwfrdRYwUU96JU2e89FX)
+                            // autogroupjkxhLMw (65fxrnKkHYMWeRca1EjkxH)
                             width: 131*fem,
                             height: double.infinity,
                             child: Column(
                               crossAxisAlignment: CrossAxisAlignment.start,
                               children: [
                                 Container(
-                                  // autogroupvgb38nm (JZnwnmba72Y8PMm3eoVGb3)
+                                  // autogroupdh6qHHB (65fxy2eLZxVi9PWYF3dh6q)
                                   width: double.infinity,
                                   height: 52*fem,
                                   child: Stack(
                                     children: [
                                       Positioned(
-                                        // email5i1 (94:4819)
+                                        // email1ys (94:4819)
                                         left: 0*fem,
                                         top: 28*fem,
                                         child: Align(
@@ -154,7 +154,7 @@ class Scene extends StatelessWidget {
                                         ),
                                       ),
                                       Positioned(
-                                        // lastnameNBK (94:4818)
+                                        // lastname5yj (94:4818)
                                         left: 71*fem,
                                         top: 0*fem,
                                         child: Align(
@@ -176,15 +176,15 @@ class Scene extends StatelessWidget {
                                         ),
                                       ),
                                       Positioned(
-                                        // firstnameCRF (106:234)
+                                        // firstnameavV (106:234)
                                         left: 0*fem,
                                         top: 0*fem,
                                         child: Align(
                                           child: SizedBox(
-                                            width: 64*fem,
+                                            width: 70*fem,
                                             height: 32*fem,
                                             child: Text(
-                                              'Hikari\n',
+                                              'Hikari\n ',
                                               style: SafeGoogleFont (
                                                 'Inter',
                                                 fontSize: 24*ffem,
@@ -201,14 +201,14 @@ class Scene extends StatelessWidget {
                                   ),
                                 ),
                                 Container(
-                                  // autogroup1dwhQXK (JZnwsmTF8ZT5z8Ud3T1DWH)
+                                  // autogroupmegy5MT (65fy3cM3BCLFn6Vz1yMeGy)
                                   margin: EdgeInsets.fromLTRB(0*fem, 0*fem, 11*fem, 0*fem),
                                   width: double.infinity,
                                   child: Row(
                                     crossAxisAlignment: CrossAxisAlignment.start,
                                     children: [
                                       Container(
-                                        // editprofileJMo (94:5249)
+                                        // editprofilepZw (94:5249)
                                         margin: EdgeInsets.fromLTRB(0*fem, 0*fem, 19*fem, 0*fem),
                                         child: Text(
                                           'Edit Profile',
@@ -223,11 +223,11 @@ class Scene extends StatelessWidget {
                                         ),
                                       ),
                                       Container(
-                                        // pencillogo11K (95:387)
+                                        // pencillogoLHP (95:387)
                                         width: 20*fem,
                                         height: 20.54*fem,
                                         child: Image.asset(
-                                          'assets/login-page/images/pencil-logo.png',
+                                          'assets/main-menu/images/pencil-logo.png',
                                           fit: BoxFit.cover,
                                         ),
                                       ),
@@ -263,14 +263,14 @@ class Scene extends StatelessWidget {
                     ),
                   ),
                   Container(
-                    // wrapperMDb (94:4842)
+                    // wrapperKv1 (94:4842)
                     margin: EdgeInsets.fromLTRB(20*fem, 0*fem, 27*fem, 38.5*fem),
                     width: double.infinity,
                     child: Column(
                       crossAxisAlignment: CrossAxisAlignment.center,
                       children: [
                         Container(
-                          // dividerFJy (I94:4843;208:74)
+                          // divider3r1 (I94:4843;208:74)
                           width: double.infinity,
                           height: 1*fem,
                           decoration: BoxDecoration (
@@ -281,14 +281,14 @@ class Scene extends StatelessWidget {
                           height: 10*fem,
                         ),
                         Container(
-                          // wrappern41 (94:4844)
+                          // wrapperb6q (94:4844)
                           padding: EdgeInsets.fromLTRB(0*fem, 0*fem, 9*fem, 0*fem),
                           width: double.infinity,
                           child: Row(
                             crossAxisAlignment: CrossAxisAlignment.center,
                             children: [
                               Container(
-                                // termsconditionsvAD (94:4845)
+                                // termsconditionswAh (94:4845)
                                 margin: EdgeInsets.fromLTRB(0*fem, 0*fem, 182*fem, 0*fem),
                                 child: Text(
                                   'Terms & Conditions',
@@ -303,11 +303,11 @@ class Scene extends StatelessWidget {
                                 ),
                               ),
                               Container(
-                                // iconsDf7 (94:4846)
+                                // icons3Ud (94:4846)
                                 width: 6*fem,
                                 height: 12*fem,
                                 child: Image.asset(
-                                  'assets/login-page/images/icons-obP.png',
+                                  'assets/main-menu/images/icons-ur9.png',
                                   width: 6*fem,
                                   height: 12*fem,
                                 ),
@@ -319,7 +319,7 @@ class Scene extends StatelessWidget {
                           height: 10*fem,
                         ),
                         Container(
-                          // dividerXvh (I94:4847;208:74)
+                          // divideraDf (I94:4847;208:74)
                           width: double.infinity,
                           height: 1*fem,
                           decoration: BoxDecoration (
@@ -330,14 +330,14 @@ class Scene extends StatelessWidget {
                           height: 10*fem,
                         ),
                         Container(
-                          // wrappersDs (94:4848)
+                          // wrappervHX (94:4848)
                           padding: EdgeInsets.fromLTRB(0*fem, 0*fem, 9*fem, 0*fem),
                           width: double.infinity,
                           child: Row(
                             crossAxisAlignment: CrossAxisAlignment.center,
                             children: [
                               Container(
-                                // aboutusbvZ (94:4849)
+                                // aboutusfku (94:4849)
                                 margin: EdgeInsets.fromLTRB(0*fem, 0*fem, 258*fem, 0*fem),
                                 child: Text(
                                   'About Us',
@@ -352,11 +352,11 @@ class Scene extends StatelessWidget {
                                 ),
                               ),
                               Container(
-                                // icons6sK (94:4850)
+                                // iconszYH (94:4850)
                                 width: 6*fem,
                                 height: 12*fem,
                                 child: Image.asset(
-                                  'assets/login-page/images/icons-ag1.png',
+                                  'assets/main-menu/images/icons-KNZ.png',
                                   width: 6*fem,
                                   height: 12*fem,
                                 ),
@@ -368,7 +368,7 @@ class Scene extends StatelessWidget {
                           height: 10*fem,
                         ),
                         Container(
-                          // dividerDBF (I94:4851;208:74)
+                          // dividerWWd (I94:4851;208:74)
                           width: double.infinity,
                           height: 1*fem,
                           decoration: BoxDecoration (
@@ -379,14 +379,14 @@ class Scene extends StatelessWidget {
                           height: 10*fem,
                         ),
                         Container(
-                          // wrapperYjK (94:4852)
+                          // wrapperesj (94:4852)
                           padding: EdgeInsets.fromLTRB(0*fem, 0*fem, 9*fem, 0*fem),
                           width: double.infinity,
                           child: Row(
                             crossAxisAlignment: CrossAxisAlignment.center,
                             children: [
                               Container(
-                                // changepasswordgqX (94:4853)
+                                // changepasswordbY5 (94:4853)
                                 margin: EdgeInsets.fromLTRB(0*fem, 0*fem, 192*fem, 0*fem),
                                 child: Text(
                                   'Change Password',
@@ -401,11 +401,11 @@ class Scene extends StatelessWidget {
                                 ),
                               ),
                               Container(
-                                // iconsQFj (94:4854)
+                                // icons82D (94:4854)
                                 width: 6*fem,
                                 height: 12*fem,
                                 child: Image.asset(
-                                  'assets/login-page/images/icons-BfP.png',
+                                  'assets/main-menu/images/icons-BgV.png',
                                   width: 6*fem,
                                   height: 12*fem,
                                 ),
@@ -417,7 +417,7 @@ class Scene extends StatelessWidget {
                           height: 10*fem,
                         ),
                         Container(
-                          // dividerjJ1 (I94:4855;208:74)
+                          // dividerfH3 (I94:4855;208:74)
                           width: double.infinity,
                           height: 1*fem,
                           decoration: BoxDecoration (
@@ -428,14 +428,14 @@ class Scene extends StatelessWidget {
                           height: 10*fem,
                         ),
                         Container(
-                          // wrapperFn9 (94:4856)
+                          // wrapper1Lu (94:4856)
                           padding: EdgeInsets.fromLTRB(0*fem, 0*fem, 9*fem, 0*fem),
                           width: double.infinity,
                           child: Row(
                             crossAxisAlignment: CrossAxisAlignment.center,
                             children: [
                               Container(
-                                // logoutoHs (94:4857)
+                                // logoutMff (94:4857)
                                 margin: EdgeInsets.fromLTRB(0*fem, 0*fem, 269*fem, 0*fem),
                                 child: Text(
                                   'Log Out',
@@ -450,11 +450,11 @@ class Scene extends StatelessWidget {
                                 ),
                               ),
                               Container(
-                                // iconsiQq (94:4858)
+                                // icons5bf (94:4858)
                                 width: 6*fem,
                                 height: 12*fem,
                                 child: Image.asset(
-                                  'assets/login-page/images/icons-RSy.png',
+                                  'assets/main-menu/images/icons-qeh.png',
                                   width: 6*fem,
                                   height: 12*fem,
                                 ),
@@ -466,7 +466,7 @@ class Scene extends StatelessWidget {
                           height: 10*fem,
                         ),
                         Container(
-                          // dividerd21 (I94:4859;208:74)
+                          // dividerDC5 (I94:4859;208:74)
                           width: double.infinity,
                           height: 1*fem,
                           decoration: BoxDecoration (
@@ -477,7 +477,7 @@ class Scene extends StatelessWidget {
                     ),
                   ),
                   Center(
-                    // scanbarcodey5s (95:300)
+                    // scanbarcodeyBF (95:300)
                     child: Container(
                       margin: EdgeInsets.fromLTRB(0*fem, 0*fem, 246*fem, 34.5*fem),
                       child: Text(
@@ -495,21 +495,21 @@ class Scene extends StatelessWidget {
                     ),
                   ),
                   Container(
-                    // barcode1fUV (94:4871)
+                    // barcode1gbT (94:4871)
                     margin: EdgeInsets.fromLTRB(0*fem, 0*fem, 5*fem, 59*fem),
                     width: 335*fem,
                     height: 116*fem,
                     child: Image.asset(
-                      'assets/login-page/images/barcode-1.png',
+                      'assets/main-menu/images/barcode-1.png',
                       fit: BoxFit.cover,
                     ),
                   ),
                   Container(
-                    // frame178Bhj (93:81)
+                    // frame178R3F (93:81)
                     margin: EdgeInsets.fromLTRB(232*fem, 0*fem, 80*fem, 0*fem),
                     width: double.infinity,
                     child: Center(
-                      // rectangle2Y2V (93:82)
+                      // rectangle2mcu (93:82)
                       child: SizedBox(
                         width: double.infinity,
                         height: 1*fem,

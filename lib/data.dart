@@ -4,7 +4,7 @@ class Data{
   String lastname = 'Wijaya';
   String password = 'test';
   String confirmPassword = 'test';
-  String email = 'example@gmail.com';
+  String email = 'test';
   int point = 10000;
 
 

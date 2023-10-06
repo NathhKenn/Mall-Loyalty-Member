@@ -1,7 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:myapp/login-page/landing-page.dart';
 import 'package:myapp/utils.dart';
-import 'data.dart';
 
 
 

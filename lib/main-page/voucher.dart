@@ -13,7 +13,7 @@ class Scene extends StatelessWidget {
     return Container(
       width: double.infinity,
       child: Container(
-        // voucher2Q9 (94:5103)
+        // voucherA41 (94:5103)
         width: double.infinity,
         decoration: BoxDecoration (
           color: Color(0xffffffff),
@@ -22,7 +22,7 @@ class Scene extends StatelessWidget {
           crossAxisAlignment: CrossAxisAlignment.center,
           children: [
             Container(
-              // wrapperAFT (94:5120)
+              // wrappertVo (94:5120)
               width: double.infinity,
               height: 99*fem,
               decoration: BoxDecoration (
@@ -36,7 +36,7 @@ class Scene extends StatelessWidget {
               child: Stack(
                 children: [
                   Positioned(
-                    // label45w (I94:5120;437:3723)
+                    // labelzYq (I94:5120;437:3723)
                     left: 16*fem,
                     top: 51*fem,
                     child: Align(
@@ -58,7 +58,7 @@ class Scene extends StatelessWidget {
                     ),
                   ),
                   Positioned(
-                    // voucherXkD (106:89)
+                    // vouchert8R (106:89)
                     left: 22*fem,
                     top: 51*fem,
                     child: Align(
@@ -83,126 +83,165 @@ class Scene extends StatelessWidget {
               ),
             ),
             Container(
-              // autogroupkwrbE8q (JZnzGhTkTydjemCpu2kwRb)
-              padding: EdgeInsets.fromLTRB(0*fem, 6*fem, 0*fem, 0*fem),
+              // autogroupgdehnjb (65g1LxgWVsJAh4tq26gdEh)
+              padding: EdgeInsets.fromLTRB(0*fem, 23*fem, 0*fem, 0*fem),
               width: double.infinity,
               child: Column(
-                crossAxisAlignment: CrossAxisAlignment.end,
+                crossAxisAlignment: CrossAxisAlignment.center,
                 children: [
                   Container(
-                    // grouphorizontalvoucherA2V (94:5285)
-                    margin: EdgeInsets.fromLTRB(0*fem, 0*fem, 15*fem, 29*fem),
-                    decoration: BoxDecoration (
-                      borderRadius: BorderRadius.circular(15*fem),
-                    ),
-                    child: Row(
-                      crossAxisAlignment: CrossAxisAlignment.start,
+                    // autogroup39arXSH (65g19PBU45nHDgVyhU39aR)
+                    margin: EdgeInsets.fromLTRB(0*fem, 0*fem, 10*fem, 15*fem),
+                    width: 380*fem,
+                    height: 217*fem,
+                    child: Stack(
                       children: [
-                        Container(
-                          // rectangle26UJ5 (94:5283)
-                          margin: EdgeInsets.fromLTRB(0*fem, 0*fem, 1272*fem, 0*fem),
-                          width: 361*fem,
-                          height: 203*fem,
-                          decoration: BoxDecoration (
-                            borderRadius: BorderRadius.circular(15*fem),
-                            image: DecorationImage (
-                              fit: BoxFit.cover,
-                              image: AssetImage (
-                                'assets/login-page/images/rectangle-26-bg-t1X.png',
-                              ),
-                            ),
-                            boxShadow: [
-                              BoxShadow(
-                                color: Color(0x3f000000),
-                                offset: Offset(0*fem, 4*fem),
-                                blurRadius: 2*fem,
-                              ),
-                            ],
+                        Positioned(
+                          // horizontalvoucherFt5 (116:11735)
+                          left: 12*fem,
+                          top: 0*fem,
+                          child: Container(
+                            width: 363*fem,
+                            height: 203*fem,
                           ),
                         ),
-                        Container(
-                          // rectangle26vfs (94:5282)
-                          margin: EdgeInsets.fromLTRB(0*fem, 0*fem, 859*fem, 0*fem),
-                          width: 361*fem,
-                          height: 203*fem,
-                          decoration: BoxDecoration (
-                            borderRadius: BorderRadius.circular(15*fem),
-                            image: DecorationImage (
-                              fit: BoxFit.cover,
-                              image: AssetImage (
-                                'assets/login-page/images/rectangle-26-bg.png',
+                        Positioned(
+                          // horizontalvoucherscreenbww (132:11789)
+                          left: 0*fem,
+                          top: 14*fem,
+                          child: Container(
+                            width: 380*fem,
+                            height: 203*fem,
+                            child: Container(
+                              // grouphorizontalvoucher9Cm (94:5285)
+                              width: 1869*fem,
+                              height: double.infinity,
+                              decoration: BoxDecoration (
+                                borderRadius: BorderRadius.circular(15*fem),
+                              ),
+                              child: Row(
+                                crossAxisAlignment: CrossAxisAlignment.center,
+                                children: [
+                                  Container(
+                                    // rectangle26seZ (94:5283)
+                                    margin: EdgeInsets.fromLTRB(0*fem, 0*fem, 1115*fem, 0*fem),
+                                    width: 361*fem,
+                                    height: 203*fem,
+                                    decoration: BoxDecoration (
+                                      borderRadius: BorderRadius.circular(15*fem),
+                                      image: DecorationImage (
+                                        fit: BoxFit.cover,
+                                        image: AssetImage (
+                                          'assets/main-menu/images/rectangle-26-bg.png',
+                                        ),
+                                      ),
+                                      boxShadow: [
+                                        BoxShadow(
+                                          color: Color(0x3f000000),
+                                          offset: Offset(0*fem, 4*fem),
+                                          blurRadius: 2*fem,
+                                        ),
+                                      ],
+                                    ),
+                                  ),
+                                  SizedBox(
+                                    width: 16*fem,
+                                  ),
+                                  Container(
+                                    // rectangle268qP (94:5282)
+                                    margin: EdgeInsets.fromLTRB(0*fem, 0*fem, 738*fem, 0*fem),
+                                    width: 361*fem,
+                                    height: 203*fem,
+                                    decoration: BoxDecoration (
+                                      borderRadius: BorderRadius.circular(15*fem),
+                                      image: DecorationImage (
+                                        fit: BoxFit.cover,
+                                        image: AssetImage (
+                                          'assets/main-menu/images/rectangle-26-bg-oSZ.png',
+                                        ),
+                                      ),
+                                      boxShadow: [
+                                        BoxShadow(
+                                          color: Color(0x3f000000),
+                                          offset: Offset(0*fem, 4*fem),
+                                          blurRadius: 2*fem,
+                                        ),
+                                      ],
+                                    ),
+                                  ),
+                                  SizedBox(
+                                    width: 16*fem,
+                                  ),
+                                  Container(
+                                    // rectangle26R3o (94:5281)
+                                    margin: EdgeInsets.fromLTRB(0*fem, 0*fem, 361*fem, 0*fem),
+                                    width: 361*fem,
+                                    height: 203*fem,
+                                    child: ClipRRect(
+                                      borderRadius: BorderRadius.circular(15*fem),
+                                      child: Image.asset(
+                                        'assets/main-menu/images/rectangle-26-1jX.png',
+                                        fit: BoxFit.cover,
+                                      ),
+                                    ),
+                                  ),
+                                  SizedBox(
+                                    width: 16*fem,
+                                  ),
+                                  Container(
+                                    // rectangle26Wqw (94:5279)
+                                    width: 361*fem,
+                                    height: 203*fem,
+                                    child: ClipRRect(
+                                      borderRadius: BorderRadius.circular(15*fem),
+                                      child: Image.asset(
+                                        'assets/main-menu/images/rectangle-26.png',
+                                        fit: BoxFit.cover,
+                                      ),
+                                    ),
+                                  ),
+                                  SizedBox(
+                                    width: 16*fem,
+                                  ),
+                                  Container(
+                                    // rectangle2235B (94:5188)
+                                    width: 361*fem,
+                                    height: 203*fem,
+                                    decoration: BoxDecoration (
+                                      borderRadius: BorderRadius.circular(15*fem),
+                                      image: DecorationImage (
+                                        fit: BoxFit.cover,
+                                        image: AssetImage (
+                                          'assets/main-menu/images/rectangle-22-bg.png',
+                                        ),
+                                      ),
+                                      boxShadow: [
+                                        BoxShadow(
+                                          color: Color(0x3f000000),
+                                          offset: Offset(0*fem, 4*fem),
+                                          blurRadius: 2*fem,
+                                        ),
+                                      ],
+                                    ),
+                                  ),
+                                ],
                               ),
                             ),
-                            boxShadow: [
-                              BoxShadow(
-                                color: Color(0x3f000000),
-                                offset: Offset(0*fem, 4*fem),
-                                blurRadius: 2*fem,
-                              ),
-                            ],
-                          ),
-                        ),
-                        Container(
-                          // rectangle26zvd (94:5281)
-                          margin: EdgeInsets.fromLTRB(0*fem, 0*fem, 428*fem, 0*fem),
-                          width: 361*fem,
-                          height: 203*fem,
-                          child: ClipRRect(
-                            borderRadius: BorderRadius.circular(15*fem),
-                            child: Image.asset(
-                              'assets/login-page/images/rectangle-26-Pus.png',
-                              fit: BoxFit.cover,
-                            ),
-                          ),
-                        ),
-                        Container(
-                          // rectangle26KCD (94:5279)
-                          margin: EdgeInsets.fromLTRB(0*fem, 0*fem, 47*fem, 0*fem),
-                          width: 361*fem,
-                          height: 203*fem,
-                          child: ClipRRect(
-                            borderRadius: BorderRadius.circular(15*fem),
-                            child: Image.asset(
-                              'assets/login-page/images/rectangle-26.png',
-                              fit: BoxFit.cover,
-                            ),
-                          ),
-                        ),
-                        Container(
-                          // rectangle22pem (94:5188)
-                          margin: EdgeInsets.fromLTRB(0*fem, 17*fem, 0*fem, 0*fem),
-                          width: 361*fem,
-                          height: 203*fem,
-                          decoration: BoxDecoration (
-                            borderRadius: BorderRadius.circular(15*fem),
-                            image: DecorationImage (
-                              fit: BoxFit.cover,
-                              image: AssetImage (
-                                'assets/login-page/images/rectangle-22-bg.png',
-                              ),
-                            ),
-                            boxShadow: [
-                              BoxShadow(
-                                color: Color(0x3f000000),
-                                offset: Offset(0*fem, 4*fem),
-                                blurRadius: 2*fem,
-                              ),
-                            ],
                           ),
                         ),
                       ],
                     ),
                   ),
                   Container(
-                    // frame181vC1 (94:5202)
-                    margin: EdgeInsets.fromLTRB(157*fem, 0*fem, 161*fem, 31*fem),
+                    // frame181Mbf (94:5202)
+                    margin: EdgeInsets.fromLTRB(157*fem, 0*fem, 161*fem, 22*fem),
                     width: double.infinity,
                     height: 8*fem,
                     child: Row(
                       crossAxisAlignment: CrossAxisAlignment.center,
                       children: [
                         Container(
-                          // stepqZs (94:5203)
+                          // stepHER (94:5203)
                           width: 24*fem,
                           height: double.infinity,
                           decoration: BoxDecoration (
@@ -214,7 +253,7 @@ class Scene extends StatelessWidget {
                           width: 4*fem,
                         ),
                         Container(
-                          // stepMYD (94:5204)
+                          // steppVF (94:5204)
                           width: 8*fem,
                           height: double.infinity,
                           decoration: BoxDecoration (
@@ -226,7 +265,7 @@ class Scene extends StatelessWidget {
                           width: 4*fem,
                         ),
                         Container(
-                          // stepgaV (94:5205)
+                          // stepy7F (94:5205)
                           width: 8*fem,
                           height: double.infinity,
                           decoration: BoxDecoration (
@@ -238,7 +277,7 @@ class Scene extends StatelessWidget {
                           width: 4*fem,
                         ),
                         Container(
-                          // step28Z (94:5206)
+                          // stephow (94:5206)
                           width: 8*fem,
                           height: double.infinity,
                           decoration: BoxDecoration (
@@ -250,7 +289,7 @@ class Scene extends StatelessWidget {
                           width: 4*fem,
                         ),
                         Container(
-                          // stepwWR (94:5207)
+                          // stepTYD (94:5207)
                           width: 8*fem,
                           height: double.infinity,
                           decoration: BoxDecoration (
@@ -262,55 +301,63 @@ class Scene extends StatelessWidget {
                     ),
                   ),
                   Container(
-                    // groupvertialvoucher6PK (95:388)
-                    margin: EdgeInsets.fromLTRB(12*fem, 0*fem, 16*fem, 0*fem),
+                    // verticalvoucherscreenDnH (132:11791)
+                    margin: EdgeInsets.fromLTRB(14*fem, 0*fem, 15*fem, 0*fem),
                     width: double.infinity,
-                    decoration: BoxDecoration (
-                      borderRadius: BorderRadius.circular(15*fem),
-                    ),
-                    child: Column(
-                      crossAxisAlignment: CrossAxisAlignment.end,
-                      children: [
-                        Container(
-                          // verticalvoucher1c6m (94:5191)
-                          margin: EdgeInsets.fromLTRB(0*fem, 0*fem, 0*fem, 31*fem),
-                          width: 361*fem,
-                          height: 193*fem,
-                          child: ClipRRect(
-                            borderRadius: BorderRadius.circular(15*fem),
-                            child: Image.asset(
-                              'assets/login-page/images/vertical-voucher-1.png',
-                              fit: BoxFit.cover,
+                    child: Container(
+                      // groupvertialvoucherAxR (95:388)
+                      width: double.infinity,
+                      height: 641*fem,
+                      decoration: BoxDecoration (
+                        borderRadius: BorderRadius.circular(15*fem),
+                      ),
+                      child: Column(
+                        crossAxisAlignment: CrossAxisAlignment.center,
+                        children: [
+                          Container(
+                            // verticalvoucher1uv1 (94:5191)
+                            width: 361*fem,
+                            height: 193*fem,
+                            child: ClipRRect(
+                              borderRadius: BorderRadius.circular(15*fem),
+                              child: Image.asset(
+                                'assets/main-menu/images/vertical-voucher-1.png',
+                                fit: BoxFit.cover,
+                              ),
                             ),
                           ),
-                        ),
-                        Container(
-                          // verticalvoucher2K1B (94:5244)
-                          margin: EdgeInsets.fromLTRB(0*fem, 0*fem, 0*fem, 89*fem),
-                          width: 361*fem,
-                          height: 193*fem,
-                          child: ClipRRect(
-                            borderRadius: BorderRadius.circular(15*fem),
-                            child: Image.asset(
-                              'assets/login-page/images/vertical-voucher-2.png',
-                              fit: BoxFit.cover,
+                          SizedBox(
+                            height: 31*fem,
+                          ),
+                          Container(
+                            // verticalvoucher23FX (94:5244)
+                            width: 361*fem,
+                            height: 193*fem,
+                            child: ClipRRect(
+                              borderRadius: BorderRadius.circular(15*fem),
+                              child: Image.asset(
+                                'assets/main-menu/images/vertical-voucher-2.png',
+                                fit: BoxFit.cover,
+                              ),
                             ),
                           ),
-                        ),
-                        Container(
-                          // verticalvoucher3Rpu (94:5284)
-                          margin: EdgeInsets.fromLTRB(0*fem, 0*fem, 1*fem, 0*fem),
-                          width: 361*fem,
-                          height: 193*fem,
-                          child: ClipRRect(
-                            borderRadius: BorderRadius.circular(15*fem),
-                            child: Image.asset(
-                              'assets/login-page/images/vertical-voucher-3.png',
-                              fit: BoxFit.cover,
+                          SizedBox(
+                            height: 31*fem,
+                          ),
+                          Container(
+                            // verticalvoucher3ZzZ (94:5284)
+                            width: 361*fem,
+                            height: 193*fem,
+                            child: ClipRRect(
+                              borderRadius: BorderRadius.circular(15*fem),
+                              child: Image.asset(
+                                'assets/main-menu/images/vertical-voucher-3.png',
+                                fit: BoxFit.cover,
+                              ),
                             ),
                           ),
-                        ),
-                      ],
+                        ],
+                      ),
                     ),
                   ),
                 ],

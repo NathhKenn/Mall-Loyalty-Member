@@ -13,7 +13,7 @@ class Scene extends StatelessWidget {
     return Container(
       width: double.infinity,
       child: Container(
-        // logout1eZ (94:4876)
+        // logoutmtD (94:4876)
         width: double.infinity,
         height: 844*fem,
         decoration: BoxDecoration (
@@ -22,7 +22,7 @@ class Scene extends StatelessWidget {
         child: Stack(
           children: [
             Positioned(
-              // wrapperkMF (94:4903)
+              // wrapperWqo (94:4903)
               left: 0*fem,
               top: 0*fem,
               child: Container(
@@ -39,7 +39,7 @@ class Scene extends StatelessWidget {
                 child: Stack(
                   children: [
                     Positioned(
-                      // labelRTP (I94:4903;437:3723)
+                      // labelCCq (I94:4903;437:3723)
                       left: 16*fem,
                       top: 60*fem,
                       child: Align(
@@ -61,7 +61,7 @@ class Scene extends StatelessWidget {
                       ),
                     ),
                     Positioned(
-                      // label75K (94:4907)
+                      // labeltLZ (94:4907)
                       left: 16*fem,
                       top: 60*fem,
                       child: Align(
@@ -87,7 +87,7 @@ class Scene extends StatelessWidget {
               ),
             ),
             Positioned(
-              // frame10bmB (94:4908)
+              // frame10Po7 (94:4908)
               left: 67.5*fem,
               top: 126.5*fem,
               child: Container(
@@ -97,32 +97,32 @@ class Scene extends StatelessWidget {
                   crossAxisAlignment: CrossAxisAlignment.center,
                   children: [
                     Container(
-                      // ellipse5vHf (94:4909)
+                      // ellipse5Kwf (94:4909)
                       margin: EdgeInsets.fromLTRB(0*fem, 0*fem, 24*fem, 0*fem),
                       width: 64*fem,
                       height: 63*fem,
                       child: Image.asset(
-                        'assets/login-page/images/ellipse-5.png',
+                        'assets/main-menu/images/ellipse-5.png',
                         width: 64*fem,
                         height: 63*fem,
                       ),
                     ),
                     Container(
-                      // wrapperF53 (94:4910)
+                      // wrapperTY5 (94:4910)
                       width: 131*fem,
                       height: double.infinity,
                       child: Column(
                         crossAxisAlignment: CrossAxisAlignment.start,
                         children: [
                           Container(
-                            // wrapperPS9 (94:4911)
+                            // wrapperobw (94:4911)
                             margin: EdgeInsets.fromLTRB(0*fem, 0*fem, 0*fem, 4*fem),
                             width: double.infinity,
                             child: Column(
                               crossAxisAlignment: CrossAxisAlignment.start,
                               children: [
                                 Text(
-                                  // hikarikinjivgy (94:4912)
+                                  // hikarikinjik1P (94:4912)
                                   'Hikari Kinji',
                                   style: SafeGoogleFont (
                                     'Inter',
@@ -134,7 +134,7 @@ class Scene extends StatelessWidget {
                                   ),
                                 ),
                                 Text(
-                                  // hikarigmailcomr4q (94:4913)
+                                  // hikarigmailcomgQq (94:4913)
                                   'Hikari@gmail.com',
                                   style: SafeGoogleFont (
                                     'Inter',
@@ -149,7 +149,7 @@ class Scene extends StatelessWidget {
                             ),
                           ),
                           TextButton(
-                            // buttonnUH (94:4914)
+                            // buttonpX3 (94:4914)
                             onPressed: () {},
                             style: TextButton.styleFrom (
                               padding: EdgeInsets.zero,
@@ -197,7 +197,7 @@ class Scene extends StatelessWidget {
               ),
             ),
             Positioned(
-              // overlayK6q (94:4967)
+              // overlaymKo (94:4967)
               left: 0*fem,
               top: 0*fem,
               child: Opacity(
@@ -212,7 +212,7 @@ class Scene extends StatelessWidget {
               ),
             ),
             Positioned(
-              // modalconfirmationdialogqL5 (94:4972)
+              // modalconfirmationdialogghf (94:4972)
               left: 21*fem,
               top: 365*fem,
               child: Container(
@@ -227,13 +227,13 @@ class Scene extends StatelessWidget {
                   crossAxisAlignment: CrossAxisAlignment.center,
                   children: [
                     Container(
-                      // wrapperi8y (I94:4972;454:14682)
+                      // wrapperaHF (I94:4972;454:14682)
                       margin: EdgeInsets.fromLTRB(0*fem, 0*fem, 33*fem, 16*fem),
                       child: Column(
                         crossAxisAlignment: CrossAxisAlignment.start,
                         children: [
                           Container(
-                            // labelF8u (I94:4972;454:14684)
+                            // labelvM7 (I94:4972;454:14684)
                             margin: EdgeInsets.fromLTRB(0*fem, 0*fem, 0*fem, 4*fem),
                             child: Text(
                               'Are you sure you want to Log Out?',
@@ -248,7 +248,7 @@ class Scene extends StatelessWidget {
                             ),
                           ),
                           Text(
-                            // description9k5 (I94:4972;454:14688)
+                            // descriptionqiy (I94:4972;454:14688)
                             'You will be logged out of your account',
                             style: SafeGoogleFont (
                               'Inter',
@@ -263,14 +263,14 @@ class Scene extends StatelessWidget {
                       ),
                     ),
                     Container(
-                      // wrapperHrH (I94:4972;454:14689)
+                      // wrapperawT (I94:4972;454:14689)
                       width: double.infinity,
                       height: 48*fem,
                       child: Row(
                         crossAxisAlignment: CrossAxisAlignment.center,
                         children: [
                           Container(
-                            // buttoneB3 (I94:4972;454:14690)
+                            // buttonjZT (I94:4972;454:14690)
                             margin: EdgeInsets.fromLTRB(0*fem, 0*fem, 16*fem, 0*fem),
                             child: TextButton(
                               onPressed: () {},
@@ -302,7 +302,7 @@ class Scene extends StatelessWidget {
                             ),
                           ),
                           TextButton(
-                            // button4kZ (I94:4972;454:14691)
+                            // buttonNsK (I94:4972;454:14691)
                             onPressed: () {},
                             style: TextButton.styleFrom (
                               padding: EdgeInsets.zero,

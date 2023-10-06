@@ -3,22 +3,21 @@ import 'package:flutter/gestures.dart';
 import 'dart:ui';
 import 'package:google_fonts/google_fonts.dart';
 import 'package:myapp/utils.dart';
-import 'package:myapp/login-page/sign-in.dart';
 import 'package:myapp/main-page/main-menu.dart';
 
 class WelcomeScene extends StatelessWidget {
   const WelcomeScene({super.key});
-
   @override
+
   Widget build(BuildContext context) {
     double baseWidth = 390;
     double fem = MediaQuery.of(context).size.width / baseWidth;
     double ffem = fem * 0.97;
     return Scaffold(
-      body:SizedBox(
+      body: SizedBox(
       width: double.infinity,
       child: Container(
-        // welcomescreenhWq (54:1694)
+        // welcomescreenuXw (54:1694)
         width: double.infinity,
         decoration: BoxDecoration (
           color: Color(0xffffffff),
@@ -27,7 +26,7 @@ class WelcomeScene extends StatelessWidget {
           crossAxisAlignment: CrossAxisAlignment.end,
           children: [
             Container(
-              // autogroupckysqsw (JZo1GAozGc8m3dSwtUCKys)
+              // autogroup6rtpTJZ (65g2KgYzkNG3kDdWhe6RTP)
               padding: EdgeInsets.fromLTRB(0*fem, 13*fem, 12*fem, 13*fem),
               width: double.infinity,
               height: 147*fem,
@@ -38,122 +37,97 @@ class WelcomeScene extends StatelessWidget {
                   colors: <Color>[Color(0xff0d86f7), Color(0xffdcecfb)],
                   stops: <double>[0.017, 0.975],
                 ),
+                boxShadow: [
+                  BoxShadow(
+                    color: Color(0x3f000000),
+                    offset: Offset(0*fem, 4*fem),
+                    blurRadius: 2*fem,
+                  ),
+                ],
               ),
-              child: ImageFiltered(
-                imageFilter: ImageFilter.blur (
-                  sigmaX: 2*fem,
-                  sigmaY: 2*fem,
-                ),
-                child: Row(
-                  crossAxisAlignment: CrossAxisAlignment.center,
-                  children: [
-                    Container(
-                      // centralmalllogo12fry (90:32)
-                      width: 247*fem,
-                      height: 61*fem,
-                      child: Image.asset(
-                        'assets/login-page/images/central-mall-logo-1-2.png',
-                        fit: BoxFit.cover,
-                      ),
-                    ),
-                    Container(
-                      // helloreadytogoshoppingCru (95:353)
-                      margin: EdgeInsets.fromLTRB(0*fem, 0*fem, 0*fem, 25*fem),
-                      constraints: BoxConstraints (
-                        maxWidth: 111*fem,
-                      ),
-                      child: Text(
-                        'Hello,\nReady to go\nShopping?',
-                        textAlign: TextAlign.right,
-                        style: SafeGoogleFont (
-                          'Inter',
-                          fontSize: 20*ffem,
-                          fontWeight: FontWeight.w400,
-                          height: 1.2*ffem/fem,
-                          letterSpacing: -0.4*fem,
-                          color: Color(0xffffffff),
-                        ),
-                      ),
-                    ),
-                  ],
-                ),
-              ),
-            ),
-            Container(
-              // autogroup9kmbSmF (JZo1bzaHopZEFtRbby9KMb)
-              padding: EdgeInsets.fromLTRB(0*fem, 0*fem, 0*fem, 45*fem),
-              width: double.infinity,
-              child: Column(
-                crossAxisAlignment: CrossAxisAlignment.end,
+              child: Row(
+                crossAxisAlignment: CrossAxisAlignment.center,
                 children: [
                   Container(
-                    // autogroupedpmxDo (JZo1SAXLKfxgFAt6fmEDpM)
-                    margin: EdgeInsets.fromLTRB(0*fem, 0*fem, 17*fem, 8*fem),
-                    width: 908*fem,
-                    height: 327*fem,
-                    child: Stack(
-                      children: [
-                        Positioned(
-                          // rectangle53X (58:1763)
-                          left: 350*fem,
-                          top: 163*fem,
-                          child: Align(
-                            child: SizedBox(
-                              width: 23*fem,
-                              height: 23*fem,
-                              child: Image.asset(
-                                'assets/login-page/images/rectangle.png',
-                                fit: BoxFit.cover,
-                              ),
-                            ),
-                          ),
-                        ),
-                        Positioned(
-                          // welcomescreenvoucherPK7 (94:5247)
-                          left: 0*fem,
-                          top: 0*fem,
-                          child: Container(
-                            width: 891*fem,
-                            height: 327*fem,
-                            child: Row(
-                              crossAxisAlignment: CrossAxisAlignment.end,
-                              children: [
-                                Container(
-                                  // voucher2hKo (94:5245)
-                                  margin: EdgeInsets.fromLTRB(0*fem, 0*fem, 149*fem, 6*fem),
-                                  width: 415*fem,
-                                  height: 294*fem,
-                                  child: Image.asset(
-                                    'assets/login-page/images/voucher-2.png',
-                                    fit: BoxFit.cover,
-                                  ),
-                                ),
-                                Container(
-                                  // voucher1pfK (93:28)
-                                  width: 327*fem,
-                                  height: 327*fem,
-                                  child: Image.asset(
-                                    'assets/login-page/images/voucher-1.png',
-                                    fit: BoxFit.cover,
-                                  ),
-                                ),
-                              ],
-                            ),
-                          ),
-                        ),
-                      ],
+                    // centralmalllogo12hTo (90:32)
+                    width: 247*fem,
+                    height: 61*fem,
+                    child: Image.asset(
+                      'assets/main-menu/images/central-mall-logo-1-2.png',
+                      fit: BoxFit.cover,
                     ),
                   ),
                   Container(
-                    // frame1MfF (58:1792)
-                    margin: EdgeInsets.fromLTRB(171*fem, 0*fem, 183*fem, 24*fem),
+                    // helloreadytogoshoppingdsF (95:353)
+                    margin: EdgeInsets.fromLTRB(0*fem, 0*fem, 0*fem, 49*fem),
+                    constraints: BoxConstraints (
+                      maxWidth: 112*fem,
+                    ),
+                    child: Text(
+                      'Hello,\nReady to go\nShopping?',
+                      textAlign: TextAlign.right,
+                      style: SafeGoogleFont (
+                        'Inter',
+                        fontSize: 20*ffem,
+                        fontWeight: FontWeight.w900,
+                        height: 1.2*ffem/fem,
+                        letterSpacing: -0.4*fem,
+                        color: Color(0xffffffff),
+                      ),
+                    ),
+                  ),
+                ],
+              ),
+            ),
+            Container(
+              // autogroupv98vvbT (65g2TLztrarrLCbXdhV98V)
+              padding: EdgeInsets.fromLTRB(13*fem, 28*fem, 13*fem, 45*fem),
+              width: double.infinity,
+              child: Column(
+                crossAxisAlignment: CrossAxisAlignment.center,
+                children: [
+                  Container(
+                    // horizontalwelcomerV7 (132:11779)
+                    margin: EdgeInsets.fromLTRB(22*fem, 0*fem, 16*fem, 12*fem),
+                    height: 315*fem,
+                    child: ListView(
+                      scrollDirection: Axis.horizontal,
+                      // horizontalwelcomeCJ5 (132:11777)
+                        children: [
+                          Container(
+                            // voucher1x2M (93:28)
+                            margin: EdgeInsets.fromLTRB(0*fem, 0*fem, 56*fem, 0*fem),
+                            width: 315*fem,
+                            height: 315*fem,
+                            child: Image.asset(
+                              'assets/main-menu/images/voucher-1.png',
+                              fit: BoxFit.cover,
+                            ),
+                          ),
+                          Container(
+                            // voucher25sf (94:5245)
+                            width: 315*fem,
+                            height: 315*fem,
+                            child: Image.asset(
+                              'assets/main-menu/images/voucher-2.png',
+                              fit: BoxFit.cover,
+                            ),
+                          ),
+                        ],
+                      ),
+                    ),
+                ]
+                  ),
+                  Container(
+                    // frame1qrq (58:1792)
+                    margin: EdgeInsets.fromLTRB(153*fem, 0*fem, 175*fem, 24*fem),
                     width: double.infinity,
                     height: 8*fem,
                     child: Row(
                       crossAxisAlignment: CrossAxisAlignment.center,
                       children: [
                         Container(
-                          // stepHJ1 (58:1793)
+                          // stepNbs (58:1793)
                           margin: EdgeInsets.fromLTRB(0*fem, 0*fem, 4*fem, 0*fem),
                           width: 24*fem,
                           height: double.infinity,
@@ -163,7 +137,7 @@ class WelcomeScene extends StatelessWidget {
                           ),
                         ),
                         Container(
-                          // stepCvm (58:1794)
+                          // stepi9w (58:1794)
                           width: 8*fem,
                           height: double.infinity,
                           decoration: BoxDecoration (
@@ -175,8 +149,8 @@ class WelcomeScene extends StatelessWidget {
                     ),
                   ),
                   Container(
-                    // wrapperYjj (54:1742)
-                    margin: EdgeInsets.fromLTRB(29*fem, 0*fem, 30*fem, 109*fem),
+                    // wrapper4jb (54:1742)
+                    margin: EdgeInsets.fromLTRB(16*fem, 0*fem, 17*fem, 89*fem),
                     width: double.infinity,
                     child: Column(
                       crossAxisAlignment: CrossAxisAlignment.start,
@@ -216,65 +190,61 @@ class WelcomeScene extends StatelessWidget {
                       ],
                     ),
                   ),
-                  Container(
-                    // buttonCC1 (54:1745)
-                    margin: EdgeInsets.fromLTRB(13*fem, 0*fem, 13*fem, 0*fem),
-                    child: TextButton(
-                      onPressed: () {
-                        Navigator.push(
-                          context, MaterialPageRoute(builder: (context) => const MenuScene())
-                        );
-                      },
-                      style: TextButton.styleFrom (
-                        padding: EdgeInsets.zero,
+                  TextButton(
+                    // buttonmXX (54:1745)
+                    onPressed: () {
+                      Navigator.push(
+                        context,
+                        MaterialPageRoute(builder: (context) => const MainScene()),
+                      );
+                    },
+                    style: TextButton.styleFrom (
+                      padding: EdgeInsets.zero,
+                    ),
+                    child: Container(
+                      padding: EdgeInsets.fromLTRB(107.5*fem, 8*fem, 113.5*fem, 8*fem),
+                      width: double.infinity,
+                      decoration: BoxDecoration (
+                        color: Color(0xff3077e2),
+                        borderRadius: BorderRadius.circular(8*fem),
                       ),
-                      child: Container(
-                        padding: EdgeInsets.fromLTRB(107.5*fem, 8*fem, 113.5*fem, 8*fem),
-                        width: double.infinity,
-                        decoration: BoxDecoration (
-                          color: Color(0xff3077e2),
-                          borderRadius: BorderRadius.circular(8*fem),
-                        ),
-                        child: Row(
-                          crossAxisAlignment: CrossAxisAlignment.center,
-                          children: [
-                            Container(
-                              // buttonSMF (I54:1745;129:21685)
-                              margin: EdgeInsets.fromLTRB(0*fem, 0*fem, 14*fem, 0*fem),
-                              child: Text(
-                                'Let’s Get Started',
-                                style: SafeGoogleFont (
-                                  'Inter',
-                                  fontSize: 16*ffem,
-                                  fontWeight: FontWeight.w600,
-                                  height: 1.5*ffem/fem,
-                                  letterSpacing: -0.32*fem,
-                                  color: Color(0xffffffff),
-                                ),
+                      child: Row(
+                        crossAxisAlignment: CrossAxisAlignment.center,
+                        children: [
+                          Container(
+                            // buttonUwj (I54:1745;129:21685)
+                            margin: EdgeInsets.fromLTRB(0*fem, 0*fem, 14*fem, 0*fem),
+                            child: Text(
+                              'Let’s Get Started',
+                              style: SafeGoogleFont (
+                                'Inter',
+                                fontSize: 16*ffem,
+                                fontWeight: FontWeight.w600,
+                                height: 1.5*ffem/fem,
+                                letterSpacing: -0.32*fem,
+                                color: Color(0xffffffff),
                               ),
                             ),
-                            Container(
-                              // icons7CV (I54:1745;179:1521)
+                          ),
+                          Container(
+                            // iconscHF (I54:1745;179:1521)
+                            width: 4*fem,
+                            height: 8*fem,
+                            child: Image.asset(
+                              'assets/main-menu/images/icons-u7w.png',
                               width: 4*fem,
                               height: 8*fem,
-                              child: Image.asset(
-                                'assets/login-page/images/icons-sAZ.png',
-                                width: 4*fem,
-                                height: 8*fem,
-                              ),
                             ),
-                          ],
-                        ),
+                          ),
+                        ],
                       ),
                     ),
                   ),
+            )
                 ],
               ),
             ),
-          ],
-        ),
-      ),
       )
-          );
+    );
   }
 }
