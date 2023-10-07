@@ -1,11 +1,15 @@
 import 'package:flutter/material.dart';
+import 'package:myapp/login-page/Terms.dart';
+import 'package:myapp/login-page/sign-in.dart';
+import 'package:myapp/main-page/Change-password.dart';
 import 'package:myapp/utils.dart';
+import 'package:myapp/data.dart';
 
-class Scene extends StatelessWidget {
-  const Scene({super.key});
-
+class ProfileScene extends StatelessWidget {
+  const ProfileScene({super.key});
   @override
   Widget build(BuildContext context) {
+     final data = Data();
     double baseWidth = 390;
     double fem = MediaQuery.of(context).size.width / baseWidth;
     double ffem = fem * 0.97;
@@ -108,7 +112,7 @@ class Scene extends StatelessWidget {
                                             width: 131*fem,
                                             height: 24*fem,
                                             child: Text(
-                                              'Hikari@gmail.com',
+                                              data.getEmail(),
                                               style: SafeGoogleFont (
                                                 'Inter',
                                                 fontSize: 16*ffem,
@@ -122,18 +126,16 @@ class Scene extends StatelessWidget {
                                         ),
                                       ),
                                       Positioned(
-                                        // lastnamehjo (94:4818)
-                                        left: 71*fem,
-                                        top: 0*fem,
+                                        left: 50*fem,
+                                        top: 10*fem,
                                         child: Align(
                                           child: SizedBox(
                                             width: 49*fem,
                                             height: 32*fem,
                                             child: Text(
-                                              'Kinji',
+                                              data.getLastName(),
                                               style: SafeGoogleFont (
                                                 'Inter',
-                                                fontSize: 24*ffem,
                                                 fontWeight: FontWeight.w600,
                                                 height: 1.3333333333*ffem/fem,
                                                 letterSpacing: -0.48*fem,
@@ -146,16 +148,15 @@ class Scene extends StatelessWidget {
                                       Positioned(
                                         // firstnameo29 (106:234)
                                         left: 0*fem,
-                                        top: 0*fem,
+                                        top: 10*fem,
                                         child: Align(
                                           child: SizedBox(
                                             width: 70*fem,
                                             height: 32*fem,
                                             child: Text(
-                                              'Hikari\n ',
+                                              data.getFirstName(),
                                               style: SafeGoogleFont (
                                                 'Inter',
-                                                fontSize: 24*ffem,
                                                 fontWeight: FontWeight.w600,
                                                 height: 1.3333333333*ffem/fem,
                                                 letterSpacing: -0.48*fem,
@@ -253,36 +254,40 @@ class Scene extends StatelessWidget {
                           // wrapperYQy (94:4844)
                           padding: EdgeInsets.fromLTRB(0*fem, 0*fem, 9*fem, 0*fem),
                           width: double.infinity,
-                          child: Row(
-                            crossAxisAlignment: CrossAxisAlignment.center,
-                            children: [
-                              Container(
-                                // termsconditions5Qu (94:4845)
-                                margin: EdgeInsets.fromLTRB(0*fem, 0*fem, 182*fem, 0*fem),
-                                child: Text(
-                                  'Terms & Conditions',
-                                  style: SafeGoogleFont (
-                                    'Inter',
-                                    fontSize: 16*ffem,
-                                    fontWeight: FontWeight.w600,
-                                    height: 1.5*ffem/fem,
-                                    letterSpacing: -0.32*fem,
-                                    color: const Color(0xff3b3b3b),
+                          child: TextButton(
+                            onPressed: () {
+                              Navigator.push(context, MaterialPageRoute(builder: (context)=> const TermsScene()));
+                            },
+                            child: Row(
+                              crossAxisAlignment: CrossAxisAlignment.center,
+                              children: [
+                                Expanded(
+                                  child: SizedBox(
+                                    child: Text(
+                                    'Terms & Condition',
+                                    style: SafeGoogleFont (
+                                      'Inter',
+                                      fontSize: 16*ffem,
+                                      fontWeight: FontWeight.w600,
+                                      height: 1.5*ffem/fem,
+                                      letterSpacing: -0.32*fem,
+                                      color: const Color(0xff3b3b3b),
+                                    ),
                                   ),
-                                ),
+                                )
                               ),
-                              SizedBox(
-                                // iconsb8M (94:4846)
-                                width: 6*fem,
-                                height: 12*fem,
-                                child: Image.asset(
-                                  'assets/main-menu/images/icons-phF.png',
+                                SizedBox(
                                   width: 6*fem,
                                   height: 12*fem,
+                                  child: Image.asset(
+                                    'assets/main-menu/images/icons-phF.png',
+                                    width: 6*fem,
+                                    height: 12*fem,
+                                  ),
                                 ),
-                              ),
-                            ],
-                          ),
+                              ],
+                            ),
+                        ),
                         ),
                         SizedBox(
                           height: 10*fem,
@@ -347,41 +352,44 @@ class Scene extends StatelessWidget {
                         SizedBox(
                           height: 10*fem,
                         ),
-                        Container(
-                          // wrapperYrD (94:4852)
-                          padding: EdgeInsets.fromLTRB(0*fem, 0*fem, 9*fem, 0*fem),
-                          width: double.infinity,
-                          child: Row(
-                            crossAxisAlignment: CrossAxisAlignment.center,
-                            children: [
-                              Container(
-                                // changepasswordVWZ (94:4853)
-                                margin: EdgeInsets.fromLTRB(0*fem, 0*fem, 192*fem, 0*fem),
-                                child: Text(
-                                  'Change Password',
-                                  style: SafeGoogleFont (
-                                    'Inter',
-                                    fontSize: 16*ffem,
-                                    fontWeight: FontWeight.w600,
-                                    height: 1.5*ffem/fem,
-                                    letterSpacing: -0.32*fem,
-                                    color: const Color(0xff3b3b3b),
+                       Container(
+                        padding: EdgeInsets.fromLTRB(0*fem, 0*fem, 9*fem, 0*fem),
+                        width: double.infinity,
+                        child: TextButton(
+                            onPressed: () {
+                              Navigator.push(context, MaterialPageRoute(builder: (context)=> const ChangeScene()));
+                            },
+                            child: Row(
+                              crossAxisAlignment: CrossAxisAlignment.center,
+                              children: [
+                                Expanded(
+                                  child: SizedBox(
+                                    child: Text(
+                                    'Change Password',
+                                    style: SafeGoogleFont (
+                                      'Inter',
+                                      fontSize: 16*ffem,
+                                      fontWeight: FontWeight.w600,
+                                      height: 1.5*ffem/fem,
+                                      letterSpacing: -0.32*fem,
+                                      color: const Color(0xff3b3b3b),
+                                    ),
                                   ),
-                                ),
+                                )
                               ),
-                              SizedBox(
-                                // iconsQdX (94:4854)
-                                width: 6*fem,
-                                height: 12*fem,
-                                child: Image.asset(
-                                  'assets/main-menu/images/icons-Ct1.png',
+                                SizedBox(
                                   width: 6*fem,
                                   height: 12*fem,
+                                  child: Image.asset(
+                                    'assets/main-menu/images/icons-Ct1.png',
+                                    width: 6*fem,
+                                    height: 12*fem,
+                                  ),
                                 ),
-                              ),
-                            ],
-                          ),
+                              ],
+                            ),
                         ),
+                      ),
                         SizedBox(
                           height: 10*fem,
                         ),
@@ -400,13 +408,50 @@ class Scene extends StatelessWidget {
                           // wrapperV9B (94:4856)
                           padding: EdgeInsets.fromLTRB(0*fem, 0*fem, 9*fem, 0*fem),
                           width: double.infinity,
-                          child: Row(
+                          child: TextButton(
+                            onPressed: () {
+                              showDialog(
+                                context: context,
+                                builder: (BuildContext context) {
+                                  return AlertDialog(
+                                    title: Text('Are you sure you want to Log Out?',
+                                            style: SafeGoogleFont (
+                                              'Inter',
+                                              fontSize: 16*ffem,
+                                              fontWeight: FontWeight.w600,
+                                              height: 1.5*ffem/fem,
+                                              letterSpacing: -0.32*fem,
+                                              color: const Color(0xff3b3b3b),
+                                            ),
+                                          ),
+                                    content: Text('You will be logged out of your account',
+                                              style: SafeGoogleFont (
+                                                'Inter',
+                                                fontSize: 16*ffem,
+                                                fontWeight: FontWeight.w400,
+                                                height: 1.5*ffem/fem,
+                                                letterSpacing: -0.32*fem,
+                                                color: const Color(0xffaba4a4),
+                                              ),
+                                            ),
+                                    actions: <Widget>[
+                                      TextButton(
+                                        child: const Text('OK'),
+                                        onPressed: () {
+                                          Navigator.push(context,MaterialPageRoute(builder: (context) => const SignScene()));
+                                        },
+                                      ),
+                                    ],
+                                  );
+                                },
+                              );
+                            },
+                            child: Row(
                             crossAxisAlignment: CrossAxisAlignment.center,
                             children: [
-                              Container(
-                                // logoutE6m (94:4857)
-                                margin: EdgeInsets.fromLTRB(0*fem, 0*fem, 269*fem, 0*fem),
-                                child: Text(
+                              Expanded(
+                                child: SizedBox(
+                                  child: Text(
                                   'Log Out',
                                   style: SafeGoogleFont (
                                     'Inter',
@@ -417,6 +462,7 @@ class Scene extends StatelessWidget {
                                     color: const Color(0xff3b3b3b),
                                   ),
                                 ),
+                                )
                               ),
                               SizedBox(
                                 // iconsxHf (94:4858)
@@ -430,6 +476,7 @@ class Scene extends StatelessWidget {
                               ),
                             ],
                           ),
+                          )
                         ),
                         SizedBox(
                           height: 10*fem,
