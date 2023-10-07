@@ -5,30 +5,28 @@ import 'package:google_fonts/google_fonts.dart';
 import 'package:myapp/utils.dart';
 import 'package:myapp/main-page/main-menu.dart';
 
-class WelcomeScreen extends StatelessWidget {
-  const WelcomeScreen({super.key});
+class WelcomeScene extends StatelessWidget {
+  const WelcomeScene({super.key});
   @override
   Widget build(BuildContext context) {
     double baseWidth = 390;
     double fem = MediaQuery.of(context).size.width / baseWidth;
     double ffem = fem * 0.97;
-    return Scaffold(
-      body: SizedBox(
+    return Container(
       width: double.infinity,
       child: Container(
-        // welcomescreenuXw (54:1694)
+        // welcomescreenu3f (54:1694)
         width: double.infinity,
         decoration: BoxDecoration (
           color: Color(0xffffffff),
         ),
         child: Column(
-          crossAxisAlignment: CrossAxisAlignment.end,
+          crossAxisAlignment: CrossAxisAlignment.center,
           children: [
             Container(
-              // autogroup6rtpTJZ (65g2KgYzkNG3kDdWhe6RTP)
-              padding: EdgeInsets.fromLTRB(0*fem, 13*fem, 12*fem, 13*fem),
+              // kotakbiruatasdkM (165:107)
+              padding: EdgeInsets.fromLTRB(0*fem, 0*fem, 12*fem, 0*fem),
               width: double.infinity,
-              height: 147*fem,
               decoration: BoxDecoration (
                 gradient: LinearGradient (
                   begin: Alignment(1, -0.565),
@@ -45,20 +43,20 @@ class WelcomeScreen extends StatelessWidget {
                 ],
               ),
               child: Row(
-                crossAxisAlignment: CrossAxisAlignment.center,
+                crossAxisAlignment: CrossAxisAlignment.start,
                 children: [
                   Container(
-                    // centralmalllogo12hTo (90:32)
-                    width: 247*fem,
-                    height: 61*fem,
+                    // centralmalllogo114Ks (175:19)
+                    width: 266*fem,
+                    height: 147*fem,
                     child: Image.asset(
-                      'assets/main-menu/images/central-mall-logo-1-2.png',
+                      'assets/main-menu/images/central-mall-logo-1-1-Zdb.png',
                       fit: BoxFit.cover,
                     ),
                   ),
                   Container(
-                    // helloreadytogoshoppingdsF (95:353)
-                    margin: EdgeInsets.fromLTRB(0*fem, 0*fem, 0*fem, 49*fem),
+                    // helloreadytogoshoppingPsw (95:353)
+                    margin: EdgeInsets.fromLTRB(0*fem, 13*fem, 0*fem, 0*fem),
                     constraints: BoxConstraints (
                       maxWidth: 112*fem,
                     ),
@@ -79,41 +77,39 @@ class WelcomeScreen extends StatelessWidget {
               ),
             ),
             Container(
-              // autogroupv98vvbT (65g2TLztrarrLCbXdhV98V)
-              padding: EdgeInsets.fromLTRB(13*fem, 28*fem, 13*fem, 45*fem),
+              // autogroupgrjqGB3 (LwYe7S2GEJCgdGhGZLGRJq)
+              padding: EdgeInsets.fromLTRB(13*fem, 14*fem, 13*fem, 45*fem),
               width: double.infinity,
               child: Column(
                 crossAxisAlignment: CrossAxisAlignment.center,
                 children: [
                   Container(
-                    // horizontalwelcomerV7 (132:11779)
-                    margin: EdgeInsets.fromLTRB(22*fem, 0*fem, 16*fem, 12*fem),
+                    // horizontalwelcomeyr9 (159:73)
+                    margin: EdgeInsets.fromLTRB(24*fem, 0*fem, 25*fem, 26*fem),
                     width: double.infinity,
                     height: 315*fem,
                     child: Container(
-                      // horizontalwelcomeCJ5 (132:11777)
-                      width: 686*fem,
+                      // horizontalwelcomeKQD (132:11777)
+                      width: 630*fem,
                       height: double.infinity,
                       child: ListView(
                         scrollDirection: Axis.horizontal,
                         children: [
                           Container(
-                            // voucher1x2M (93:28)
-                            margin: EdgeInsets.fromLTRB(0*fem, 0*fem, 56*fem, 0*fem),
+                            // voucher1welcomescreenTmK (93:28)
                             width: 315*fem,
                             height: 315*fem,
                             child: Image.asset(
-                              'assets/main-menu/images/voucher-1.png',
+                              'assets/main-menu/images/voucher-1-welcome-screen.png',
                               fit: BoxFit.cover,
                             ),
                           ),
                           Container(
-                            // voucher25sf (94:5245)
+                            // voucher2welcomescreeno4V (94:5245)
                             width: 315*fem,
                             height: 315*fem,
                             child: Image.asset(
-                              'assets/main-menu/images/voucher-2.png',
-                              fit: BoxFit.cover,
+                              'assets/main-menu/images/voucher-2-welcome-screen.png',
                             ),
                           ),
                         ],
@@ -121,7 +117,7 @@ class WelcomeScreen extends StatelessWidget {
                     ),
                   ),
                   Container(
-                    // frame1qrq (58:1792)
+                    // frame198M (58:1792)
                     margin: EdgeInsets.fromLTRB(153*fem, 0*fem, 175*fem, 24*fem),
                     width: double.infinity,
                     height: 8*fem,
@@ -129,7 +125,7 @@ class WelcomeScreen extends StatelessWidget {
                       crossAxisAlignment: CrossAxisAlignment.center,
                       children: [
                         Container(
-                          // stepNbs (58:1793)
+                          // stepfsP (58:1793)
                           margin: EdgeInsets.fromLTRB(0*fem, 0*fem, 4*fem, 0*fem),
                           width: 24*fem,
                           height: double.infinity,
@@ -139,7 +135,7 @@ class WelcomeScreen extends StatelessWidget {
                           ),
                         ),
                         Container(
-                          // stepi9w (58:1794)
+                          // step1AZ (58:1794)
                           width: 8*fem,
                           height: double.infinity,
                           decoration: BoxDecoration (
@@ -151,7 +147,7 @@ class WelcomeScreen extends StatelessWidget {
                     ),
                   ),
                   Container(
-                    // wrapper4jb (54:1742)
+                    // wrapperA3T (54:1742)
                     margin: EdgeInsets.fromLTRB(16*fem, 0*fem, 17*fem, 89*fem),
                     width: double.infinity,
                     child: Column(
@@ -193,11 +189,11 @@ class WelcomeScreen extends StatelessWidget {
                     ),
                   ),
                   TextButton(
-                    // buttonmXX (54:1745)
-                    onPressed: () {
-                      Navigator.push(
-                        context, MaterialPageRoute(builder: (context) => const MainScene())
-                      );
+                    // button1yB (54:1745)
+                    onPressed: () {Navigator.push(
+                    context,
+                    MaterialPageRoute(builder: (context) => const MainScene()),
+                    );
                     },
                     style: TextButton.styleFrom (
                       padding: EdgeInsets.zero,
@@ -213,7 +209,7 @@ class WelcomeScreen extends StatelessWidget {
                         crossAxisAlignment: CrossAxisAlignment.center,
                         children: [
                           Container(
-                            // buttonUwj (I54:1745;129:21685)
+                            // button8Y1 (I54:1745;129:21685)
                             margin: EdgeInsets.fromLTRB(0*fem, 0*fem, 14*fem, 0*fem),
                             child: Text(
                               'Let’s Get Started',
@@ -228,11 +224,11 @@ class WelcomeScreen extends StatelessWidget {
                             ),
                           ),
                           Container(
-                            // iconscHF (I54:1745;179:1521)
+                            // iconsqBX (I54:1745;179:1521)
                             width: 4*fem,
                             height: 8*fem,
                             child: Image.asset(
-                              'assets/main-menu/images/icons-u7w.png',
+                              'assets/main-menu/images/icons-oNZ.png',
                               width: 4*fem,
                               height: 8*fem,
                             ),
@@ -247,7 +243,6 @@ class WelcomeScreen extends StatelessWidget {
           ],
         ),
       ),
-      )
           );
   }
 }

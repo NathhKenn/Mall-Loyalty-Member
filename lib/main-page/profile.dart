@@ -13,7 +13,7 @@ class Scene extends StatelessWidget {
     return Container(
       width: double.infinity,
       child: Container(
-        // profileDDT (93:34)
+        // profileyzq (93:34)
         width: double.infinity,
         decoration: BoxDecoration (
           color: Color(0xffffffff),
@@ -22,88 +22,57 @@ class Scene extends StatelessWidget {
           crossAxisAlignment: CrossAxisAlignment.center,
           children: [
             Container(
-              // wrapper4zm (94:3679)
+              // autogroupdpv5Wzm (LwYaXsKT4m5Y4T4E1QDpv5)
               width: double.infinity,
-              height: 108*fem,
-              decoration: BoxDecoration (
-                gradient: LinearGradient (
-                  begin: Alignment(0, -1),
-                  end: Alignment(0, 1),
-                  colors: <Color>[Color(0xff3077e2), Color(0xff5a96e3)],
-                  stops: <double>[0, 1],
+              height: 110*fem,
+              child: Container(
+                // kotakbiruatasTv1 (165:101)
+                padding: EdgeInsets.fromLTRB(17*fem, 67*fem, 17*fem, 11*fem),
+                width: double.infinity,
+                height: double.infinity,
+                decoration: BoxDecoration (
+                  gradient: LinearGradient (
+                    begin: Alignment(0, -1),
+                    end: Alignment(0, 1),
+                    colors: <Color>[Color(0xff5a96e3), Color(0xff3077e3)],
+                    stops: <double>[0, 1],
+                  ),
                 ),
-              ),
-              child: Stack(
-                children: [
-                  Positioned(
-                    // label9mK (I94:3679;437:3723)
-                    left: 16*fem,
-                    top: 60*fem,
-                    child: Align(
-                      child: SizedBox(
-                        width: 58*fem,
-                        height: 32*fem,
-                        child: Text(
-                          'Profile',
-                          style: SafeGoogleFont (
-                            'Inter',
-                            fontSize: 20*ffem,
-                            fontWeight: FontWeight.w400,
-                            height: 1.6*ffem/fem,
-                            letterSpacing: -0.4*fem,
-                            color: Color(0xffffffff),
-                          ),
-                        ),
-                      ),
-                    ),
+                child: Text(
+                  'Profile',
+                  style: SafeGoogleFont (
+                    'Inter',
+                    fontSize: 20*ffem,
+                    fontWeight: FontWeight.w600,
+                    height: 1.6*ffem/fem,
+                    letterSpacing: -0.4*fem,
+                    color: Color(0xffffffff),
                   ),
-                  Positioned(
-                    // profilebtD (94:4875)
-                    left: 16*fem,
-                    top: 60*fem,
-                    child: Align(
-                      child: SizedBox(
-                        width: 60*fem,
-                        height: 32*fem,
-                        child: Text(
-                          'Profile',
-                          style: SafeGoogleFont (
-                            'Inter',
-                            fontSize: 20*ffem,
-                            fontWeight: FontWeight.w600,
-                            height: 1.6*ffem/fem,
-                            letterSpacing: -0.4*fem,
-                            color: Color(0xffffffff),
-                          ),
-                        ),
-                      ),
-                    ),
-                  ),
-                ],
+                ),
               ),
             ),
             Container(
-              // autogroupdscqJ1w (65fyPBcks2ugD7e9xqdSCq)
-              padding: EdgeInsets.fromLTRB(0*fem, 23*fem, 0*fem, 59*fem),
+              // autogroupnsfpfmB (LwYbRqpr96yWJ4up4vnsfP)
+              padding: EdgeInsets.fromLTRB(0*fem, 21*fem, 0*fem, 119*fem),
               width: double.infinity,
               child: Column(
-                crossAxisAlignment: CrossAxisAlignment.center,
+                crossAxisAlignment: CrossAxisAlignment.start,
                 children: [
                   Container(
-                    // autogroup3xzj1S9 (65fxascb5tr8Ka4kgK3XZj)
-                    margin: EdgeInsets.fromLTRB(0*fem, 0*fem, 130*fem, 27*fem),
+                    // autogroup49szPSH (LwYafSw9tX4f425R1v49SZ)
+                    margin: EdgeInsets.fromLTRB(0*fem, 0*fem, 0*fem, 27*fem),
                     padding: EdgeInsets.fromLTRB(40*fem, 0*fem, 0*fem, 0*fem),
                     width: 260*fem,
                     height: 76*fem,
                     child: Container(
-                      // frame182vJD (106:232)
+                      // frame182hSy (106:232)
                       width: double.infinity,
                       height: double.infinity,
                       child: Row(
                         crossAxisAlignment: CrossAxisAlignment.end,
                         children: [
                           Container(
-                            // profilepicek1 (94:4823)
+                            // profilepiced7 (94:4823)
                             margin: EdgeInsets.fromLTRB(0*fem, 0*fem, 19*fem, 1*fem),
                             width: 70*fem,
                             height: 70*fem,
@@ -119,20 +88,20 @@ class Scene extends StatelessWidget {
                             ),
                           ),
                           Container(
-                            // autogroupjkxhLMw (65fxrnKkHYMWeRca1EjkxH)
+                            // autogroupudmjws7 (LwYarcHDv1W8ZLk8ipudMj)
                             width: 131*fem,
                             height: double.infinity,
                             child: Column(
                               crossAxisAlignment: CrossAxisAlignment.start,
                               children: [
                                 Container(
-                                  // autogroupdh6qHHB (65fxy2eLZxVi9PWYF3dh6q)
+                                  // autogroup4ksmt1f (LwYaywQLtPeCmfvqxi4kSM)
                                   width: double.infinity,
                                   height: 52*fem,
                                   child: Stack(
                                     children: [
                                       Positioned(
-                                        // email1ys (94:4819)
+                                        // emailciM (94:4819)
                                         left: 0*fem,
                                         top: 28*fem,
                                         child: Align(
@@ -154,7 +123,7 @@ class Scene extends StatelessWidget {
                                         ),
                                       ),
                                       Positioned(
-                                        // lastname5yj (94:4818)
+                                        // lastnamehjo (94:4818)
                                         left: 71*fem,
                                         top: 0*fem,
                                         child: Align(
@@ -176,7 +145,7 @@ class Scene extends StatelessWidget {
                                         ),
                                       ),
                                       Positioned(
-                                        // firstnameavV (106:234)
+                                        // firstnameo29 (106:234)
                                         left: 0*fem,
                                         top: 0*fem,
                                         child: Align(
@@ -201,14 +170,14 @@ class Scene extends StatelessWidget {
                                   ),
                                 ),
                                 Container(
-                                  // autogroupmegy5MT (65fy3cM3BCLFn6Vz1yMeGy)
+                                  // autogroupphx55kM (LwYb5Gao3m1tk6Rj3XpHx5)
                                   margin: EdgeInsets.fromLTRB(0*fem, 0*fem, 11*fem, 0*fem),
                                   width: double.infinity,
                                   child: Row(
                                     crossAxisAlignment: CrossAxisAlignment.start,
                                     children: [
                                       Container(
-                                        // editprofilepZw (94:5249)
+                                        // editprofileDLm (94:5249)
                                         margin: EdgeInsets.fromLTRB(0*fem, 0*fem, 19*fem, 0*fem),
                                         child: Text(
                                           'Edit Profile',
@@ -223,7 +192,7 @@ class Scene extends StatelessWidget {
                                         ),
                                       ),
                                       Container(
-                                        // pencillogoLHP (95:387)
+                                        // pencillogoj4D (95:387)
                                         width: 20*fem,
                                         height: 20.54*fem,
                                         child: Image.asset(
@@ -244,7 +213,8 @@ class Scene extends StatelessWidget {
                   Center(
                     // unlockingrewardsoneloyalmember (94:4825)
                     child: Container(
-                      margin: EdgeInsets.fromLTRB(0*fem, 0*fem, 7*fem, 25*fem),
+                      margin: EdgeInsets.fromLTRB(0*fem, 0*fem, 0*fem, 25*fem),
+                      width: double.infinity,
                       constraints: BoxConstraints (
                         maxWidth: 285*fem,
                       ),
@@ -263,14 +233,14 @@ class Scene extends StatelessWidget {
                     ),
                   ),
                   Container(
-                    // wrapperKv1 (94:4842)
+                    // wrappertbK (94:4842)
                     margin: EdgeInsets.fromLTRB(20*fem, 0*fem, 27*fem, 38.5*fem),
                     width: double.infinity,
                     child: Column(
                       crossAxisAlignment: CrossAxisAlignment.center,
                       children: [
                         Container(
-                          // divider3r1 (I94:4843;208:74)
+                          // divideroyB (I94:4843;208:74)
                           width: double.infinity,
                           height: 1*fem,
                           decoration: BoxDecoration (
@@ -281,14 +251,14 @@ class Scene extends StatelessWidget {
                           height: 10*fem,
                         ),
                         Container(
-                          // wrapperb6q (94:4844)
+                          // wrapperYQy (94:4844)
                           padding: EdgeInsets.fromLTRB(0*fem, 0*fem, 9*fem, 0*fem),
                           width: double.infinity,
                           child: Row(
                             crossAxisAlignment: CrossAxisAlignment.center,
                             children: [
                               Container(
-                                // termsconditionswAh (94:4845)
+                                // termsconditions5Qu (94:4845)
                                 margin: EdgeInsets.fromLTRB(0*fem, 0*fem, 182*fem, 0*fem),
                                 child: Text(
                                   'Terms & Conditions',
@@ -303,11 +273,11 @@ class Scene extends StatelessWidget {
                                 ),
                               ),
                               Container(
-                                // icons3Ud (94:4846)
+                                // iconsb8M (94:4846)
                                 width: 6*fem,
                                 height: 12*fem,
                                 child: Image.asset(
-                                  'assets/main-menu/images/icons-ur9.png',
+                                  'assets/main-menu/images/icons-phF.png',
                                   width: 6*fem,
                                   height: 12*fem,
                                 ),
@@ -319,7 +289,7 @@ class Scene extends StatelessWidget {
                           height: 10*fem,
                         ),
                         Container(
-                          // divideraDf (I94:4847;208:74)
+                          // divideriCy (I94:4847;208:74)
                           width: double.infinity,
                           height: 1*fem,
                           decoration: BoxDecoration (
@@ -330,14 +300,14 @@ class Scene extends StatelessWidget {
                           height: 10*fem,
                         ),
                         Container(
-                          // wrappervHX (94:4848)
+                          // wrapperf8D (94:4848)
                           padding: EdgeInsets.fromLTRB(0*fem, 0*fem, 9*fem, 0*fem),
                           width: double.infinity,
                           child: Row(
                             crossAxisAlignment: CrossAxisAlignment.center,
                             children: [
                               Container(
-                                // aboutusfku (94:4849)
+                                // aboutusBsF (94:4849)
                                 margin: EdgeInsets.fromLTRB(0*fem, 0*fem, 258*fem, 0*fem),
                                 child: Text(
                                   'About Us',
@@ -352,11 +322,11 @@ class Scene extends StatelessWidget {
                                 ),
                               ),
                               Container(
-                                // iconszYH (94:4850)
+                                // icons7F7 (94:4850)
                                 width: 6*fem,
                                 height: 12*fem,
                                 child: Image.asset(
-                                  'assets/main-menu/images/icons-KNZ.png',
+                                  'assets/main-menu/images/icons-CUZ.png',
                                   width: 6*fem,
                                   height: 12*fem,
                                 ),
@@ -368,7 +338,7 @@ class Scene extends StatelessWidget {
                           height: 10*fem,
                         ),
                         Container(
-                          // dividerWWd (I94:4851;208:74)
+                          // divider1rH (I94:4851;208:74)
                           width: double.infinity,
                           height: 1*fem,
                           decoration: BoxDecoration (
@@ -379,14 +349,14 @@ class Scene extends StatelessWidget {
                           height: 10*fem,
                         ),
                         Container(
-                          // wrapperesj (94:4852)
+                          // wrapperYrD (94:4852)
                           padding: EdgeInsets.fromLTRB(0*fem, 0*fem, 9*fem, 0*fem),
                           width: double.infinity,
                           child: Row(
                             crossAxisAlignment: CrossAxisAlignment.center,
                             children: [
                               Container(
-                                // changepasswordbY5 (94:4853)
+                                // changepasswordVWZ (94:4853)
                                 margin: EdgeInsets.fromLTRB(0*fem, 0*fem, 192*fem, 0*fem),
                                 child: Text(
                                   'Change Password',
@@ -401,11 +371,11 @@ class Scene extends StatelessWidget {
                                 ),
                               ),
                               Container(
-                                // icons82D (94:4854)
+                                // iconsQdX (94:4854)
                                 width: 6*fem,
                                 height: 12*fem,
                                 child: Image.asset(
-                                  'assets/main-menu/images/icons-BgV.png',
+                                  'assets/main-menu/images/icons-Ct1.png',
                                   width: 6*fem,
                                   height: 12*fem,
                                 ),
@@ -417,7 +387,7 @@ class Scene extends StatelessWidget {
                           height: 10*fem,
                         ),
                         Container(
-                          // dividerfH3 (I94:4855;208:74)
+                          // dividerLXB (I94:4855;208:74)
                           width: double.infinity,
                           height: 1*fem,
                           decoration: BoxDecoration (
@@ -428,14 +398,14 @@ class Scene extends StatelessWidget {
                           height: 10*fem,
                         ),
                         Container(
-                          // wrapper1Lu (94:4856)
+                          // wrapperV9B (94:4856)
                           padding: EdgeInsets.fromLTRB(0*fem, 0*fem, 9*fem, 0*fem),
                           width: double.infinity,
                           child: Row(
                             crossAxisAlignment: CrossAxisAlignment.center,
                             children: [
                               Container(
-                                // logoutMff (94:4857)
+                                // logoutE6m (94:4857)
                                 margin: EdgeInsets.fromLTRB(0*fem, 0*fem, 269*fem, 0*fem),
                                 child: Text(
                                   'Log Out',
@@ -450,11 +420,11 @@ class Scene extends StatelessWidget {
                                 ),
                               ),
                               Container(
-                                // icons5bf (94:4858)
+                                // iconsxHf (94:4858)
                                 width: 6*fem,
                                 height: 12*fem,
                                 child: Image.asset(
-                                  'assets/main-menu/images/icons-qeh.png',
+                                  'assets/main-menu/images/icons.png',
                                   width: 6*fem,
                                   height: 12*fem,
                                 ),
@@ -466,7 +436,7 @@ class Scene extends StatelessWidget {
                           height: 10*fem,
                         ),
                         Container(
-                          // dividerDC5 (I94:4859;208:74)
+                          // dividerV2h (I94:4859;208:74)
                           width: double.infinity,
                           height: 1*fem,
                           decoration: BoxDecoration (
@@ -477,9 +447,10 @@ class Scene extends StatelessWidget {
                     ),
                   ),
                   Center(
-                    // scanbarcodeyBF (95:300)
+                    // scanbarcodeRww (95:300)
                     child: Container(
-                      margin: EdgeInsets.fromLTRB(0*fem, 0*fem, 246*fem, 34.5*fem),
+                      margin: EdgeInsets.fromLTRB(0*fem, 0*fem, 0*fem, 34.5*fem),
+                      width: double.infinity,
                       child: Text(
                         'Scan Barcode',
                         textAlign: TextAlign.center,
@@ -495,30 +466,13 @@ class Scene extends StatelessWidget {
                     ),
                   ),
                   Container(
-                    // barcode1gbT (94:4871)
-                    margin: EdgeInsets.fromLTRB(0*fem, 0*fem, 5*fem, 59*fem),
+                    // barcodew9b (94:4871)
+                    margin: EdgeInsets.fromLTRB(25*fem, 0*fem, 0*fem, 0*fem),
                     width: 335*fem,
                     height: 116*fem,
                     child: Image.asset(
-                      'assets/main-menu/images/barcode-1.png',
+                      'assets/main-menu/images/barcode.png',
                       fit: BoxFit.cover,
-                    ),
-                  ),
-                  Container(
-                    // frame178R3F (93:81)
-                    margin: EdgeInsets.fromLTRB(232*fem, 0*fem, 80*fem, 0*fem),
-                    width: double.infinity,
-                    child: Center(
-                      // rectangle2mcu (93:82)
-                      child: SizedBox(
-                        width: double.infinity,
-                        height: 1*fem,
-                        child: Container(
-                          decoration: BoxDecoration (
-                            color: Color(0x331d1d1d),
-                          ),
-                        ),
-                      ),
                     ),
                   ),
                 ],
