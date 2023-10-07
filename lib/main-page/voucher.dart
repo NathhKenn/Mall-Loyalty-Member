@@ -1,8 +1,8 @@
 import 'package:flutter/material.dart';
 import 'package:myapp/utils.dart';
 
-class Scene extends StatelessWidget {
-  const Scene({super.key});
+class VoucherScene extends StatelessWidget {
+  const VoucherScene({super.key});
 
   @override
   Widget build(BuildContext context) {
@@ -99,8 +99,8 @@ class Scene extends StatelessWidget {
                       decoration: BoxDecoration (
                         borderRadius: BorderRadius.circular(15*fem),
                       ),
-                      child: Row(
-                        crossAxisAlignment: CrossAxisAlignment.center,
+                      child: ListView(
+                        scrollDirection: Axis.horizontal,
                         children: [
                           Container(
                             // horizontalvoucher1rW5 (94:5283)
@@ -299,7 +299,7 @@ class Scene extends StatelessWidget {
                   SizedBox(
                     // verticalvouchersE9 (159:79)
                     width: double.infinity,
-                    height: 351*fem,
+                    height: 328*fem,
                     child: Container(
                       // groupvertialvoucherRmT (95:388)
                       width: double.infinity,
@@ -307,41 +307,72 @@ class Scene extends StatelessWidget {
                       decoration: BoxDecoration (
                         borderRadius: BorderRadius.circular(15*fem),
                       ),
-                      child: Column(
-                        crossAxisAlignment: CrossAxisAlignment.center,
+                      child: ListView(
+                        scrollDirection: Axis.vertical,
                         children: [
                           SizedBox(
                             // verticalvoucher1Zcm (94:5191)
                             width: 361*fem,
-                            height: 193*fem,
+                            height: 117*fem,
                             child: ClipRRect(
                               borderRadius: BorderRadius.circular(15*fem),
                               child: Image.asset(
                                 'assets/main-menu/images/vertical-voucher-1.png',
-                                fit: BoxFit.cover,
                               ),
                             ),
                           ),
                           SizedBox(
                             // verticalvoucher2Hof (94:5244)
                             width: 361*fem,
-                            height: 193*fem,
+                            height: 117*fem,
                             child: ClipRRect(
                               borderRadius: BorderRadius.circular(15*fem),
                               child: Image.asset(
                                 'assets/main-menu/images/vertical-voucher-2.png',
-                                fit: BoxFit.cover,
                               ),
                             ),
                           ),
                           SizedBox(
                             // verticalvoucher3Rus (94:5284)
                             width: 361*fem,
-                            height: 193*fem,
+                            height: 117*fem,
                             child: ClipRRect(
                               borderRadius: BorderRadius.circular(15*fem),
                               child: Image.asset(
                                 'assets/main-menu/images/vertical-voucher-3.png',
+                              ),
+                            ),
+                          ),
+                          SizedBox(
+                            // verticalvoucher3Rus (94:5284)
+                            width: 361*fem,
+                            height: 117*fem,
+                            child: ClipRRect(
+                              borderRadius: BorderRadius.circular(15*fem),
+                              child: Image.asset(
+                                'assets/main-menu/images/vertical-voucher-4.png',
+                              ),
+                            ),
+                          ),
+                          SizedBox(
+                            // verticalvoucher3Rus (94:5284)
+                            width: 361*fem,
+                            height: 117*fem,
+                            child: ClipRRect(
+                              borderRadius: BorderRadius.circular(15*fem),
+                              child: Image.asset(
+                                'assets/main-menu/images/vertical-voucher-5.png',
+                              ),
+                            ),
+                          ),
+                          SizedBox(
+                            // verticalvoucher3Rus (94:5284)
+                            width: 361*fem,
+                            height: 117*fem,
+                            child: ClipRRect(
+                              borderRadius: BorderRadius.circular(15*fem),
+                              child: Image.asset(
+                                'assets/main-menu/images/vertical-voucher-6.png',
                               ),
                             ),
                           ),

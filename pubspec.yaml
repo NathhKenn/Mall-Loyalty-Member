@@ -212,6 +212,7 @@ flutter:
     - assets/main-menu/images/gambar-voucher-main-menu-bg.png
     - assets/main-menu/images/xxi-1.png
     - assets/main-menu/images/voucher-1-welcome-screen.png
+    - assets/main-menu/images/voucher-3-welcome-screen.png
     - assets/main-menu/images/horizontal-voucher-5-bg.png
     - assets/main-menu/images/vertical-voucher-3.png
     - assets/main-menu/images/xiaomi.png
@@ -226,6 +227,9 @@ flutter:
     - assets/main-menu/images/ellipse-4.png
     - assets/main-menu/images/vertical-voucher-2.png
     - assets/main-menu/images/vertical-voucher-1.png
+    - assets/main-menu/images/vertical-voucher-4.png
+    - assets/main-menu/images/vertical-voucher-5.png
+    - assets/main-menu/images/vertical-voucher-6.png
     - assets/main-menu/images/starbucks-1.png
     - assets/main-menu/images/horizontal-main-menu-3.png
     - assets/main-menu/images/horizontal-voucher-4.png

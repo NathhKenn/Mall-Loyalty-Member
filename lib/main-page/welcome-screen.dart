@@ -1,23 +1,25 @@
 import 'package:flutter/material.dart';
 import 'package:myapp/utils.dart';
 import 'package:myapp/main-page/main-menu.dart';
+import 'package:myapp/main-page/voucher.dart';
+import 'package:myapp/main-page/profile.dart';
 
 class WelcomeScene extends StatelessWidget {
-  const WelcomeScene({super.key});
+  const WelcomeScene({Key? key}) : super(key: key);
   @override
   Widget build(BuildContext context) {
     double baseWidth = 390;
+    double screenWidth = MediaQuery.of(context).size.width;
     double fem = MediaQuery.of(context).size.width / baseWidth;
     double ffem = fem * 0.97;
-    return SizedBox(
-      width: double.infinity,
-      child: Container(
-        // welcomescreenu3f (54:1694)
-        width: double.infinity,
+    
+    return Scaffold(
+      body: Container(
         decoration: const BoxDecoration (
           color: Color(0xffffffff),
         ),
-        child: Column(
+        child: SingleChildScrollView(
+          child: Column(
           crossAxisAlignment: CrossAxisAlignment.center,
           children: [
             Container(
@@ -107,6 +109,14 @@ class WelcomeScene extends StatelessWidget {
                             height: 315*fem,
                             child: Image.asset(
                               'assets/main-menu/images/voucher-2-welcome-screen.png',
+                            ),
+                          ),
+                          SizedBox(
+                            // voucher2welcomescreeno4V (94:5245)
+                            width: 315*fem,
+                            height: 315*fem,
+                            child: Image.asset(
+                              'assets/main-menu/images/voucher-3-welcome-screen.png',
                             ),
                           ),
                         ],
@@ -240,6 +250,7 @@ class WelcomeScene extends StatelessWidget {
           ],
         ),
       ),
+      )
           );
   }
 }
