@@ -283,7 +283,7 @@ class SignInScene extends State<SignScene>{
                 onPressed: () {
                   Data data = Data();
                   if (emailController.text == data.getEmail() && passwordController.text == data.getPassword()){
-                      Navigator.push(context,MaterialPageRoute(builder: (context) => const WelcomeScene()));
+                      Navigator.push(context,MaterialPageRoute(builder: (context) => const WelcomeScreen()));
                   }
                   else{
                       showDialog(

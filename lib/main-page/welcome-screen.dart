@@ -5,10 +5,9 @@ import 'package:google_fonts/google_fonts.dart';
 import 'package:myapp/utils.dart';
 import 'package:myapp/main-page/main-menu.dart';
 
-class WelcomeScene extends StatelessWidget {
-  const WelcomeScene({super.key});
+class WelcomeScreen extends StatelessWidget {
+  const WelcomeScreen({super.key});
   @override
-
   Widget build(BuildContext context) {
     double baseWidth = 390;
     double fem = MediaQuery.of(context).size.width / baseWidth;
@@ -89,10 +88,14 @@ class WelcomeScene extends StatelessWidget {
                   Container(
                     // horizontalwelcomerV7 (132:11779)
                     margin: EdgeInsets.fromLTRB(22*fem, 0*fem, 16*fem, 12*fem),
+                    width: double.infinity,
                     height: 315*fem,
-                    child: ListView(
-                      scrollDirection: Axis.horizontal,
+                    child: Container(
                       // horizontalwelcomeCJ5 (132:11777)
+                      width: 686*fem,
+                      height: double.infinity,
+                      child: ListView(
+                        scrollDirection: Axis.horizontal,
                         children: [
                           Container(
                             // voucher1x2M (93:28)
@@ -104,7 +107,7 @@ class WelcomeScene extends StatelessWidget {
                               fit: BoxFit.cover,
                             ),
                           ),
-                          SizedBox(
+                          Container(
                             // voucher25sf (94:5245)
                             width: 315*fem,
                             height: 315*fem,
@@ -116,19 +119,31 @@ class WelcomeScene extends StatelessWidget {
                         ],
                       ),
                     ),
+                  ),
                   Container(
-                  margin: EdgeInsets.fromLTRB(153*fem, 0*fem, 175*fem, 24*fem),
-                  width: double.infinity,
-                  height: 8*fem,
-                  child: Row(
+                    // frame1qrq (58:1792)
+                    margin: EdgeInsets.fromLTRB(153*fem, 0*fem, 175*fem, 24*fem),
+                    width: double.infinity,
+                    height: 8*fem,
+                    child: Row(
                       crossAxisAlignment: CrossAxisAlignment.center,
-                      children:[
+                      children: [
                         Container(
+                          // stepNbs (58:1793)
                           margin: EdgeInsets.fromLTRB(0*fem, 0*fem, 4*fem, 0*fem),
                           width: 24*fem,
                           height: double.infinity,
-                          decoration: BoxDecoration(
+                          decoration: BoxDecoration (
                             color: Color(0xff3077e2),
+                            borderRadius: BorderRadius.circular(12*fem),
+                          ),
+                        ),
+                        Container(
+                          // stepi9w (58:1794)
+                          width: 8*fem,
+                          height: double.infinity,
+                          decoration: BoxDecoration (
+                            color: Color(0xffd5d5d5),
                             borderRadius: BorderRadius.circular(12*fem),
                           ),
                         ),
@@ -136,23 +151,52 @@ class WelcomeScene extends StatelessWidget {
                     ),
                   ),
                   Container(
-                  // stepi9w (58:1794)
-                  width: 8*fem,
-                  height: double.infinity,
-                  decoration: BoxDecoration (
-                      color: Color(0xffd5d5d5),
-                      borderRadius: BorderRadius.circular(12*fem),
+                    // wrapper4jb (54:1742)
+                    margin: EdgeInsets.fromLTRB(16*fem, 0*fem, 17*fem, 89*fem),
+                    width: double.infinity,
+                    child: Column(
+                      crossAxisAlignment: CrossAxisAlignment.start,
+                      children: [
+                        Container(
+                          // welcometocentralmallmembership (54:1743)
+                          margin: EdgeInsets.fromLTRB(0*fem, 0*fem, 0*fem, 8*fem),
+                          child: Text(
+                            'Welcome to Central Mall Membership',
+                            style: SafeGoogleFont (
+                              'Inter',
+                              fontSize: 19*ffem,
+                              fontWeight: FontWeight.w600,
+                              height: 1.6842105263*ffem/fem,
+                              letterSpacing: -0.38*fem,
+                              color: Color(0xff3b3b3b),
+                            ),
+                          ),
+                        ),
+                        Container(
+                          // areyoureadytoenjoyafantasticsh (54:1744)
+                          constraints: BoxConstraints (
+                            maxWidth: 328*fem,
+                          ),
+                          child: Text(
+                            'Are you ready to enjoy a fantastic shopping experience with rewards, exclusive offers, and special privileges? We\'re excited to have you as part of our loyal shopper community!',
+                            style: SafeGoogleFont (
+                              'Inter',
+                              fontSize: 16*ffem,
+                              fontWeight: FontWeight.w400,
+                              height: 1.5*ffem/fem,
+                              letterSpacing: -0.32*fem,
+                              color: Color(0xff585858),
+                            ),
+                          ),
+                        ),
+                      ],
+                    ),
                   ),
-                  ),
-                ]
-              ),
-            ),
-            TextButton(
+                  TextButton(
                     // buttonmXX (54:1745)
                     onPressed: () {
                       Navigator.push(
-                        context,
-                        MaterialPageRoute(builder: (context) => const MainScene()),
+                        context, MaterialPageRoute(builder: (context) => const MainScene())
                       );
                     },
                     style: TextButton.styleFrom (
@@ -197,10 +241,13 @@ class WelcomeScene extends StatelessWidget {
                       ),
                     ),
                   ),
+                ],
+              ),
+            ),
           ],
-        )
+        ),
+      ),
       )
-      )
-    );
+          );
   }
 }
