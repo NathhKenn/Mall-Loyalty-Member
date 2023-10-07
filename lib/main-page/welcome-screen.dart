@@ -200,7 +200,7 @@ class WelcomeScene extends StatelessWidget {
                     // button1yB (54:1745)
                     onPressed: () {Navigator.push(
                     context,
-                    MaterialPageRoute(builder: (context) => const BarcodeScene()),
+                    MaterialPageRoute(builder: (context) => const MainScene()),
                     );
                     },
                     style: TextButton.styleFrom (
