@@ -104,7 +104,7 @@ class WelcomeScene extends StatelessWidget {
                               fit: BoxFit.cover,
                             ),
                           ),
-                          Container(
+                          SizedBox(
                             // voucher25sf (94:5245)
                             width: 315*fem,
                             height: 315*fem,
@@ -116,81 +116,38 @@ class WelcomeScene extends StatelessWidget {
                         ],
                       ),
                     ),
-                ]
-                  ),
                   Container(
-                    // frame1qrq (58:1792)
-                    margin: EdgeInsets.fromLTRB(153*fem, 0*fem, 175*fem, 24*fem),
-                    width: double.infinity,
-                    height: 8*fem,
-                    child: Row(
+                  margin: EdgeInsets.fromLTRB(153*fem, 0*fem, 175*fem, 24*fem),
+                  width: double.infinity,
+                  height: 8*fem,
+                  child: Row(
                       crossAxisAlignment: CrossAxisAlignment.center,
-                      children: [
+                      children:[
                         Container(
-                          // stepNbs (58:1793)
                           margin: EdgeInsets.fromLTRB(0*fem, 0*fem, 4*fem, 0*fem),
                           width: 24*fem,
                           height: double.infinity,
-                          decoration: BoxDecoration (
+                          decoration: BoxDecoration(
                             color: Color(0xff3077e2),
                             borderRadius: BorderRadius.circular(12*fem),
                           ),
                         ),
-                        Container(
-                          // stepi9w (58:1794)
-                          width: 8*fem,
-                          height: double.infinity,
-                          decoration: BoxDecoration (
-                            color: Color(0xffd5d5d5),
-                            borderRadius: BorderRadius.circular(12*fem),
-                          ),
-                        ),
                       ],
                     ),
                   ),
                   Container(
-                    // wrapper4jb (54:1742)
-                    margin: EdgeInsets.fromLTRB(16*fem, 0*fem, 17*fem, 89*fem),
-                    width: double.infinity,
-                    child: Column(
-                      crossAxisAlignment: CrossAxisAlignment.start,
-                      children: [
-                        Container(
-                          // welcometocentralmallmembership (54:1743)
-                          margin: EdgeInsets.fromLTRB(0*fem, 0*fem, 0*fem, 8*fem),
-                          child: Text(
-                            'Welcome to Central Mall Membership',
-                            style: SafeGoogleFont (
-                              'Inter',
-                              fontSize: 19*ffem,
-                              fontWeight: FontWeight.w600,
-                              height: 1.6842105263*ffem/fem,
-                              letterSpacing: -0.38*fem,
-                              color: Color(0xff3b3b3b),
-                            ),
-                          ),
-                        ),
-                        Container(
-                          // areyoureadytoenjoyafantasticsh (54:1744)
-                          constraints: BoxConstraints (
-                            maxWidth: 328*fem,
-                          ),
-                          child: Text(
-                            'Are you ready to enjoy a fantastic shopping experience with rewards, exclusive offers, and special privileges? We\'re excited to have you as part of our loyal shopper community!',
-                            style: SafeGoogleFont (
-                              'Inter',
-                              fontSize: 16*ffem,
-                              fontWeight: FontWeight.w400,
-                              height: 1.5*ffem/fem,
-                              letterSpacing: -0.32*fem,
-                              color: Color(0xff585858),
-                            ),
-                          ),
-                        ),
-                      ],
-                    ),
+                  // stepi9w (58:1794)
+                  width: 8*fem,
+                  height: double.infinity,
+                  decoration: BoxDecoration (
+                      color: Color(0xffd5d5d5),
+                      borderRadius: BorderRadius.circular(12*fem),
                   ),
-                  TextButton(
+                  ),
+                ]
+              ),
+            ),
+            TextButton(
                     // buttonmXX (54:1745)
                     onPressed: () {
                       Navigator.push(
@@ -240,10 +197,9 @@ class WelcomeScene extends StatelessWidget {
                       ),
                     ),
                   ),
-            )
-                ],
-              ),
-            ),
+          ],
+        )
+      )
       )
     );
   }
