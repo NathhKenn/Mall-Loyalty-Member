@@ -1,27 +1,26 @@
 import 'package:flutter/material.dart';
-import 'package:flutter/gestures.dart';
-import 'dart:ui';
-import 'package:google_fonts/google_fonts.dart';
 import 'package:myapp/utils.dart';
 
 class Scene extends StatelessWidget {
+  const Scene({super.key});
+
   @override
   Widget build(BuildContext context) {
     double baseWidth = 390;
     double fem = MediaQuery.of(context).size.width / baseWidth;
     double ffem = fem * 0.97;
-    return Container(
+    return SizedBox(
       width: double.infinity,
       child: Container(
         // voucherH1j (94:5103)
         width: double.infinity,
-        decoration: BoxDecoration (
+        decoration: const BoxDecoration (
           color: Color(0xffffffff),
         ),
         child: Column(
           crossAxisAlignment: CrossAxisAlignment.center,
           children: [
-            Container(
+            SizedBox(
               // autogroupm77ocph (LwYczt3VJfQdoK6v6eM77o)
               width: double.infinity,
               height: 110*fem,
@@ -43,7 +42,7 @@ class Scene extends StatelessWidget {
                             fontWeight: FontWeight.w600,
                             height: 1.6*ffem/fem,
                             letterSpacing: -0.4*fem,
-                            color: Color(0xffffffff),
+                            color: const Color(0xffffffff),
                           ),
                         ),
                       ),
@@ -57,7 +56,7 @@ class Scene extends StatelessWidget {
                       padding: EdgeInsets.fromLTRB(17*fem, 67*fem, 17*fem, 11*fem),
                       width: 390*fem,
                       height: 110*fem,
-                      decoration: BoxDecoration (
+                      decoration: const BoxDecoration (
                         gradient: LinearGradient (
                           begin: Alignment(0, -1),
                           end: Alignment(0, 1),
@@ -73,7 +72,7 @@ class Scene extends StatelessWidget {
                           fontWeight: FontWeight.w600,
                           height: 1.6*ffem/fem,
                           letterSpacing: -0.4*fem,
-                          color: Color(0xffffffff),
+                          color: const Color(0xffffffff),
                         ),
                       ),
                     ),
@@ -109,7 +108,7 @@ class Scene extends StatelessWidget {
                             height: 203*fem,
                             decoration: BoxDecoration (
                               borderRadius: BorderRadius.circular(15*fem),
-                              image: DecorationImage (
+                              image: const DecorationImage (
                                 fit: BoxFit.cover,
                                 image: AssetImage (
                                   'assets/main-menu/images/horizontal-voucher-1-bg.png',
@@ -117,7 +116,7 @@ class Scene extends StatelessWidget {
                               ),
                               boxShadow: [
                                 BoxShadow(
-                                  color: Color(0x3f000000),
+                                  color: const Color(0x3f000000),
                                   offset: Offset(0*fem, 4*fem),
                                   blurRadius: 2*fem,
                                 ),
@@ -133,7 +132,7 @@ class Scene extends StatelessWidget {
                             height: 203*fem,
                             decoration: BoxDecoration (
                               borderRadius: BorderRadius.circular(15*fem),
-                              image: DecorationImage (
+                              image: const DecorationImage (
                                 fit: BoxFit.cover,
                                 image: AssetImage (
                                   'assets/main-menu/images/horizontal-voucher-2-bg.png',
@@ -141,7 +140,7 @@ class Scene extends StatelessWidget {
                               ),
                               boxShadow: [
                                 BoxShadow(
-                                  color: Color(0x3f000000),
+                                  color: const Color(0x3f000000),
                                   offset: Offset(0*fem, 4*fem),
                                   blurRadius: 2*fem,
                                 ),
@@ -151,7 +150,7 @@ class Scene extends StatelessWidget {
                           SizedBox(
                             width: 0.4*fem,
                           ),
-                          Container(
+                          SizedBox(
                             // autogrouppbx5CTT (LwYdVNE2Mbp6iWPVpjPbx5)
                             width: 994*fem,
                             height: double.infinity,
@@ -168,7 +167,7 @@ class Scene extends StatelessWidget {
                                       child: Container(
                                         decoration: BoxDecoration (
                                           borderRadius: BorderRadius.circular(15*fem),
-                                          image: DecorationImage (
+                                          image: const DecorationImage (
                                             fit: BoxFit.cover,
                                             image: AssetImage (
                                               'assets/main-menu/images/horizontal-voucher-5-bg.png',
@@ -176,7 +175,7 @@ class Scene extends StatelessWidget {
                                           ),
                                           boxShadow: [
                                             BoxShadow(
-                                              color: Color(0x3f000000),
+                                              color: const Color(0x3f000000),
                                               offset: Offset(0*fem, 4*fem),
                                               blurRadius: 2*fem,
                                             ),
@@ -242,7 +241,7 @@ class Scene extends StatelessWidget {
                           width: 24*fem,
                           height: double.infinity,
                           decoration: BoxDecoration (
-                            color: Color(0xff3077e2),
+                            color: const Color(0xff3077e2),
                             borderRadius: BorderRadius.circular(12*fem),
                           ),
                         ),
@@ -254,7 +253,7 @@ class Scene extends StatelessWidget {
                           width: 8*fem,
                           height: double.infinity,
                           decoration: BoxDecoration (
-                            color: Color(0xffd5d5d5),
+                            color: const Color(0xffd5d5d5),
                             borderRadius: BorderRadius.circular(12*fem),
                           ),
                         ),
@@ -266,7 +265,7 @@ class Scene extends StatelessWidget {
                           width: 8*fem,
                           height: double.infinity,
                           decoration: BoxDecoration (
-                            color: Color(0xffd5d5d5),
+                            color: const Color(0xffd5d5d5),
                             borderRadius: BorderRadius.circular(12*fem),
                           ),
                         ),
@@ -278,7 +277,7 @@ class Scene extends StatelessWidget {
                           width: 8*fem,
                           height: double.infinity,
                           decoration: BoxDecoration (
-                            color: Color(0xffd5d5d5),
+                            color: const Color(0xffd5d5d5),
                             borderRadius: BorderRadius.circular(12*fem),
                           ),
                         ),
@@ -290,14 +289,14 @@ class Scene extends StatelessWidget {
                           width: 8*fem,
                           height: double.infinity,
                           decoration: BoxDecoration (
-                            color: Color(0xffd5d5d5),
+                            color: const Color(0xffd5d5d5),
                             borderRadius: BorderRadius.circular(12*fem),
                           ),
                         ),
                       ],
                     ),
                   ),
-                  Container(
+                  SizedBox(
                     // verticalvouchersE9 (159:79)
                     width: double.infinity,
                     height: 351*fem,
@@ -311,7 +310,7 @@ class Scene extends StatelessWidget {
                       child: Column(
                         crossAxisAlignment: CrossAxisAlignment.center,
                         children: [
-                          Container(
+                          SizedBox(
                             // verticalvoucher1Zcm (94:5191)
                             width: 361*fem,
                             height: 193*fem,
@@ -323,7 +322,7 @@ class Scene extends StatelessWidget {
                               ),
                             ),
                           ),
-                          Container(
+                          SizedBox(
                             // verticalvoucher2Hof (94:5244)
                             width: 361*fem,
                             height: 193*fem,
@@ -335,7 +334,7 @@ class Scene extends StatelessWidget {
                               ),
                             ),
                           ),
-                          Container(
+                          SizedBox(
                             // verticalvoucher3Rus (94:5284)
                             width: 361*fem,
                             height: 193*fem,

@@ -1,7 +1,4 @@
 import 'package:flutter/material.dart';
-import 'package:flutter/gestures.dart';
-import 'dart:ui';
-import 'package:google_fonts/google_fonts.dart';
 import 'package:myapp/utils.dart';
 import 'package:myapp/main-page/main-menu.dart';
 
@@ -12,12 +9,12 @@ class WelcomeScene extends StatelessWidget {
     double baseWidth = 390;
     double fem = MediaQuery.of(context).size.width / baseWidth;
     double ffem = fem * 0.97;
-    return Container(
+    return SizedBox(
       width: double.infinity,
       child: Container(
         // welcomescreenu3f (54:1694)
         width: double.infinity,
-        decoration: BoxDecoration (
+        decoration: const BoxDecoration (
           color: Color(0xffffffff),
         ),
         child: Column(
@@ -28,7 +25,7 @@ class WelcomeScene extends StatelessWidget {
               padding: EdgeInsets.fromLTRB(0*fem, 0*fem, 12*fem, 0*fem),
               width: double.infinity,
               decoration: BoxDecoration (
-                gradient: LinearGradient (
+                gradient: const LinearGradient (
                   begin: Alignment(1, -0.565),
                   end: Alignment(-1, 0.234),
                   colors: <Color>[Color(0xff0d86f7), Color(0xffdcecfb)],
@@ -36,7 +33,7 @@ class WelcomeScene extends StatelessWidget {
                 ),
                 boxShadow: [
                   BoxShadow(
-                    color: Color(0x3f000000),
+                    color: const Color(0x3f000000),
                     offset: Offset(0*fem, 4*fem),
                     blurRadius: 2*fem,
                   ),
@@ -45,7 +42,7 @@ class WelcomeScene extends StatelessWidget {
               child: Row(
                 crossAxisAlignment: CrossAxisAlignment.start,
                 children: [
-                  Container(
+                  SizedBox(
                     // centralmalllogo114Ks (175:19)
                     width: 266*fem,
                     height: 147*fem,
@@ -69,7 +66,7 @@ class WelcomeScene extends StatelessWidget {
                         fontWeight: FontWeight.w900,
                         height: 1.2*ffem/fem,
                         letterSpacing: -0.4*fem,
-                        color: Color(0xffffffff),
+                        color: const Color(0xffffffff),
                       ),
                     ),
                   ),
@@ -88,14 +85,14 @@ class WelcomeScene extends StatelessWidget {
                     margin: EdgeInsets.fromLTRB(24*fem, 0*fem, 25*fem, 26*fem),
                     width: double.infinity,
                     height: 315*fem,
-                    child: Container(
+                    child: SizedBox(
                       // horizontalwelcomeKQD (132:11777)
                       width: 630*fem,
                       height: double.infinity,
                       child: ListView(
                         scrollDirection: Axis.horizontal,
                         children: [
-                          Container(
+                          SizedBox(
                             // voucher1welcomescreenTmK (93:28)
                             width: 315*fem,
                             height: 315*fem,
@@ -104,7 +101,7 @@ class WelcomeScene extends StatelessWidget {
                               fit: BoxFit.cover,
                             ),
                           ),
-                          Container(
+                          SizedBox(
                             // voucher2welcomescreeno4V (94:5245)
                             width: 315*fem,
                             height: 315*fem,
@@ -130,7 +127,7 @@ class WelcomeScene extends StatelessWidget {
                           width: 24*fem,
                           height: double.infinity,
                           decoration: BoxDecoration (
-                            color: Color(0xff3077e2),
+                            color: const Color(0xff3077e2),
                             borderRadius: BorderRadius.circular(12*fem),
                           ),
                         ),
@@ -139,7 +136,7 @@ class WelcomeScene extends StatelessWidget {
                           width: 8*fem,
                           height: double.infinity,
                           decoration: BoxDecoration (
-                            color: Color(0xffd5d5d5),
+                            color: const Color(0xffd5d5d5),
                             borderRadius: BorderRadius.circular(12*fem),
                           ),
                         ),
@@ -164,7 +161,7 @@ class WelcomeScene extends StatelessWidget {
                               fontWeight: FontWeight.w600,
                               height: 1.6842105263*ffem/fem,
                               letterSpacing: -0.38*fem,
-                              color: Color(0xff3b3b3b),
+                              color: const Color(0xff3b3b3b),
                             ),
                           ),
                         ),
@@ -181,7 +178,7 @@ class WelcomeScene extends StatelessWidget {
                               fontWeight: FontWeight.w400,
                               height: 1.5*ffem/fem,
                               letterSpacing: -0.32*fem,
-                              color: Color(0xff585858),
+                              color: const Color(0xff585858),
                             ),
                           ),
                         ),
@@ -202,7 +199,7 @@ class WelcomeScene extends StatelessWidget {
                       padding: EdgeInsets.fromLTRB(107.5*fem, 8*fem, 113.5*fem, 8*fem),
                       width: double.infinity,
                       decoration: BoxDecoration (
-                        color: Color(0xff3077e2),
+                        color: const Color(0xff3077e2),
                         borderRadius: BorderRadius.circular(8*fem),
                       ),
                       child: Row(
@@ -219,11 +216,11 @@ class WelcomeScene extends StatelessWidget {
                                 fontWeight: FontWeight.w600,
                                 height: 1.5*ffem/fem,
                                 letterSpacing: -0.32*fem,
-                                color: Color(0xffffffff),
+                                color: const Color(0xffffffff),
                               ),
                             ),
                           ),
-                          Container(
+                          SizedBox(
                             // iconsqBX (I54:1745;179:1521)
                             width: 4*fem,
                             height: 8*fem,
