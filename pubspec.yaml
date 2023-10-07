@@ -244,6 +244,14 @@ flutter:
     - assets/main-menu/images/voucher-2-welcome-screen.png
     - assets/main-menu/images/central-mall-logo-1-1-Zdb.png
     - assets/main-menu/images/horizontal-main-menu-4.png
+    - assets/main-menu/images/xiaomi-1.png
+    - assets/main-menu/images/starbucks.png
+    - assets/main-menu/images/xxi.png
+    - assets/main-menu/images/shihlin.png
+    - assets/main-menu/images/points-1.png
+    - assets/main-menu/images/points-1-GsB.png
+    - assets/main-menu/images/points-1-QjT.png
+    - assets/main-menu/images/points-1-fvH.png
   
 
   # An image asset can refer to one or more resolution-specific "variants", see

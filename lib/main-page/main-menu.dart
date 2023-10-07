@@ -9,7 +9,9 @@ class MainScene extends StatelessWidget {
     double fem = MediaQuery.of(context).size.width / baseWidth;
     double ffem = fem * 0.97;
 
-    return SizedBox(
+    return Scaffold(
+      resizeToAvoidBottomInset: false,
+      body: SizedBox(
       width: double.infinity,
       child: Container(
         width: double.infinity,
@@ -498,7 +500,7 @@ class MainScene extends StatelessWidget {
                     // recenttransactionuNH (58:2372)
                     margin: EdgeInsets.fromLTRB(0*fem, 0*fem, 209*fem, 7*fem),
                     child: Text(
-                      'Recent Transaction',
+                      'Recentl Transactions',
                       style: SafeGoogleFont (
                         'Inter',
                         fontSize: 16*ffem,
@@ -510,434 +512,64 @@ class MainScene extends StatelessWidget {
                     ),
                   ),
                   SizedBox(
-                    // recenttransaction1AR (159:75)
+                    // verticalvouchersE9 (159:79)
                     width: double.infinity,
-                    height: 220*fem,
+                    height: 160*fem,
                     child: Container(
-                      // recenttransactionm9b (106:77)
+                      // groupvertialvoucherRmT (95:388)
                       width: double.infinity,
-                      height: 348*fem,
+                      height: 359*fem,
                       decoration: BoxDecoration (
-                        boxShadow: [
-                          BoxShadow(
-                            color: const Color(0x3f000000),
-                            offset: Offset(0*fem, 4*fem),
-                            blurRadius: 2*fem,
-                          ),
-                          BoxShadow(
-                            color: const Color(0x3f000000),
-                            offset: Offset(0*fem, 4*fem),
-                            blurRadius: 2*fem,
-                          ),
-                        ],
+                        borderRadius: BorderRadius.circular(15*fem),
                       ),
-                      child: Column(
-                        crossAxisAlignment: CrossAxisAlignment.center,
+                      child: ListView(
+                        scrollDirection: Axis.vertical,
                         children: [
                           SizedBox(
-                            // autogroupg1y5FKf (LwYWzZ3tZcZpWmwVPAG1Y5)
-                            width: double.infinity,
-                            height: 172*fem,
-                            child: Stack(
-                              children: [
-                                Positioned(
-                                  // xxizHF (132:11781)
-                                  left: 0*fem,
-                                  top: 84*fem,
-                                  child: Container(
-                                    padding: EdgeInsets.fromLTRB(9*fem, 5*fem, 18*fem, 4*fem),
-                                    width: 360*fem,
-                                    height: 88*fem,
-                                    decoration: BoxDecoration (
-                                      border: Border.all(color: const Color(0xff000000)),
-                                      color: const Color(0xffd9d9d9),
-                                      borderRadius: BorderRadius.circular(10*fem),
-                                    ),
-                                    child: Row(
-                                      crossAxisAlignment: CrossAxisAlignment.center,
-                                      children: [
-                                        Container(
-                                          // xxi1Tgd (106:138)
-                                          margin: EdgeInsets.fromLTRB(0*fem, 0*fem, 8*fem, 0*fem),
-                                          width: 107*fem,
-                                          height: 79*fem,
-                                          child: Image.asset(
-                                            'assets/main-menu/images/xxi-1.png',
-                                            fit: BoxFit.cover,
-                                          ),
-                                        ),
-                                        Container(
-                                          // autogrouphutmamF (LwYX9iTHn6EunBvNw1hutM)
-                                          margin: EdgeInsets.fromLTRB(0*fem, 9*fem, 3.5*fem, 0*fem),
-                                          child: Column(
-                                            crossAxisAlignment: CrossAxisAlignment.start,
-                                            children: [
-                                              Container(
-                                                // xxii6m (106:191)
-                                                margin: EdgeInsets.fromLTRB(12.5*fem, 0*fem, 0*fem, 5.5*fem),
-                                                child: Text(
-                                                  'XXI',
-                                                  style: SafeGoogleFont (
-                                                    'Inter',
-                                                    fontSize: 24*ffem,
-                                                    fontWeight: FontWeight.w800,
-                                                    height: 1*ffem/fem,
-                                                    letterSpacing: -0.48*fem,
-                                                    color: const Color(0xff1f1f1f),
-                                                  ),
-                                                ),
-                                              ),
-                                              Container(
-                                                // date2nov20211rZ (106:192)
-                                                margin: EdgeInsets.fromLTRB(0.5*fem, 0*fem, 0*fem, 0*fem),
-                                                child: Text(
-                                                  'Date : 2 Nov 2021 ',
-                                                  style: SafeGoogleFont (
-                                                    'Inter',
-                                                    fontSize: 20*ffem,
-                                                    fontWeight: FontWeight.w400,
-                                                    height: 1.2*ffem/fem,
-                                                    letterSpacing: -0.4*fem,
-                                                    color: const Color(0xff000000),
-                                                  ),
-                                                ),
-                                              ),
-                                            ],
-                                          ),
-                                        ),
-                                        Container(
-                                          // voucher8AV (106:218)
-                                          margin: EdgeInsets.fromLTRB(0*fem, 0*fem, 0*fem, 26*fem),
-                                          width: 47*fem,
-                                          height: 47*fem,
-                                          child: Image.asset(
-                                            'assets/main-menu/images/voucher.png',
-                                            fit: BoxFit.cover,
-                                          ),
-                                        ),
-                                      ],
-                                    ),
-                                  ),
-                                ),
-                                Positioned(
-                                  // shihlin4K3 (132:11780)
-                                  left: 0*fem,
-                                  top: 0*fem,
-                                  child: Container(
-                                    padding: EdgeInsets.fromLTRB(9*fem, 5*fem, 18*fem, 4*fem),
-                                    width: 360*fem,
-                                    height: 88*fem,
-                                    decoration: BoxDecoration (
-                                      border: Border.all(color: const Color(0xff000000)),
-                                      color: const Color(0xffc4c4c4),
-                                      borderRadius: BorderRadius.circular(10*fem),
-                                    ),
-                                    child: Row(
-                                      crossAxisAlignment: CrossAxisAlignment.center,
-                                      children: [
-                                        Container(
-                                          // shihlinlogo1jg5 (106:135)
-                                          margin: EdgeInsets.fromLTRB(0*fem, 0*fem, 7.5*fem, 0*fem),
-                                          width: 107*fem,
-                                          height: 79*fem,
-                                          child: Image.asset(
-                                            'assets/main-menu/images/shihlin-logo-1.png',
-                                            fit: BoxFit.cover,
-                                          ),
-                                        ),
-                                        Container(
-                                          // autogroupvx93TMB (LwYXTnmWMfk3Xn3gG5vX93)
-                                          margin: EdgeInsets.fromLTRB(0*fem, 0*fem, 0*fem, 6*fem),
-                                          width: 218.5*fem,
-                                          child: Column(
-                                            crossAxisAlignment: CrossAxisAlignment.start,
-                                            children: [
-                                              Container(
-                                                // autogroupvejtBny (LwYXaHagVTjHoyn8GXVejT)
-                                                margin: EdgeInsets.fromLTRB(0*fem, 0*fem, 0*fem, 2*fem),
-                                                width: double.infinity,
-                                                height: 47*fem,
-                                                child: Row(
-                                                  crossAxisAlignment: CrossAxisAlignment.center,
-                                                  children: [
-                                                    Container(
-                                                      // autogroupyqtjiY1 (LwYXecnoFKinfSw6GpYQTj)
-                                                      margin: EdgeInsets.fromLTRB(0*fem, 9*fem, 32*fem, 8.5*fem),
-                                                      height: double.infinity,
-                                                      child: Column(
-                                                        crossAxisAlignment: CrossAxisAlignment.center,
-                                                        children: [
-                                                          Container(
-                                                            // shihlinqcd (106:159)
-                                                            margin: EdgeInsets.fromLTRB(0*fem, 0*fem, 9.5*fem, 5.5*fem),
-                                                            child: RichText(
-                                                              text: TextSpan(
-                                                                style: SafeGoogleFont (
-                                                                  'Inter',
-                                                                  fontSize: 24*ffem,
-                                                                  fontWeight: FontWeight.w800,
-                                                                  height: 1*ffem/fem,
-                                                                  letterSpacing: -0.48*fem,
-                                                                  color: const Color(0xff1f1f1f),
-                                                                ),
-                                                                children: [
-                                                                  TextSpan(
-                                                                    text: 'Shihlin',
-                                                                    style: SafeGoogleFont (
-                                                                      'Inter',
-                                                                      fontSize: 24*ffem,
-                                                                      fontWeight: FontWeight.w800,
-                                                                      height: 1*ffem/fem,
-                                                                      letterSpacing: -0.48*fem,
-                                                                      color: const Color(0xff1f1f1f),
-                                                                    ),
-                                                                  ),
-                                                                  TextSpan(
-                                                                    text: ' ',
-                                                                    style: SafeGoogleFont (
-                                                                      'Inter',
-                                                                      fontSize: 24*ffem,
-                                                                      fontWeight: FontWeight.w800,
-                                                                      height: 1*ffem/fem,
-                                                                      letterSpacing: -0.48*fem,
-                                                                      color: const Color(0xff1f1f1f),
-                                                                    ),
-                                                                  ),
-                                                                ],
-                                                              ),
-                                                            ),
-                                                          ),
-                                                        ],
-                                                      ),
-                                                    ),
-                                                    SizedBox(
-                                                      // moneylogoxMo (106:164)
-                                                      width: 68*fem,
-                                                      height: 47*fem,
-                                                      child: Image.asset(
-                                                        'assets/main-menu/images/money-logo.png',
-                                                        fit: BoxFit.cover,
-                                                      ),
-                                                    ),
-                                                  ],
-                                                ),
-                                              ),
-                                              Container(
-                                                // date30dec2021Vcd (106:163)
-                                                margin: EdgeInsets.fromLTRB(0.5*fem, 0*fem, 0*fem, 0*fem),
-                                                child: Text(
-                                                  'Date : 30 Dec 2021 ',
-                                                  style: SafeGoogleFont (
-                                                    'Inter',
-                                                    fontSize: 20*ffem,
-                                                    fontWeight: FontWeight.w400,
-                                                    height: 1.2*ffem/fem,
-                                                    letterSpacing: -0.4*fem,
-                                                    color: const Color(0xff000000),
-                                                  ),
-                                                ),
-                                              ),
-                                            ],
-                                          ),
-                                        ),
-                                      ],
-                                    ),
-                                  ),
-                                ),
-                              ],
+                            // verticalvoucher1Zcm (94:5191)
+                            width: 361*fem,
+                            height: 117*fem,
+                            child: ClipRRect(
+                              borderRadius: BorderRadius.circular(15*fem),
+                              child: Image.asset(
+                                'assets/main-menu/images/xxi.png',
+                              ),
                             ),
                           ),
-                          Container(
-                            // starbucksnbj (132:11782)
-                            padding: EdgeInsets.fromLTRB(24*fem, 5*fem, 16*fem, 4*fem),
-                            width: double.infinity,
-                            height: 88*fem,
-                            decoration: BoxDecoration (
-                              border: Border.all(color: const Color(0xff000000)),
-                              color: const Color(0xffd9d9d9),
-                              borderRadius: BorderRadius.circular(10*fem),
-                            ),
-                            child: Row(
-                              crossAxisAlignment: CrossAxisAlignment.center,
-                              children: [
-                                Container(
-                                  // starbucks1s7P (106:145)
-                                  margin: EdgeInsets.fromLTRB(0*fem, 0*fem, 21.54*fem, 0*fem),
-                                  width: 78.46*fem,
-                                  height: 79*fem,
-                                  child: Image.asset(
-                                    'assets/main-menu/images/starbucks-1.png',
-                                    fit: BoxFit.cover,
-                                  ),
-                                ),
-                                Container(
-                                  // autogroupqxvvnk9 (LwYYgqZTR6XLdwNUjDQxvV)
-                                  margin: EdgeInsets.fromLTRB(0*fem, 3*fem, 0*fem, 9*fem),
-                                  width: 220*fem,
-                                  height: double.infinity,
-                                  child: Stack(
-                                    children: [
-                                      Positioned(
-                                        // starbucksJTb (106:195)
-                                        left: 6*fem,
-                                        top: 7*fem,
-                                        child: Align(
-                                          child: SizedBox(
-                                            width: 119*fem,
-                                            height: 12*fem,
-                                            child: Text(
-                                              'Starbucks',
-                                              style: SafeGoogleFont (
-                                                'Inter',
-                                                fontSize: 24*ffem,
-                                                fontWeight: FontWeight.w800,
-                                                height: 0.5*ffem/fem,
-                                                letterSpacing: -0.48*fem,
-                                                color: const Color(0xff1f1f1f),
-                                              ),
-                                            ),
-                                          ),
-                                        ),
-                                      ),
-                                      Positioned(
-                                        // date17oct2021C3B (106:196)
-                                        left: 0.5*fem,
-                                        top: 43*fem,
-                                        child: Align(
-                                          child: SizedBox(
-                                            width: 171*fem,
-                                            height: 24*fem,
-                                            child: Text(
-                                              'Date : 17 Oct 2021 ',
-                                              style: SafeGoogleFont (
-                                                'Inter',
-                                                fontSize: 20*ffem,
-                                                fontWeight: FontWeight.w400,
-                                                height: 1.2*ffem/fem,
-                                                letterSpacing: -0.4*fem,
-                                                color: const Color(0xff000000),
-                                              ),
-                                            ),
-                                          ),
-                                        ),
-                                      ),
-                                      Positioned(
-                                        // pngwing1UWV (106:219)
-                                        left: 170*fem,
-                                        top: 0*fem,
-                                        child: Align(
-                                          child: SizedBox(
-                                            width: 50*fem,
-                                            height: 49*fem,
-                                            child: Image.asset(
-                                              'assets/main-menu/images/pngwing-1.png',
-                                              fit: BoxFit.cover,
-                                            ),
-                                          ),
-                                        ),
-                                      ),
-                                    ],
-                                  ),
-                                ),
-                              ],
+                          SizedBox(
+                            // verticalvoucher2Hof (94:5244)
+                            width: 361*fem,
+                            height: 117*fem,
+                            child: ClipRRect(
+                              borderRadius: BorderRadius.circular(15*fem),
+                              child: Image.asset(
+                                'assets/main-menu/images/xiaomi-1.png',
+                              ),
                             ),
                           ),
-                          Container(
-                            // xiaomio2y (132:11785)
-                            padding: EdgeInsets.fromLTRB(11*fem, 7*fem, 18*fem, 8*fem),
-                            width: double.infinity,
-                            height: 88*fem,
-                            decoration: BoxDecoration (
-                              border: Border.all(color: const Color(0xff000000)),
-                              color: const Color(0xffd9d9d9),
-                              borderRadius: BorderRadius.circular(10*fem),
-                            ),
-                            child: Row(
-                              crossAxisAlignment: CrossAxisAlignment.center,
-                              children: [
-                                Container(
-                                  // xiaomiVRb (106:158)
-                                  margin: EdgeInsets.fromLTRB(0*fem, 1*fem, 15*fem, 0*fem),
-                                  width: 107*fem,
-                                  height: 30*fem,
-                                  child: Image.asset(
-                                    'assets/main-menu/images/xiaomi.png',
-                                    fit: BoxFit.cover,
-                                  ),
-                                ),
-                                SizedBox(
-                                  // autogroupuxwfR4M (LwYY674L5jygDnBvmKUXwf)
-                                  width: 209*fem,
-                                  height: double.infinity,
-                                  child: Column(
-                                    crossAxisAlignment: CrossAxisAlignment.start,
-                                    children: [
-                                      Container(
-                                        // autogroupvseqy5s (LwYYCSD7ecjZKA2ivfvsEq)
-                                        margin: EdgeInsets.fromLTRB(0*fem, 0*fem, 0*fem, 5*fem),
-                                        width: double.infinity,
-                                        height: 44*fem,
-                                        child: Row(
-                                          crossAxisAlignment: CrossAxisAlignment.center,
-                                          children: [
-                                            Container(
-                                              // autogroupbde1Vpu (LwYYGMGFzBeeCZTZKFBdE1)
-                                              margin: EdgeInsets.fromLTRB(0*fem, 9*fem, 34.5*fem, 5.5*fem),
-                                              height: double.infinity,
-                                              child: Column(
-                                                crossAxisAlignment: CrossAxisAlignment.center,
-                                                children: [
-                                                  Container(
-                                                    // xiaomi249 (106:199)
-                                                    margin: EdgeInsets.fromLTRB(0*fem, 0*fem, 13.5*fem, 5.5*fem),
-                                                    child: Text(
-                                                      'Xiaomi',
-                                                      style: SafeGoogleFont (
-                                                        'Inter',
-                                                        fontSize: 24*ffem,
-                                                        fontWeight: FontWeight.w800,
-                                                        height: 1*ffem/fem,
-                                                        letterSpacing: -0.48*fem,
-                                                        color: const Color(0xff1f1f1f),
-                                                      ),
-                                                    ),
-                                                  ),
-                                                ],
-                                              ),
-                                            ),
-                                            SizedBox(
-                                              // vouchervQR (132:11784)
-                                              width: 56*fem,
-                                              height: 44*fem,
-                                              child: Image.asset(
-                                                'assets/main-menu/images/voucher-bbX.png',
-                                                fit: BoxFit.cover,
-                                              ),
-                                            ),
-                                          ],
-                                        ),
-                                      ),
-                                      Container(
-                                        // date24feb202152R (106:200)
-                                        margin: EdgeInsets.fromLTRB(0.5*fem, 0*fem, 0*fem, 0*fem),
-                                        child: Text(
-                                          'Date : 24 Feb 2021 ',
-                                          style: SafeGoogleFont (
-                                            'Inter',
-                                            fontSize: 20*ffem,
-                                            fontWeight: FontWeight.w400,
-                                            height: 1.2*ffem/fem,
-                                            letterSpacing: -0.4*fem,
-                                            color: const Color(0xff000000),
-                                          ),
-                                        ),
-                                      ),
-                                    ],
-                                  ),
-                                ),
-                              ],
+                          SizedBox(
+                            // verticalvoucher3Rus (94:5284)
+                            width: 361*fem,
+                            height: 117*fem,
+                            child: ClipRRect(
+                              borderRadius: BorderRadius.circular(15*fem),
+                              child: Image.asset(
+                                'assets/main-menu/images/starbucks.png',
+                              ),
                             ),
                           ),
+                          SizedBox(
+                            // verticalvoucher3Rus (94:5284)
+                            width: 361*fem,
+                            height: 117*fem,
+                            child: ClipRRect(
+                              borderRadius: BorderRadius.circular(15*fem),
+                              child: Image.asset(
+                                'assets/main-menu/images/shihlin.png',
+                              ),
+                            ),
+                          ),
+
                         ],
                       ),
                     ),
@@ -948,6 +580,7 @@ class MainScene extends StatelessWidget {
           ],
         ),
       ),
+      )
       );
   }
 }

@@ -9,7 +9,9 @@ class VoucherScene extends StatelessWidget {
     double baseWidth = 390;
     double fem = MediaQuery.of(context).size.width / baseWidth;
     double ffem = fem * 0.97;
-    return SizedBox(
+
+    return Scaffold(
+      body: SizedBox(
       width: double.infinity,
       child: Container(
         // voucherH1j (94:5103)
@@ -386,6 +388,7 @@ class VoucherScene extends StatelessWidget {
           ],
         ),
       ),
-          );
+      )
+    );
   }
 }

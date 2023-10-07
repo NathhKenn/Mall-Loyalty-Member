@@ -41,19 +41,36 @@ class LandingScene extends StatelessWidget {
                     decoration: BoxDecoration (
                       borderRadius: BorderRadius.circular(15*fem),
                       border: Border.all(color: const Color(0xff000000)),
-                      color: const Color(0xffffffff),
-                      boxShadow: [
-                        BoxShadow(
-                          color: const Color(0x3f000000),
-                          offset: Offset(0*fem, 4*fem),
-                          blurRadius: 2*fem,
+                      gradient: LinearGradient(
+                          colors: [
+                            const Color(0xff61a5c2), // lighter blue
+                            const Color(0xff306c8c), // darker blue
+                          ],
+                          begin: Alignment.topLeft,
+                          end: Alignment.bottomRight,
                         ),
-                      ],
+                        boxShadow: [
+                          BoxShadow(
+                            color: const Color(0x3f000000),
+                            offset: Offset(0 * fem, 4 * fem),
+                            blurRadius: 2 * fem,
+                          ),
+                        ],
+                      ),
+                      // Add Padding for the inside border
+                      child: Padding(
+                        padding: EdgeInsets.all(8 * fem), // Adjust the padding as needed
+                        child: Container(
+                          decoration: BoxDecoration(
+                            borderRadius: BorderRadius.circular(15 * fem),
+                            color: Color.fromARGB(255, 255, 255, 255),
+                          ),
+                        ),
+                      ),
                     ),
                   ),
                 ),
               ),
-            ),
             Positioned(
               // rectangle24Cvm (53:161)
               left: 70*fem,

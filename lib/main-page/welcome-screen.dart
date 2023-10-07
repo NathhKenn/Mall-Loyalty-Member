@@ -3,6 +3,7 @@ import 'package:myapp/utils.dart';
 import 'package:myapp/main-page/main-menu.dart';
 import 'package:myapp/main-page/voucher.dart';
 import 'package:myapp/main-page/profile.dart';
+import 'package:myapp/main-page/barcode.dart';
 
 class WelcomeScene extends StatelessWidget {
   const WelcomeScene({Key? key}) : super(key: key);
@@ -199,7 +200,7 @@ class WelcomeScene extends StatelessWidget {
                     // button1yB (54:1745)
                     onPressed: () {Navigator.push(
                     context,
-                    MaterialPageRoute(builder: (context) => const MainScene()),
+                    MaterialPageRoute(builder: (context) => const BarcodeScene()),
                     );
                     },
                     style: TextButton.styleFrom (
