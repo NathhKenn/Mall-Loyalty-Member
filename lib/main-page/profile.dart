@@ -260,7 +260,16 @@ class ProfileScene extends StatelessWidget {
                                         ),
                                       ),
                                     ),
-                                  )
+                                  ), // Add a comma here
+                                  SizedBox(
+                                    width: 6 * fem,
+                                    height: 12 * fem,
+                                    child: Image.asset(
+                                      'assets/main-menu/images/icons-CUZ.png',
+                                      width: 6 * fem,
+                                      height: 12 * fem,
+                                    ),
+                                  ),
                                 ],
                               ),
                             ),
@@ -347,7 +356,16 @@ class ProfileScene extends StatelessWidget {
                                         ),
                                       ),
                                     ),
-                                  )
+                                  ), // Add a comma here
+                                  SizedBox(
+                                    width: 6 * fem,
+                                    height: 12 * fem,
+                                    child: Image.asset(
+                                      'assets/main-menu/images/icons-CUZ.png',
+                                      width: 6 * fem,
+                                      height: 12 * fem,
+                                    ),
+                                  ),
                                 ],
                               ),
                             ),
@@ -400,8 +418,7 @@ class ProfileScene extends StatelessWidget {
                                         TextButton(
                                           child: const Text('OK'),
                                           onPressed: () {
-                                            Navigator.push(context,
-                                                MaterialPageRoute(builder: (context) => const SignScene()));
+                                            Navigator.push(context, MaterialPageRoute(builder: (context) => const SignScene()));
                                           },
                                         ),
                                       ],
@@ -426,7 +443,7 @@ class ProfileScene extends StatelessWidget {
                                         ),
                                       ),
                                     ),
-                                  ),
+                                  ), // Add a comma here
                                   SizedBox(
                                     width: 6 * fem,
                                     height: 12 * fem,
