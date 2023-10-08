@@ -10,6 +10,25 @@ class BarcodeScene extends StatelessWidget {
     double fem = MediaQuery.of(context).size.width / baseWidth;
     double ffem = fem * 0.97;
 
+    void _showPopUpImage(BuildContext context, String imagePath) {
+  showDialog(
+    context: context,
+    builder: (BuildContext context) {
+      return AlertDialog(
+        content: Image.asset(imagePath),
+        actions: [
+          TextButton(
+            onPressed: () {
+              Navigator.of(context).pop();
+            },
+            child: Text('Close'),
+          ),
+        ],
+      );
+    },
+  );
+}
+
     return Scaffold(
       body: SizedBox(
       width: double.infinity,
@@ -141,7 +160,11 @@ class BarcodeScene extends StatelessWidget {
                       child: Row(
                         crossAxisAlignment: CrossAxisAlignment.center,
                         children: [
-                          Container(
+                         GestureDetector(
+                        onTap: () {
+                          _showPopUpImage(context, 'assets/main-menu/images/points-1.png');
+                        },
+                          child: Container(
                             // points1pwB (195:25)
                             margin: EdgeInsets.fromLTRB(0*fem, 0*fem, 81*fem, 0*fem),
                             width: 130*fem,
@@ -151,6 +174,7 @@ class BarcodeScene extends StatelessWidget {
                               fit: BoxFit.cover,
                             ),
                           ),
+                         ),
                           Container(
                             // points1kpq (195:26)
                             width: 130*fem,

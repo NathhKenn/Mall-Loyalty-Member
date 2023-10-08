@@ -2,8 +2,9 @@ import 'package:flutter/material.dart';
 import 'package:myapp/login-page/Terms.dart';
 import 'package:myapp/login-page/sign-in.dart';
 import 'package:myapp/main-page/Change-password.dart';
+import 'package:myapp/main-page/About.dart';
 import 'package:myapp/utils.dart';
-import 'package:myapp/data.dart';
+import 'package:myapp/login-page/data.dart';
 
 class ProfileScene extends StatelessWidget {
   const ProfileScene({Key? key}) : super(key: key);
@@ -290,6 +291,10 @@ class ProfileScene extends StatelessWidget {
                           Container(
                             padding: EdgeInsets.fromLTRB(0 * fem, 0 * fem, 9 * fem, 0 * fem),
                             width: double.infinity,
+                            child: TextButton(
+                            onPressed: () {
+                              Navigator.push(context, MaterialPageRoute(builder: (context) => const AboutScene()));
+                            },
                             child: Row(
                               crossAxisAlignment: CrossAxisAlignment.center,
                               children: [
@@ -467,6 +472,7 @@ class ProfileScene extends StatelessWidget {
                               color: Color(0xffededed),
                             ),
                           ),
+                          )
                         ],
                       ),
                     ),

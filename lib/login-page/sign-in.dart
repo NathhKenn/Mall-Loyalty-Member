@@ -5,7 +5,7 @@ import 'package:myapp/utils.dart';
 import 'package:myapp/login-page/forgot-password.dart';
 import 'package:myapp/login-page/register.dart';
 import 'package:myapp/main-page/welcome-screen.dart';
-import 'package:myapp/data.dart';
+import 'package:myapp/login-page/data.dart';
 
 class SignScene extends StatefulWidget {
   const SignScene({super.key});

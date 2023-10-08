@@ -158,7 +158,7 @@ class _MainSceneState extends State<MainScene> {
                                   width: 34 * fem,
                                   height: 24 * fem,
                                   child: Text(
-                                    'Rp 0',
+                                    'Rp 58.000',
                                     style: TextStyle(
                                       fontSize: 16 * ffem,
                                       fontWeight: FontWeight.w400,
@@ -275,7 +275,7 @@ class _MainSceneState extends State<MainScene> {
                           width: 15 * fem,
                           height: 24 * fem,
                           child: Text(
-                            '0',
+                            '11',
                             style: TextStyle(
                               fontSize: 24 * ffem,
                               fontWeight: FontWeight.w400,

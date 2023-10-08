@@ -2,6 +2,7 @@
 
 import 'package:flutter/material.dart';
 import 'package:myapp/login-page/sign-in.dart';
+import 'package:myapp/main-page/profile.dart';
 import 'package:myapp/utils.dart';
 
 class ChangeScene extends StatelessWidget {
@@ -273,9 +274,11 @@ class ChangeScene extends StatelessWidget {
               left: 83*fem,
               top: 558*fem,
               child: TextButton(
-                onPressed: () {
-                  Navigator.pop(context);
-                },
+                onPressed: () {Navigator.push(
+                    context,
+                    MaterialPageRoute(builder: (context) => const ProfileScene()),
+                  );
+                  },
                 style: TextButton.styleFrom (
                   padding: EdgeInsets.zero,
                 ),

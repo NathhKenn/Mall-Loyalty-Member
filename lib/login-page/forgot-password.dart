@@ -3,7 +3,7 @@
 import 'package:flutter/material.dart';
 import 'package:myapp/login-page/sign-in.dart';
 import 'package:myapp/utils.dart';
-import 'package:myapp/data.dart';
+import 'package:myapp/login-page/data.dart';
 class ForgotScene extends StatefulWidget {
   const ForgotScene({super.key});
 

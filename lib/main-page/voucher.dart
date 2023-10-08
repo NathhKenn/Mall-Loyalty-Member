@@ -106,7 +106,24 @@ class _VoucherSceneState extends State<VoucherScene> {
                         child: ListView(
                           scrollDirection: Axis.vertical,
                           children: [
-                            SizedBox(
+                          GestureDetector(
+                            onTap: () {
+                              showDialog(
+                                context: context,
+                                builder: (BuildContext context) {
+                                  return Dialog(
+                                    child: SizedBox(
+                                      width: 361 * fem,
+                                      height: 119* fem,
+                                      child: Image.asset(
+                                        'assets/main-menu/images/vertical-voucher-1.png',
+                                      ),
+                                    ),
+                                  );
+                                },
+                              );
+                            },
+                            child: SizedBox(
                               width: 361 * fem,
                               height: 117 * fem,
                               child: ClipRRect(
@@ -116,7 +133,25 @@ class _VoucherSceneState extends State<VoucherScene> {
                                 ),
                               ),
                             ),
-                            SizedBox(
+                          ),
+                          GestureDetector(
+                            onTap: () {
+                              showDialog(
+                                context: context,
+                                builder: (BuildContext context) {
+                                  return Dialog(
+                                    child: SizedBox(
+                                      width: 361 * fem,
+                                      height: 119* fem,
+                                      child: Image.asset(
+                                        'assets/main-menu/images/vertical-voucher-2.png',
+                                      ),
+                                    ),
+                                  );
+                                },
+                              );
+                            },
+                            child: SizedBox(
                               width: 361 * fem,
                               height: 117 * fem,
                               child: ClipRRect(
@@ -126,7 +161,25 @@ class _VoucherSceneState extends State<VoucherScene> {
                                 ),
                               ),
                             ),
-                            SizedBox(
+                           ),
+                            GestureDetector(
+                            onTap: () {
+                              showDialog(
+                                context: context,
+                                builder: (BuildContext context) {
+                                  return Dialog(
+                                    child: SizedBox(
+                                      width: 361 * fem,
+                                      height: 119* fem,
+                                      child: Image.asset(
+                                        'assets/main-menu/images/vertical-voucher-3.png',
+                                      ),
+                                    ),
+                                  );
+                                },
+                              );
+                            },
+                            child: SizedBox(
                               width: 361 * fem,
                               height: 117 * fem,
                               child: ClipRRect(
@@ -136,7 +189,25 @@ class _VoucherSceneState extends State<VoucherScene> {
                                 ),
                               ),
                             ),
-                            SizedBox(
+                            ),
+                            GestureDetector(
+                            onTap: () {
+                              showDialog(
+                                context: context,
+                                builder: (BuildContext context) {
+                                  return Dialog(
+                                    child: SizedBox(
+                                      width: 361 * fem,
+                                      height: 119* fem,
+                                      child: Image.asset(
+                                        'assets/main-menu/images/vertical-voucher-4.png',
+                                      ),
+                                    ),
+                                  );
+                                },
+                              );
+                            },
+                            child: SizedBox(
                               width: 361 * fem,
                               height: 117 * fem,
                               child: ClipRRect(
@@ -146,7 +217,25 @@ class _VoucherSceneState extends State<VoucherScene> {
                                 ),
                               ),
                             ),
-                            SizedBox(
+                            ),
+                            GestureDetector(
+                            onTap: () {
+                              showDialog(
+                                context: context,
+                                builder: (BuildContext context) {
+                                  return Dialog(
+                                    child: SizedBox(
+                                      width: 361 * fem,
+                                      height: 119* fem,
+                                      child: Image.asset(
+                                        'assets/main-menu/images/vertical-voucher-5.png',
+                                      ),
+                                    ),
+                                  );
+                                },
+                              );
+                            },
+                            child: SizedBox(
                               width: 361 * fem,
                               height: 117 * fem,
                               child: ClipRRect(
@@ -156,7 +245,25 @@ class _VoucherSceneState extends State<VoucherScene> {
                                 ),
                               ),
                             ),
-                            SizedBox(
+                            ),
+                            GestureDetector(
+                            onTap: () {
+                              showDialog(
+                                context: context,
+                                builder: (BuildContext context) {
+                                  return Dialog(
+                                    child: SizedBox(
+                                      width: 361 * fem,
+                                      height: 119* fem,
+                                      child: Image.asset(
+                                        'assets/main-menu/images/vertical-voucher-6.png',
+                                      ),
+                                    ),
+                                  );
+                                },
+                              );
+                            },
+                            child: SizedBox(
                               width: 361 * fem,
                               height: 117 * fem,
                               child: ClipRRect(
@@ -166,6 +273,7 @@ class _VoucherSceneState extends State<VoucherScene> {
                                 ),
                               ),
                             ),
+                          ),
                           ],
                         ),
                       ),
@@ -192,11 +300,81 @@ class _VoucherSceneState extends State<VoucherScene> {
           });
         },
         children: [
-          buildVoucherImage('assets/main-menu/images/horizontal-voucher-1-bg.png', fem),
-          buildVoucherImage('assets/main-menu/images/horizontal-voucher-2-bg.png', fem),
-          buildVoucherImage('assets/main-menu/images/horizontal-voucher-3.png', fem),
-          buildVoucherImage('assets/main-menu/images/horizontal-voucher-5-bg.png', fem),
-          buildVoucherImage('assets/main-menu/images/horizontal-voucher-4.png', fem),
+          TextButton(
+            onPressed: (){
+              showDialog(
+                context: context,
+                builder: (BuildContext context) {
+                  return Dialog(
+                    child:Image.asset('assets/main-menu/images/Voucher-1x.png')
+                    );
+                    });
+                  },
+            child: buildVoucherImage(
+              'assets/main-menu/images/horizontal-voucher-1-bg.png', 
+              fem,
+            ),
+            ),
+            TextButton(
+            onPressed: (){
+              showDialog(
+                context: context,
+                builder: (BuildContext context) {
+                  return Dialog(
+                    child:Image.asset('assets/main-menu/images/Voucher-2x.png')
+                    );
+                    });
+                  },
+            child: buildVoucherImage(
+              'assets/main-menu/images/horizontal-voucher-2-bg.png', 
+              fem,
+            ),
+            ),
+            TextButton(
+            onPressed: (){
+              showDialog(
+                context: context,
+                builder: (BuildContext context) {
+                  return Dialog(
+                    child:Image.asset('assets/main-menu/images/Voucher-3x.png')
+                    );
+                    });
+                  },
+            child: buildVoucherImage(
+              'assets/main-menu/images/horizontal-voucher-3.png', 
+              fem,
+            ),
+            ),
+            TextButton(
+            onPressed: (){
+              showDialog(
+                context: context,
+                builder: (BuildContext context) {
+                  return Dialog(
+                    child:Image.asset('assets/main-menu/images/Voucher-4x.png')
+                    );
+                    });
+                  },
+            child: buildVoucherImage(
+              'assets/main-menu/images/horizontal-voucher-5-bg.png', 
+              fem,
+            ),
+            ),
+            TextButton(
+            onPressed: (){
+              showDialog(
+                context: context,
+                builder: (BuildContext context) {
+                  return Dialog(
+                    child:Image.asset('assets/main-menu/images/Voucher-5x.png')
+                    );
+                    });
+                  },
+            child: buildVoucherImage(
+              'assets/main-menu/images/horizontal-voucher-4.png', 
+              fem,
+            ),
+            ),
         ],
       ),
     );

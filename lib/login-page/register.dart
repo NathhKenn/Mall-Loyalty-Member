@@ -1,9 +1,11 @@
 import 'package:flutter/material.dart';
-import 'package:myapp/data.dart';
+import 'package:myapp/login-page/data.dart';
 import 'package:myapp/login-page/Terms.dart';
 import 'package:myapp/utils.dart';
 import 'package:myapp/login-page/landing-page.dart';
 import 'package:myapp/login-page/sign-in.dart';
+import 'package:shared_preferences/shared_preferences.dart';
+import 'data.dart';
 
 
 class RegisterScene extends StatefulWidget {
@@ -13,10 +15,21 @@ class RegisterScene extends StatefulWidget {
 }
 
 class RegScene extends State<RegisterScene>{
+ final TextEditingController _firstName = TextEditingController();
+ final TextEditingController _lastName = TextEditingController();
+ final TextEditingController _email = TextEditingController();
  final TextEditingController _password = TextEditingController();
  final TextEditingController _confirm = TextEditingController();
 
  final data = Data();
+
+void _register() async {
+  SharedPreferences prefs = await SharedPreferences.getInstance();
+  prefs.setString('email', _email.text);
+  prefs.setString('password', _password.text);
+  prefs.setString('firstName', data.getFirstName());
+  prefs.setString('lastName', data.getLastName());
+}
 
 
    @override
@@ -333,6 +346,9 @@ class RegScene extends State<RegisterScene>{
                       child: Center(
                         child: TextFormField(
                           controller: _confirm,
+                          onChanged: (value){
+                            data.setConfirmPassword(value);
+                          },
                           obscureText: true,
                           style: TextStyle(
                             fontSize: 15*ffem,
@@ -398,7 +414,10 @@ class RegScene extends State<RegisterScene>{
                       ),
                       child: Center(
                         child: TextFormField(
-                          controller: _password,
+                          controller:_password,
+                          onChanged: (value){
+                            data.setPassword(value);
+                          },
                           obscureText: true,
                           style: TextStyle(
                             fontSize: 15*ffem,
@@ -461,30 +480,20 @@ class RegScene extends State<RegisterScene>{
               left: 211*fem,
               top: 558*fem,
               child: TextButton(
-               onPressed: () {
-                  if (_confirm.text == _password.text){
-                      Navigator.push(context, MaterialPageRoute(builder: (context) => const SignScene()));
-                  }
-                  else{
-                    showDialog(
-                        context: context,
-                        builder: (BuildContext context) {
-                          return AlertDialog(
-                            title: const Text('Error occurred'),
-                            content: const Text('The Password and the confirmed one is not the same, please try again'),
-                            actions: <Widget>[
-                              TextButton(
-                                child: const Text('OK'),
-                                onPressed: () {
-                                  Navigator.of(context).pop();
-                                },
-                              ),
-                            ],
-                          );
-                        },
-                      );
-                  }
-               },
+              onPressed: () {
+                if (_confirm.text == _password.text) {
+                  _register(); // Call the register function to save email and password
+                  Navigator.push(context, MaterialPageRoute(builder: (context) => const SignScene()));
+                } else {
+                  // Show an error message, passwords don't match
+                  ScaffoldMessenger.of(context).showSnackBar(
+                    SnackBar(
+                      content: Text('Passwords do not match.'),
+                      duration: Duration(seconds: 5), // Adjust the duration as needed
+                    ),
+                  );// Show an error message, passwords don't match
+                }
+              },
                 style: TextButton.styleFrom(
                   padding:EdgeInsets.zero,
                 ),

@@ -1,10 +1,10 @@
 import 'package:flutter/material.dart';
 import 'dart:ui';
 import 'package:myapp/utils.dart';
-import 'package:myapp/login-page/register.dart';
+import 'package:myapp/main-page/profile.dart';
 
-class TermsScene extends StatelessWidget {
-  const TermsScene({super.key});
+class AboutScene extends StatelessWidget {
+  const AboutScene({super.key});
 
   @override
   Widget build(BuildContext context) {
@@ -100,7 +100,7 @@ class TermsScene extends StatelessWidget {
                   Navigator.push(
                       context,
                       MaterialPageRoute(
-                          builder: ((context) => const RegisterScene())));
+                          builder: ((context) => const ProfileScene())));
                 },
                 style: TextButton.styleFrom(
                   padding: EdgeInsets.zero,
@@ -152,45 +152,17 @@ class TermsScene extends StatelessWidget {
                       padding: EdgeInsets.all(16 * fem),
                       child: Text(
                         """
-Terms and Conditions - Central Mall Loyalty Program
+In the heart of our vibrant city stands Central Mall, a beacon of style, comfort, and endless possibilities. Our journey began with a vision to create not just a shopping destination, but a haven where the pulse of urban life finds its rhythm. From the moment you step through our doors, you'll be enveloped in an atmosphere that seamlessly blends modern sophistication with a warm and inviting ambiance.
 
-Membership Eligibility:
-· The Central Mall Loyalty Program is open to individuals aged 18 years and above.
-· Membership is granted at the discretion of Central Mall and can be revoked or suspended if violated.
+Central Mall is more than just a collection of stores; it's a curated experience that caters to the diverse tastes and desires of our discerning patrons. Spanning six floors of retail bliss, each level unfolds a new chapter in the story of fashion, lifestyle, and innovation. Immerse yourself in the latest trends, discover hidden gems in our boutique shops, and indulge in a world of choices that reflect your unique personality.
 
-Membership Benefits:
-· Members are entitled to exclusive discounts, promotions, and rewards as outlined by Central Mall.
-· Benefits may vary based on membership levels and are subject to change.
+Our commitment to excellence extends beyond the products lining our shelves. At Central Mall, we prioritize customer satisfaction, ensuring that every visit is a delightful adventure. Our friendly and knowledgeable staff are here to assist you, turning your shopping excursion into a personalized journey. From fashion consultations to tech demos, we strive to make your experience not just enjoyable but truly memorable.
 
-Earning and Redeeming Points:
-· Members earn loyalty points based on eligible purchases at Central Mall.
-· Points can be redeemed for discounts or special offers as specified by the Loyalty Program.
+As a community hub, Central Mall hosts a variety of events and activities that bring people together. Whether it's a fashion show unveiling the season's hottest looks or a cultural festival celebrating diversity, we take pride in fostering connections and creating moments that go beyond the transactional nature of shopping. Join us in building a community where shared experiences become cherished memories.
 
-Member Obligations:
-· Members are responsible for maintaining the confidentiality of their account information.
-· Any unauthorized use of the membership account should be reported immediately to Central Mall.
+Central Mall is also committed to sustainability and ethical practices. Our initiatives include eco-friendly store designs, partnerships with socially responsible brands, and ongoing efforts to reduce our environmental footprint. We believe that great style doesn't have to come at the expense of the planet, and our commitment to responsible business practices reflects that ethos.
 
-Program Changes:
-· Central Mall reserves the right to modify, suspend, or terminate the Loyalty Program at any time.
-· Changes to the program will be communicated to members through appropriate channels.
-
-Termination of Membership:
-· Central Mall may terminate a membership if the member engages in fraudulent activities or violates program rules.
-· Members can voluntarily terminate their membership by contacting Central Mall.
-
-Privacy Policy:
-· Member information will be treated with confidentiality and will only be used in accordance with the Privacy Policy.
-
-Communication:
-· Members may receive program-related communications, including promotional materials, via email or other channels.
-
-Governing Law:
-· These Terms and Conditions are governed by the laws of [Your Jurisdiction].
-
-Contact Information:
-· For questions or concerns regarding the Loyalty Program, contact Central Mall at [Contact Information].
-
-By enrolling in the Central Mall Loyalty Program, you agree to abide by these Terms and Conditions.
+In essence, Central Mall isn't just a place to shop; it's a destination where lifestyle, community, and sustainability converge. Join us on this exciting journey as we redefine the shopping experience and set new standards for what a mall can truly be. Welcome to Central Mall—where every visit is a celebration of you.
 """,
                         style: TextStyle(
                           fontSize: 16 * ffem,

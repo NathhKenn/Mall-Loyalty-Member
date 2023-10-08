@@ -33,6 +33,7 @@ dependencies:
   flutter:
     sdk: flutter
   sqflite: ^2.3.0
+  shared_preferences: ^2.2.1
 
 
   # The following adds the Cupertino Icons font to your application.
@@ -252,6 +253,11 @@ flutter:
     - assets/main-menu/images/points-1-GsB.png
     - assets/main-menu/images/points-1-QjT.png
     - assets/main-menu/images/points-1-fvH.png
+    - assets/main-menu/images/Voucher-1x.png
+    - assets/main-menu/images/Voucher-2x.png
+    - assets/main-menu/images/Voucher-3x.png
+    - assets/main-menu/images/Voucher-4x.png
+    - assets/main-menu/images/Voucher-5x.png
   
 
   # An image asset can refer to one or more resolution-specific "variants", see
