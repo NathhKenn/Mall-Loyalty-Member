@@ -6,7 +6,7 @@ class Data {
   String password = 'untar1818';
   String confirmPassword = 'untar1818';
   String email = 'vicentjay@gmail.com';
-  int point = 10000;
+  int point = 20000;
 
   String getFirstName() {
     return firstname;

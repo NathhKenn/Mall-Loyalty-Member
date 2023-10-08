@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:myapp/utils.dart';
+import 'package:myapp/login-page/data.dart';
 
 class MainScene extends StatefulWidget {
   MainScene ({super.key});
@@ -10,7 +11,7 @@ class MainScene extends StatefulWidget {
 
 class _MainSceneState extends State<MainScene> {
   int currentPage = 0;
-
+final Data data = Data();
   @override
   Widget build(BuildContext context) {
     double baseWidth = 390;
@@ -158,7 +159,7 @@ class _MainSceneState extends State<MainScene> {
                                   width: 34 * fem,
                                   height: 24 * fem,
                                   child: Text(
-                                    '100000',
+                                    data.getPoint().toString(),
                                     style: TextStyle(
                                       fontSize: 10 * ffem,
                                       fontWeight: FontWeight.w400,
