@@ -158,12 +158,12 @@ class _MainSceneState extends State<MainScene> {
                                   width: 34 * fem,
                                   height: 24 * fem,
                                   child: Text(
-                                    'Rp 58.000',
+                                    '100000',
                                     style: TextStyle(
-                                      fontSize: 16 * ffem,
+                                      fontSize: 10 * ffem,
                                       fontWeight: FontWeight.w400,
                                       height: 1.5 * ffem / fem,
-                                      letterSpacing: -0.32 * fem,
+                                      letterSpacing: -0.35 * fem,
                                       color: Color(0xffffffff),
                                     ),
                                   ),
@@ -179,7 +179,7 @@ class _MainSceneState extends State<MainScene> {
                                   width: 121 * fem,
                                   height: 24 * fem,
                                   child: Text(
-                                    'E - GIFT Balance',
+                                    'E-Reward',
                                     style: TextStyle(
                                       fontSize: 16 * ffem,
                                       fontWeight: FontWeight.w400,
