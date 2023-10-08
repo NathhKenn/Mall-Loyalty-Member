@@ -261,7 +261,7 @@ class ProfileScene extends StatelessWidget {
                                         ),
                                       ),
                                     ),
-                                  ), // Add a comma here
+                                  ),
                                   SizedBox(
                                     width: 6 * fem,
                                     height: 12 * fem,
@@ -298,8 +298,8 @@ class ProfileScene extends StatelessWidget {
                             child: Row(
                               crossAxisAlignment: CrossAxisAlignment.center,
                               children: [
-                                Container(
-                                  margin: EdgeInsets.fromLTRB(0 * fem, 0 * fem, 258 * fem, 0 * fem),
+                                Expanded(
+                                  child:SizedBox(
                                   child: Text(
                                     'About Us',
                                     style: SafeGoogleFont(
@@ -311,6 +311,7 @@ class ProfileScene extends StatelessWidget {
                                       color: const Color(0xff3b3b3b),
                                     ),
                                   ),
+                                  )
                                 ),
                                 SizedBox(
                                   width: 6 * fem,
@@ -323,6 +324,7 @@ class ProfileScene extends StatelessWidget {
                                 ),
                               ],
                             ),
+                          ),
                           ),
                           SizedBox(
                             height: 10 * fem,
@@ -472,7 +474,9 @@ class ProfileScene extends StatelessWidget {
                               color: Color(0xffededed),
                             ),
                           ),
+                        ]
                           )
+                    )
                         ],
                       ),
                     ),
@@ -506,10 +510,7 @@ class ProfileScene extends StatelessWidget {
                   ],
                 ),
               ),
-            ],
           ),
-        ),
-      ),
-    );
+        );
   }
 }
