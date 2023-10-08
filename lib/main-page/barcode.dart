@@ -21,7 +21,7 @@ class BarcodeScene extends StatelessWidget {
             onPressed: () {
               Navigator.of(context).pop();
             },
-            child: Text('Close'),
+            child: Text('Points added successfully'),
           ),
         ],
       );
@@ -175,7 +175,11 @@ class BarcodeScene extends StatelessWidget {
                             ),
                           ),
                          ),
-                          Container(
+                        GestureDetector(
+                        onTap: () {
+                          _showPopUpImage(context, 'assets/main-menu/images/points-1-QjT.png');
+                        },
+                          child: Container(
                             // points1kpq (195:26)
                             width: 130*fem,
                             height: 103.38*fem,
@@ -184,6 +188,7 @@ class BarcodeScene extends StatelessWidget {
                               fit: BoxFit.cover,
                             ),
                           ),
+                        ),
                         ],
                       ),
                     ),
@@ -193,7 +198,11 @@ class BarcodeScene extends StatelessWidget {
                       child: Row(
                         crossAxisAlignment: CrossAxisAlignment.center,
                         children: [
-                          Container(
+                         GestureDetector(
+                        onTap: () {
+                          _showPopUpImage(context, 'assets/main-menu/images/points-1-fvH.png');
+                        },
+                          child: Container(
                             // points14Kj (195:28)
                             margin: EdgeInsets.fromLTRB(0*fem, 0*fem, 81*fem, 0*fem),
                             width: 130*fem,
@@ -203,7 +212,12 @@ class BarcodeScene extends StatelessWidget {
                               fit: BoxFit.cover,
                             ),
                           ),
-                          Container(
+                         ),
+                         GestureDetector(
+                        onTap: () {
+                          _showPopUpImage(context, 'assets/main-menu/images/points-1-GsB.png');
+                        },
+                          child: Container(
                             // points1P77 (195:27)
                             width: 130*fem,
                             height: 103.38*fem,
@@ -212,6 +226,7 @@ class BarcodeScene extends StatelessWidget {
                               fit: BoxFit.cover,
                             ),
                           ),
+                         )
                         ],
                       ),
                     ),

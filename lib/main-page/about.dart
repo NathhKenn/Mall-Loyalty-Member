@@ -61,7 +61,7 @@ class AboutScene extends StatelessWidget {
                   width: 308 * fem,
                   height: 34 * fem,
                   child: Text(
-                    'Terms and Conditions',
+                    'About US',
                     textAlign: TextAlign.center,
                     style: SafeGoogleFont(
                       'Inter',
