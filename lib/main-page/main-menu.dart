@@ -179,7 +179,7 @@ class _MainSceneState extends State<MainScene> {
                                   width: 121 * fem,
                                   height: 24 * fem,
                                   child: Text(
-                                    'E - GIFT Balance',
+                                    'E-Reward',
                                     style: TextStyle(
                                       fontSize: 16 * ffem,
                                       fontWeight: FontWeight.w400,
@@ -256,7 +256,7 @@ class _MainSceneState extends State<MainScene> {
                           child: Text(
                             'View My Voucher',
                             style: TextStyle(
-                              fontSize: 13 * ffem,
+                              fontSize: 14 * ffem,
                               fontWeight: FontWeight.w500,
                               height: 1.8461538462 * ffem / fem,
                               letterSpacing: -0.26 * fem,
