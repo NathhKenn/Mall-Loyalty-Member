@@ -13,9 +13,6 @@ class RegisterScene extends StatefulWidget {
 }
 
 class RegScene extends State<RegisterScene>{
- final TextEditingController _firstName = TextEditingController();
- final TextEditingController _lastName = TextEditingController();
- final TextEditingController _email = TextEditingController();
  final TextEditingController _password = TextEditingController();
  final TextEditingController _confirm = TextEditingController();
 
@@ -335,9 +332,7 @@ class RegScene extends State<RegisterScene>{
                       ),
                       child: Center(
                         child: TextFormField(
-                           onChanged: (value){
-                            data.setConfirmPassword(value);
-                          },
+                          controller: _confirm,
                           obscureText: true,
                           style: TextStyle(
                             fontSize: 15*ffem,
@@ -403,9 +398,7 @@ class RegScene extends State<RegisterScene>{
                       ),
                       child: Center(
                         child: TextFormField(
-                          onChanged: (value){
-                            data.setPassword(value);
-                          },
+                          controller: _password,
                           obscureText: true,
                           style: TextStyle(
                             fontSize: 15*ffem,
@@ -470,9 +463,27 @@ class RegScene extends State<RegisterScene>{
               child: TextButton(
                onPressed: () {
                   if (_confirm.text == _password.text){
-                      setState(() {});
+                      Navigator.push(context, MaterialPageRoute(builder: (context) => const SignScene()));
                   }
-                  Navigator.push(context, MaterialPageRoute(builder: (context) => const SignScene()));
+                  else{
+                    showDialog(
+                        context: context,
+                        builder: (BuildContext context) {
+                          return AlertDialog(
+                            title: const Text('Error occurred'),
+                            content: const Text('The Password and the confirmed one is not the same, please try again'),
+                            actions: <Widget>[
+                              TextButton(
+                                child: const Text('OK'),
+                                onPressed: () {
+                                  Navigator.of(context).pop();
+                                },
+                              ),
+                            ],
+                          );
+                        },
+                      );
+                  }
                },
                 style: TextButton.styleFrom(
                   padding:EdgeInsets.zero,

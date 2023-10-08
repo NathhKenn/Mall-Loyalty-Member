@@ -3,9 +3,18 @@
 import 'package:flutter/material.dart';
 import 'package:myapp/login-page/sign-in.dart';
 import 'package:myapp/utils.dart';
-
-class ForgotScene extends StatelessWidget {
+import 'package:myapp/data.dart';
+class ForgotScene extends StatefulWidget {
   const ForgotScene({super.key});
+
+  @override
+  ForScene createState() => ForScene();
+}
+  class ForScene extends State <ForgotScene>{
+    final TextEditingController _password = TextEditingController();
+    final TextEditingController _confirm = TextEditingController();
+    final TextEditingController _email = TextEditingController();
+    Data data = Data();
 
   @override
   Widget build(BuildContext context) {
@@ -136,7 +145,8 @@ class ForgotScene extends StatelessWidget {
                         ],
                       ),
                       child: Center(
-                        child: TextField(
+                        child: TextFormField(
+                          controller :_password,
                           obscureText: true,
                           style: TextStyle(
                             fontSize: 15*ffem,
@@ -201,7 +211,8 @@ class ForgotScene extends StatelessWidget {
                         ],
                       ),
                       child: Center(
-                        child: TextField(
+                        child: TextFormField(
+                          controller: _confirm,
                           obscureText: true,
                           style: TextStyle(
                             fontSize: 15*ffem,
@@ -230,10 +241,31 @@ class ForgotScene extends StatelessWidget {
               child:  
                 TextButton(
                   onPressed:  () {
-                    Navigator.push(
+                    if (_confirm.text == _password.text && _email.text == data.getEmail()){
+                      Navigator.push(
                       context,
                       MaterialPageRoute(builder: (context) => const SignScene()),
                     );
+                  }
+                  else{
+                    showDialog(
+                        context: context,
+                        builder: (BuildContext context) {
+                          return AlertDialog(
+                            title: const Text('Error occurred'),
+                            content: const Text('There is an error in the password and email, please try again'),
+                            actions: <Widget>[
+                              TextButton(
+                                child: const Text('OK'),
+                                onPressed: () {
+                                  Navigator.of(context).pop();
+                                },
+                              ),
+                            ],
+                          );
+                        },
+                      );
+                  }
                   },
                   style:  TextButton.styleFrom (
                   padding:  EdgeInsets.zero,
@@ -352,7 +384,8 @@ class ForgotScene extends StatelessWidget {
                         ],
                       ),
                       child: Center (
-                        child: TextField(
+                        child: TextFormField(
+                          controller: _email,
                           style: TextStyle(
                             fontSize: 15*ffem,
                             color:const Color(0xff000000),
