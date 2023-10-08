@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:myapp/main-page/Mainpage.dart';
 import 'package:myapp/utils.dart';
 import 'package:myapp/main-page/main-menu.dart';
 import 'package:myapp/main-page/voucher.dart';
@@ -200,7 +201,7 @@ class WelcomeScene extends StatelessWidget {
                     // button1yB (54:1745)
                     onPressed: () {Navigator.push(
                     context,
-                    MaterialPageRoute(builder: (context) => const MainScene()),
+                    MaterialPageRoute(builder: (context) => const MainPage()),
                     );
                     },
                     style: TextButton.styleFrom (
