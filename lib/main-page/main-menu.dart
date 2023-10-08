@@ -514,7 +514,7 @@ class MainScene extends StatelessWidget {
                   SizedBox(
                     // verticalvouchersE9 (159:79)
                     width: double.infinity,
-                    height: 160*fem,
+                    height: 122*fem,
                     child: Container(
                       // groupvertialvoucherRmT (95:388)
                       width: double.infinity,
