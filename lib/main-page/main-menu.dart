@@ -179,7 +179,7 @@ class _MainSceneState extends State<MainScene> {
                                   width: 121 * fem,
                                   height: 24 * fem,
                                   child: Text(
-                                    'E-Reward',
+                                    'E - GIFT Balance',
                                     style: TextStyle(
                                       fontSize: 16 * ffem,
                                       fontWeight: FontWeight.w400,
@@ -256,7 +256,7 @@ class _MainSceneState extends State<MainScene> {
                           child: Text(
                             'View My Voucher',
                             style: TextStyle(
-                              fontSize: 14 * ffem,
+                              fontSize: 13 * ffem,
                               fontWeight: FontWeight.w500,
                               height: 1.8461538462 * ffem / fem,
                               letterSpacing: -0.26 * fem,
@@ -394,26 +394,70 @@ class _MainSceneState extends State<MainScene> {
                     });
                   },
                   children: [
-                    buildVoucherImage(
+                    TextButton(
+                      onPressed: (){
+                        showDialog(
+                          context: context, 
+                          builder: (BuildContext context){
+                            return Dialog(
+                              child:Image.asset('assets/main-menu/images/horizontal-main-menu-1.png')
+                            );
+                          });
+                      },
+                    child:buildVoucherImage(
                       'assets/main-menu/images/horizontal-main-menu-1.png',
                       fem,
                     ),
-                    buildVoucherImage(
+                    ),
+                    TextButton(
+                      onPressed: (){
+                        showDialog(
+                          context: context, 
+                          builder: (BuildContext context){
+                            return Dialog(
+                              child:Image.asset('assets/main-menu/images/horizontal-main-menu-2.png')
+                            );
+                          });
+                      },
+                    child:buildVoucherImage(
+                      'assets/main-menu/images/horizontal-main-menu-2.png',
+                      fem,
+                    ),
+                    ),
+                    TextButton(
+                      onPressed: (){
+                        showDialog(
+                          context: context, 
+                          builder: (BuildContext context){
+                            return Dialog(
+                              child:Image.asset('assets/main-menu/images/horizontal-main-menu-3.png')
+                            );
+                          });
+                      },
+                    child:buildVoucherImage(
                       'assets/main-menu/images/horizontal-main-menu-3.png',
                       fem,
                     ),
-                    buildVoucherImage(
+                    ),
+                    TextButton(
+                      onPressed: (){
+                        showDialog(
+                          context: context, 
+                          builder: (BuildContext context){
+                            return Dialog(
+                              child:Image.asset('assets/main-menu/images/horizontal-main-menu-4.png')
+                            );
+                          });
+                      },
+                    child:buildVoucherImage(
                       'assets/main-menu/images/horizontal-main-menu-4.png',
                       fem,
                     ),
-                    buildVoucherImage(
-                      'assets/main-menu/images/horizontal-main-menu-2.png',
-                      fem,
                     ),
                   ],
                 ),
               ),
-              SizedBox(height: 10.0), 
+              const SizedBox(height: 10.0), 
               buildPageIndicator(),
               Container(
                 // autogroup3qhpv73 (LwYWgUjfz34gmBpC463QHP)
